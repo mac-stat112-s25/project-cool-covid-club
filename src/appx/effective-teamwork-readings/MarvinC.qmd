@@ -1,0 +1,10 @@
+---
+title: "Marvin"
+format: html
+---
+
+## Summary/Insights
+
+Effective teamwork includes involving all voices in decision making, encouraging an environment where open discussion is possible, and having steps to ensure that conflicts are resolved quickly and productively. Each individual should be able to apply their strengths to the overall progress of the project, such that everyone is able to contribute and feel ownership of the project.
+
+Source: https://skillpath.com/blog/effective-teamwork
