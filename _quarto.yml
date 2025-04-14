@@ -44,7 +44,6 @@ book:
   - src/appx/effective-teamwork-readings/GabrielDonellyHiggins/qmd
   - src/appx/effective-teamwork-readings/MarvinC.qmd
 
-
 format:
   html:
     theme: # bootswatch themes--other options https://bootswatch.com/
