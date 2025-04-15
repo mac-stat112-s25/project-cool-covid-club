@@ -6,15 +6,3 @@ code-fold: false  # change to true to fold the code chunks
 ---
 
 Your report will go here.
-
-```{r}
-library(tidyverse)
-library(readxl)
-```
-
-```{r}
-covid_panel <- read_xlsx("./data/COVID-19-Constructed-Dataset-(PANEL).xlsx")
-
-covid <- read_xlsx("./data/COVID-19-Constructed-Dataset.xlsx")
-```
-
