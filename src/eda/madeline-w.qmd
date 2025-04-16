@@ -3,3 +3,27 @@ title: "Madeline W"
 format: html
 ---
 
+```{r}
+library(tidyverse)
+```
+
+```{r}
+school_attendance <- read_csv("../../data/School_Attendance_by_Student_Group.csv")
+```
+
+```{r}
+#looking at varibles of the dataset and familarizing with the data
+  dim(school_attendance) 
+  nrow(school_attendance) 
+  names(school_attendance)
+  str(school_attendance)
+```
+
+```{r}
+#looking at districts with higher attendance rates durring covid
+school_attendance |>
+  arrange(desc(`2020-2021 attendance rate`)) |>
+  head()
+```
+
+

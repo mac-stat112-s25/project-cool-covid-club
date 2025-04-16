@@ -43,6 +43,7 @@ book:
   - src/appx/case-study.qmd
   - src/appx/effective-teamwork-readings/GabrielDonellyHiggins/qmd
   - src/appx/effective-teamwork-readings/MarvinC.qmd
+  - src/appx/effective-teamwork-readings/madeline-w.qmd
 
 format:
   html:
