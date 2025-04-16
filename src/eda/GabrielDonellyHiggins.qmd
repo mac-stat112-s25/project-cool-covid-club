@@ -1,5 +1,0 @@
----
-title: "Gabriel DH"
-format: html
----
-
