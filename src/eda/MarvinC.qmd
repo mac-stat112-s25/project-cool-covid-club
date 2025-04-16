@@ -6,7 +6,7 @@ format: html
 ```{r}
 library(tidyverse)
 
-closed_schools <- read_csv("../../data/school_closures.csv")
+closed_schools <- read_delim("../../data/school_closures.csv", delim = ';')
 ```
 
 
@@ -70,3 +70,7 @@ tidy_us_schools |>
   geom_bar()
 ```
 
+```{r}
+closed_schools |>
+  filter(Country == 'Netherlands')
+```
