@@ -5,8 +5,10 @@ format: html
 
 ```{r}
 library(tidyverse)
+library(readxl)
 
 closed_schools <- read_delim("../../data/school_closures.csv", delim = ';')
+table <- read_xls("../../data/Table 6.xls")
 ```
 
 
@@ -71,6 +73,6 @@ tidy_us_schools |>
 ```
 
 ```{r}
-closed_schools |>
+nld_schools <- closed_schools |>
   filter(Country == 'Netherlands')
 ```
