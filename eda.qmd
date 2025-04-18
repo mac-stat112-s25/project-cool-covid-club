@@ -1,0 +1,11 @@
+---
+title: "eda"
+format: html
+---
+
+```{r}
+library(tidyverse)
+covidgrades <- read_csv("covidgrades.csv")
+```
+
+
