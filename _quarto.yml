@@ -11,7 +11,7 @@ project:
 
 
 book:
-  title: "project title"
+  title: "Did COVID Cook Our Kids?"
   author: ["student 1 first and last name", "student 2 first and last name", "student 3 first and last name"]
   date: today  # use today to update date published based on last time project was edited
   date-format: full
@@ -37,13 +37,22 @@ book:
 
   chapters:
     - index.qmd
-
+    
+    - part: "Effective Teamwork"
+      chapters: 
+      - src/et/GabrielDonellyHiggins.qmd
+      - src/et/marvin-c.qmd
+      - src/et/madeline-w.qmd
+      
+    - part: "EDA"
+      chapters: 
+      - src/eda/marvin-c.qmd
+      - src/eda/madeline-w.qmd
+    
+    
   appendices:
   - src/appx/proposal.qmd
   - src/appx/case-study.qmd
-  - src/appx/effective-teamwork-readings/GabrielDonellyHiggins/qmd
-  - src/appx/effective-teamwork-readings/MarvinC.qmd
-  - src/appx/effective-teamwork-readings/madeline-w.qmd
 
 format:
   html:
