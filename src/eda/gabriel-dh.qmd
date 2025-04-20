@@ -1,0 +1,20 @@
+---
+title: "gabriel-dh"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+messy_covid_unformatted <- read_csv("../../data/covid_test_scores_2.csv")
+
+messy_covid_unformatted
+
+messy_covid <- read_csv("../../data/covid_test_scores_2.csv", skip = 1)
+
+messy_covid 
+  # filter(VARIABLES != "Additional controls")
+  # filter(...1 != "VARIABLES") |>
+  # filter(...1 != "Additional controls") |>
+  # pivot_longer(cols = c(2...2, 3...3, 4...4, 5...5, 1...6, 2...7, 3...8, 4...9, 5...10, 1...11, 2...12, 3...13, 4...14, 5...15), names_to = "grade")
+```
