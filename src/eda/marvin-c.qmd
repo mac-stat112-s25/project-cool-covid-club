@@ -78,6 +78,30 @@ nld_schools <- closed_schools |>
 ```
 
 ```{r}
+# Importing final dataset
+covid <- read_csv("../../data/clean_covid.csv")
+```
 
+
+```{r}
+# Pivoting final dataset to include subject category
+clean_covid <- covid |>
+  pivot_longer(cols = c(spelling_value, reading_value, math_value),
+               names_to = 'subject',
+               values_to = 'scores_diff',
+               names_pattern = "(.*)_value",
+               names_transform = list(subject = as.factor))
+```
+
+```{r}
+unique(clean_covid$VARIABLES)
+
+# Removing unnecessary observations 
+factored_covid <- clean_covid |>
+  filter(!(VARIABLES %in% c("Constant", "Observations", "R-squared", "Clusters"))) 
+```
+
+```{r}
+write.csv(factored_covid, file = "../../data/factored_covid.csv")
 ```
 
