@@ -27,6 +27,8 @@ covid |>
   ggplot(aes(y = mean_scores_diff, x = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
-  labs(x = "Income Level", y = "Average Change in Scores from Midterms to Finals")
+  labs(x = "Income Level", 
+       y = "Average Change in Scores from Midterms to Finals", 
+       title = "Comparing the Change in Exam Scores during Covid between Income Levels")
 ```
 
