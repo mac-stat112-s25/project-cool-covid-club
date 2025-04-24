@@ -26,4 +26,36 @@ school_attendance |>
   head()
 ```
 
+```{r}
+covid_clean <- read_csv("../../data/clean_covid.csv")
+```
+
+
+```{r}
+#old
+covid |>
+  filter(str_detect(VARIABLES, "education")) |>
+  mutate(education_level = as.factor(str_to_sentence(str_extract(VARIABLES, "Medium|High|missing")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High", "Missing"))) |>
+  select(-VARIABLES, -...1, -...2) |>
+  group_by(education_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  geom_col() +
+  facet_wrap(~subject)
+```
+
+```{r}
+covid |>
+  filter(VARIABLES %in% c("COVID-19 year * Parental education high", "COVID-19 year * Parental education medium")) |>
+  group_by(VARIABLES,subject) |>
+  mutate(VARIABLES = str_replace_all(VARIABLES, "COVID-19 year * Parental education high","High")) |>
+  mutate(VARIABLES = str_replace_all(VARIABLES, "COVID-19 year * Parental education medium","Medium")) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = VARIABLES)) +
+  geom_col() +
+  facet_wrap(~subject)
+```
+str_replace(example, "quick", "really quick")
+
 
