@@ -65,3 +65,4 @@ _freeze/
 *.log
 *.aux
 *.toc
+data/~$covid_test_scores.xlsx
