@@ -12,7 +12,7 @@ messy_covid_unformatted
 
 messy_covid <- read_csv("../../data/covid_test_scores_2.csv", skip = 1)
 
-clean_covid <- messy_covid |>
+clean_covid_formatted <- messy_covid |>
   filter(VARIABLES != "Additional controls") |>
   filter(VARIABLES != "Household income") |>
   filter(VARIABLES != "Parental education") |>
@@ -36,7 +36,19 @@ clean_covid <- messy_covid |>
   mutate(VARIABLES = ifelse(reading_2 == "0.0498", "income_missing", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "0.00413", "educatiion_medium", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "0.0235", "education_high", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "education_missing", VARIABLES)) 
+  mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "education_missing", VARIABLES))
   
-write.csv("../../data/clean_covid_formatted.csv")
+write.csv(clean_covid_formatted, "../../data/clean_covid_formatted.csv")
+
+clean_covid_formatted
+
+```
+
+```{r}
+clean_covid_formatted |>
+  pivot_longer(cols = c(-VARIABLES), names_to = "type_grade", values_to = "score") |>
+  pivot_wider(names_from = VARIABLES, values_from = score) |>
+  rename(rsquared = `R-squared`) |>
+  select(-Constant, -Observations, -Clusters, -rsquared) |>
+  mutate(car = str_extract(type_grade, "(.*)_"))
 ```
