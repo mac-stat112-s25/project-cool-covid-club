@@ -8,7 +8,7 @@ code-fold: false  # change to true to fold the code chunks
 ```{r}
 library(tidyverse) 
 
-covid <- read_csv("data/factored_covid.csv")
+covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
 
@@ -18,18 +18,21 @@ Your report will go here.
 
 ```{r}
 covid |>
-  filter(str_detect(VARIABLES, "income")) |>
-  mutate(income_level = as.factor(str_to_sentence(str_extract(VARIABLES, "Medium|High|missing")))) |>
-  mutate(income_level = fct_relevel(income_level, c("Medium", "High", "Missing"))) |>
-  select(-VARIABLES, -...1, -...2) |>
+  select(subject, grade, income_medium, income_high, income_missing) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff",
+               names_prefix = "income_") |>
+  mutate(income_level = fct_relevel(as.factor(income_level), c("medium", "high", "missing")),
+         subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
   ggplot(aes(y = mean_scores_diff, x = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
-  labs(x = "Income Level", 
-       y = "Average Change in Scores from Midterms to Finals", 
-       title = "Comparing the Change in Exam Scores during Covid between Income Levels")
+  labs(x = "Income Level",
+       y = "Average Change in Scores from Midterms to Finals",
+       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels")
 ```
 
 ## Viz 4: Scores During Covid By Parent Education Level

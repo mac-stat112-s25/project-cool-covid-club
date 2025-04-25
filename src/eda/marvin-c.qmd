@@ -102,6 +102,8 @@ factored_covid <- clean_covid |>
 ```
 
 ```{r}
-write.csv(factored_covid, file = "../../data/factored_covid.csv")
+clean_covid <- read_csv("../../data/clean_covid_formatted.csv")
+
+clean_covid
 ```
 
