@@ -27,7 +27,7 @@ school_attendance |>
 ```
 
 ```{r}
-covid_clean <- read_csv("../../data/clean_covid.csv")
+covid <- read_csv("../../data/factored_covid.csv")
 ```
 
 
@@ -46,16 +46,18 @@ covid |>
 ```
 
 ```{r}
+# Viz 4: Scores Durring Covid By Parent Education Level
 covid |>
   filter(VARIABLES %in% c("COVID-19 year * Parental education high", "COVID-19 year * Parental education medium")) |>
   group_by(VARIABLES,subject) |>
-  mutate(VARIABLES = str_replace_all(VARIABLES, "COVID-19 year * Parental education high","High")) |>
-  mutate(VARIABLES = str_replace_all(VARIABLES, "COVID-19 year * Parental education medium","Medium")) |>
+  mutate(VARIABLES = str_sub(VARIABLES, 35, 41)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
   ggplot(aes(y = mean_scores_diff, x = VARIABLES)) +
   geom_col() +
-  facet_wrap(~subject)
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Levle", 
+       y = "Average Change in Scores from Midterms to Finals", 
+       title = "Comparison of the Change in Exam Scores during Covid by Parental Education Level")
 ```
-str_replace(example, "quick", "really quick")
 
 
