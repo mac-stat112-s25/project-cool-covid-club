@@ -44,11 +44,14 @@ clean_covid_formatted
 
 ```
 
+
 ```{r}
-clean_covid_formatted |>
+write.csv(clean_covid_formatted |>
   pivot_longer(cols = c(-VARIABLES), names_to = "type_grade", values_to = "score") |>
   pivot_wider(names_from = VARIABLES, values_from = score) |>
   rename(rsquared = `R-squared`) |>
   select(-Constant, -Observations, -Clusters, -rsquared) |>
-  mutate(car = str_extract(type_grade, "(.*)_"))
+  mutate(subject = as.factor(str_extract(type_grade, "reading|spelling|math")),
+         grade = as.numeric(str_extract(type_grade, "1|2|3|4|5"))) |>
+  select(-type_grade), "../../data/clean_covid_formatted.csv")
 ```
