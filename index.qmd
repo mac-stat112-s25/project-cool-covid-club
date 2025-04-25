@@ -32,10 +32,10 @@ covid |>
        title = "Comparing the Change in Exam Scores during Covid between Income Levels")
 ```
 
-## Viz 4: Scores Durring Covid By Parent Education Level
+## Viz 4: Scores During Covid By Parent Education Level
 
 ```{r}
-# Viz 4: Scores Durring Covid By Parent Education Level
+# Viz 4: Scores During Covid By Parent Education Level
 covid |>
   filter(VARIABLES %in% c("COVID-19 year * Parental education high", "COVID-19 year * Parental education medium")) |>
   group_by(VARIABLES,subject) |>
