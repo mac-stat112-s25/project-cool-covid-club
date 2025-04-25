@@ -31,26 +31,12 @@ clean_covid <- messy_covid |>
          math_4 = `Grade 4...14`,
          math_5 = `Grade 5...15`) |>
   select(-math_1, -spelling_1) |>
-  mutate(VARIABLES = ifelse(reading_2 == "-0.0233", "Pre_medium", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "0.0181", "Pre_high", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "0.0498", "Pre_missing", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "0.00413", "Post_medium", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "0.0235", "Post_high", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "Post_missing", VARIABLES)) 
-
-
+  mutate(VARIABLES = ifelse(reading_2 == "-0.0233", "income_medium", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0181", "income_high", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0498", "income_missing", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.00413", "educatiion_medium", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0235", "education_high", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "education_missing", VARIABLES)) 
   
-
-  # pivot_longer(cols = c(spelling_2, spelling_3, spelling_4, spelling_5), names_to = "spelling_grade", values_to = "spelling_value") |>
-  # pivot_longer(cols = c(math_2, math_3, math_4, math_5), names_to = "math_grade", values_to = "math_value") |>
-  # pivot_longer(cols = c(reading_2, reading_3, reading_4, reading_5), names_to = "reading_grade", values_to = "reading_value") |>
-  # mutate(grade = fct_recode(spelling_grade,
-  #                           "2" = "spelling_2",
-  #                           "3" = "spelling_3",
-  #                           "4" = "spelling_4",
-  #                           "5" = "spelling_5")) |>
-  # select(-spelling_grade, -math_grade, -reading_grade) |>
-  # summarize(VARIABLES, grade, spelling_value, math_value, reading_value)
-  
-clean_covid
+write.csv("../../data/clean_covid_formatted.csv")
 ```
