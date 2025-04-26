@@ -21,7 +21,7 @@ covid |>
                names_to = "income_level",
                values_to = "scores_diff") |>
   mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
-  mutate(income_level = fct_relevel(income_level, c("medium", "high")),
+  mutate(income_level = fct_relevel(income_level, c("Medium", "High")),
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
@@ -73,7 +73,8 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores Before Covid",
-       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level")
+       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level") +
+  theme_solarized()
 ```
 
 
