@@ -40,12 +40,12 @@ covid |>
 
 ```{r}
 covid |>
-  select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`, `COVID-19 year * Household income missing`) |>
+  select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
                values_to = "scores_diff") |>
-  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "Medium|High|missing")))) |>
-  mutate(income_level = fct_relevel(income_level, c("Medium", "High", "Missing")),
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "Medium|High")))) |>
+  mutate(income_level = fct_relevel(income_level, c("Medium", "High")),
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
@@ -61,7 +61,6 @@ covid |>
 
 ```{r}
 # Viz 4: Scores During Covid By Parent Education Level
-# Viz 4
 covid |>
   select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
   pivot_longer(cols = c(-subject, -grade),
