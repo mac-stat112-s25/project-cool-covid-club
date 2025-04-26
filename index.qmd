@@ -65,7 +65,6 @@ covid |>
 
 ```{r}
 # Viz 4: Scores During Covid By Parent Education Level
-# Viz 4
 covid |>
   select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
   pivot_longer(cols = c(-subject, -grade),
