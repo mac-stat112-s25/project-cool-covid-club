@@ -5,7 +5,36 @@ format: html
 
 ```{r}
 library(tidyverse)
-covidgrades <- read_csv("covidgrades.csv")
+covid <- read_csv("data/clean_covid_formatted.csv")
+```
+
+
+
+Your report will go here.
+
+## Viz 1: Scores before Covid by Income Level
+
+```{r}
+covid |>
+  select(subject, grade,`income_medium`, `income_high`, `income_missing`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high|missing")))) |>
+  mutate(income_level = fct_relevel(income_level, c("medium", "high", "missing")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = income_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Income Level",
+       y = "Average Change in Scores from Midterms to Finals",
+       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels")
+
+# Control: bar graphs compare learning gains for high and medium income outcome before Covid, faceted by subject, averaged grade.
+# x = income status, y = average grade difference pre-Covid, facet = subject
+
 ```
 
 
