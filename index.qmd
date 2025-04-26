@@ -1,7 +1,7 @@
 ---
 title: "Report"
 execute: 
-  echo: true      # change to true to show the code
+  echo: false      # change to true to show the code
 code-fold: false  # change to true to fold the code chunks
 ---
 
@@ -30,9 +30,10 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels") +
+       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels",
+       fill = "") +
   theme_solarized() +
-  scale_color_solarized(name = "Subject")
+  scale_color_solarized()
 ```
 
 ## Viz 2: Scores during Covid by Income Level
@@ -53,7 +54,8 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels") +
+       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels",
+       fill = "") +
   theme_solarized()
 ```
 
@@ -73,7 +75,8 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores Before Covid",
-       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level") +
+       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level",
+       fill = "") +
   theme_solarized()
 ```
 
@@ -95,6 +98,7 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores During Covid",
-       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level") +
+       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level",
+       fill = "") +
   theme_solarized()
 ```
