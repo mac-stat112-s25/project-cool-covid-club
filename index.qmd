@@ -6,7 +6,8 @@ code-fold: false  # change to true to fold the code chunks
 ---
 
 ```{r}
-library(tidyverse) 
+library(tidyverse)
+library(ggthemes)
 
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
@@ -19,21 +20,23 @@ Your report will go here.
 
 ```{r}
 covid |>
-  select(subject, grade,`income_medium`, `income_high`, `income_missing`) |>
+  select(subject, grade,`income_medium`, `income_high`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
                values_to = "scores_diff") |>
-  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high|missing")))) |>
-  mutate(income_level = fct_relevel(income_level, c("medium", "high", "missing")),
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
+  mutate(income_level = fct_relevel(income_level, c("medium", "high")),
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = income_level)) +
+  ggplot(aes(y = mean_scores_diff, x = income_level, color = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels")
+       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
 ```
 
 ## Viz 2: Scores during Covid by Income Level
@@ -49,12 +52,13 @@ covid |>
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = income_level)) +
+  ggplot(aes(y = mean_scores_diff, x = income_level, color = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels")
+       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels") +
+  theme_solarized()
 ```
 
 ## Viz 4: Scores During Covid By Parent Education Level
@@ -69,10 +73,11 @@ covid |>
   group_by(education_level, subject) |>
   mutate(education_level = str_sub(education_level, 35, 41)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  ggplot(aes(y = mean_scores_diff, x = education_level, color = subject)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores During Covid",
-       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level")
+       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level") +
+  theme_solarized()
 ```
