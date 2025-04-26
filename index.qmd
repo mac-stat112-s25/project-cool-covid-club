@@ -61,6 +61,26 @@ covid |>
   theme_solarized()
 ```
 
+## Viz 3: Socres Before Covid By Parent Education Level
+```{r}
+# Viz 3 
+covid |>
+  select(subject, grade,education_high, education_medium) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+  group_by(education_level, subject) |>
+  mutate(education_level = str_sub(education_level, 11, 16)) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Level",
+       y = "Average Change in Scores Before Covid",
+       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level")
+```
+
+
 ## Viz 4: Scores During Covid By Parent Education Level
 
 ```{r}
