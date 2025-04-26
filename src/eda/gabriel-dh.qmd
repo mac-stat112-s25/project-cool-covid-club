@@ -5,6 +5,7 @@ format: html
 
 ```{r}
 library(tidyverse)
+library(ggthemes)
 
 messy_covid_unformatted <- read_csv("../../data/covid_test_scores_2.csv")
 
@@ -52,6 +53,58 @@ write.csv(clean_covid_formatted |>
   mutate(subject = as.factor(str_extract(type_grade, "reading|spelling|math")),
          grade = as.numeric(str_extract(type_grade, "1|2|3|4|5"))) |>
   select(-type_grade), "../../data/clean_covid_formatted.csv")
+```
 
-clean_covid_formatted
+```{r}
+messy_pre_covid <- read_csv("../../data/clean_covid_formatted.csv")
+
+pre_covid <- messy_pre_covid |>
+  select(-`...1`) |>
+  mutate(income_medium_dif = `COVID-19 year * Medium income household` - income_medium) |>
+  mutate(income_high_dif = `COVID-19 year * High income household` - income_high) |>
+  mutate(income_missing_dif = `COVID-19 year * Household income missing` - income_missing) |>
+  mutate(pct_dif_medium = (income_medium_dif / income_medium)) |>
+  mutate(pct_dif_high = (income_high_dif / income_high)) |>
+  mutate(pct_dif_missing = (income_missing_dif / income_missing)) |>
+  mutate(subject = fct_recode(subject,
+                              "Math" = "math",
+                              "Spelling" = "spelling",
+                              "Reading" = "reading"))
+
+
+pre_covid
+```
+
+```{r}
+# viz 1
+ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for Medium Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+```
+
+```{r}
+# vis 2
+ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for High Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+
+```
+
+```{r}
+# viz 3
+ggplot(pre_covid, aes(x = grade, y = pct_dif_missing, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for Households with Missing Incomes") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
 ```
