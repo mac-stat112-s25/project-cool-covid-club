@@ -12,11 +12,7 @@ library(ggthemes)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
-
-Your report will go here.
-
 ##Viz 1: Scores before Covid by Income Level
-
 
 ```{r}
 covid |>
@@ -29,7 +25,7 @@ covid |>
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = income_level, color = income_level)) +
+  ggplot(aes(y = mean_scores_diff, x = income_level, fill = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Income Level",
@@ -52,7 +48,7 @@ covid |>
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = income_level, color = income_level)) +
+  ggplot(aes(y = mean_scores_diff, x = income_level, fill = income_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Income Level",
@@ -72,7 +68,7 @@ covid |>
   group_by(education_level, subject) |>
   mutate(education_level = str_sub(education_level, 11, 16)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
@@ -93,7 +89,7 @@ covid |>
   group_by(education_level, subject) |>
   mutate(education_level = str_sub(education_level, 35, 41)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
-  ggplot(aes(y = mean_scores_diff, x = education_level, color = subject)) +
+  ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
   geom_col() +
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
