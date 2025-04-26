@@ -73,8 +73,10 @@ covid |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "education_level",
                values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
   group_by(education_level, subject) |>
-  mutate(education_level = str_sub(education_level, 11, 16)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
   ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
   geom_col() +
@@ -97,8 +99,10 @@ covid |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "education_level",
                values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
   group_by(education_level, subject) |>
-  mutate(education_level = str_sub(education_level, 35, 41)) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
   ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
   geom_col() +
