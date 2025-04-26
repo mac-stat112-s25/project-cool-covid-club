@@ -30,10 +30,11 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels",
+       title = "Changes in Exam Scores before Covid-19",
        fill = "") +
   theme_solarized() +
-  scale_color_solarized()
+  scale_color_solarized() +
+  theme(legend.position = "none")
 ```
 
 ## Viz 2: Scores during Covid by Income Level
@@ -54,10 +55,15 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
-       title = "Comparing the Change in Exam Scores during Covid-19 between Income Levels",
+       title = "Changes in Exam Scores during Covid-19",
        fill = "") +
-  theme_solarized()
+  theme_solarized() +
+  theme(legend.position = "none")
 ```
+
+## Observations (Viz 1 & 2)
+
+From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
 
 ## Viz 3: Socres Before Covid By Parent Education Level
 ```{r}
@@ -75,9 +81,10 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores Before Covid",
-       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level",
+       title = "Changes in Exam Scores before Covid-19",
        fill = "") +
-  theme_solarized()
+  theme_solarized() +
+  theme(legend.position = "none")
 ```
 
 
@@ -98,7 +105,8 @@ covid |>
   facet_wrap(~subject) +
   labs(x = "Parental Education Level",
        y = "Average Change in Scores During Covid",
-       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level",
+       title = "Changes in Exam Scores during Covid-19",
        fill = "") +
-  theme_solarized()
+  theme_solarized()  +
+  theme(legend.position = "none")
 ```
