@@ -60,7 +60,7 @@ tidy_us_schools |>
 
 tidy_us_schools |>
   ggplot(aes(x = open_status)) +
-  geom_bar
+  geom_bar()
 # The majority of the time schools were partially open
 ```
 
