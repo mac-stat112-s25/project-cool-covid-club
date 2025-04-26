@@ -16,12 +16,12 @@ Your report will go here.
 
 ```{r}
 covid |>
-  select(subject, grade,`income_medium`, `income_high`, `income_missing`) |>
+  select(subject, grade,`income_medium`, `income_high`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
                values_to = "scores_diff") |>
-  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high|missing")))) |>
-  mutate(income_level = fct_relevel(income_level, c("medium", "high", "missing")),
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
+  mutate(income_level = fct_relevel(income_level, c("medium", "high")),
          subject = as.factor(subject)) |>
   group_by(income_level, subject) |>
   summarize(mean_scores_diff = mean(scores_diff)) |>
