@@ -8,8 +8,6 @@ library(tidyverse)
 
 messy_covid_unformatted <- read_csv("../../data/covid_test_scores_2.csv")
 
-messy_covid_unformatted
-
 messy_covid <- read_csv("../../data/covid_test_scores_2.csv", skip = 1)
 
 clean_covid_formatted <- messy_covid |>
@@ -34,7 +32,7 @@ clean_covid_formatted <- messy_covid |>
   mutate(VARIABLES = ifelse(reading_2 == "-0.0233", "income_medium", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "0.0181", "income_high", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "0.0498", "income_missing", VARIABLES)) |>
-  mutate(VARIABLES = ifelse(reading_2 == "0.00413", "educatiion_medium", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.00413", "education_medium", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "0.0235", "education_high", VARIABLES)) |>
   mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "education_missing", VARIABLES))
   
@@ -54,4 +52,6 @@ write.csv(clean_covid_formatted |>
   mutate(subject = as.factor(str_extract(type_grade, "reading|spelling|math")),
          grade = as.numeric(str_extract(type_grade, "1|2|3|4|5"))) |>
   select(-type_grade), "../../data/clean_covid_formatted.csv")
+
+clean_covid_formatted
 ```
