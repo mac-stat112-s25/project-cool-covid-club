@@ -1,7 +1,8 @@
 ---
-title: "eda"
+title: "Ruth-L"
 format: html
 ---
+
 
 ```{r}
 library(tidyverse)
@@ -125,9 +126,3 @@ covid |>
   scale_color_solarized(name = "Subject")
 
 ```
-
-
-
-
-
-
