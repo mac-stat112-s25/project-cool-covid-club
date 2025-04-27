@@ -1,12 +1,12 @@
 ---
-title: "Ruth-L"
+title: "ruth-l"
 format: html
 ---
 
 
 ```{r}
 library(tidyverse)
-covid <- read_csv("data/clean_covid_formatted.csv")
+library(ggthemes)
 ```
 
 
@@ -16,7 +16,7 @@ Your report will go here.
 ## Viz 1: Scores before Covid by Income Level
 
 ```{r}
-covid |>
+clean_covid_formatted |>
   select(subject, grade,`income_medium`, `income_high`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
@@ -42,7 +42,7 @@ covid |>
 Viz 5, 2nd version
 ```{r}
 
-covid |>
+clean_covid_formatted |>
   select(subject, grade,`income_medium`, `income_high`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
@@ -64,7 +64,7 @@ covid |>
 Viz 6, 2nd version
 
 ```{r}
-covid |>
+clean_covid_formatted |>
   select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "income_level",
@@ -86,7 +86,7 @@ covid |>
 
 Viz 7, same thing but for parental ed before covid
 ```{r}
-covid |>
+clean_covid_formatted |>
   select(subject, grade,education_high, education_medium) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "education_level",
@@ -107,7 +107,7 @@ covid |>
 Viz 8, parental ed during covid
 
 ```{r}
-covid |>
+clean_covid_formatted |>
   select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
   pivot_longer(cols = c(-subject, -grade),
                names_to = "education_level",
