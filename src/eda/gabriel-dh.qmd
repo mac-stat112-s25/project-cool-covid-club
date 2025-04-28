@@ -81,7 +81,7 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
   geom_point(size = 5) +
   geom_smooth(method = "lm",
               se = FALSE) +
-  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for Medium Income Households") +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in Medium Income Households") +
   theme_solarized() +
   scale_color_solarized(name = "Subject")
 ```
@@ -92,7 +92,7 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
   geom_point(size = 5) +
   geom_smooth(method = "lm",
               se = FALSE) +
-  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for High Income Households") +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in High Income Households") +
   theme_solarized() +
   scale_color_solarized(name = "Subject")
 
@@ -104,7 +104,7 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_missing, color = subject)) +
   geom_point(size = 5) +
   geom_smooth(method = "lm",
               se = FALSE) +
-  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Before and After Covid for Households with Missing Incomes") +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Pre/During Covid in Households with Missing Incomes") +
   theme_solarized() +
   scale_color_solarized(name = "Subject")
 ```
