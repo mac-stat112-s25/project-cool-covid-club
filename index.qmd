@@ -58,7 +58,9 @@ covid |>
        title = "Changes in Exam Scores during Covid-19",
        fill = "") +
   theme_solarized() +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(-0.02, 0.07),
+                     breaks = seq(0, 0.07, .02))
 ```
 
 ## Observations (Viz 1 & 2)
