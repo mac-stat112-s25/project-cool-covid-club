@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Did COVID Cook Our Kids?",
     "section": "",
-    "text": "0.1 Viz 2: Scores during Covid by Income Level\n`summarise()` has grouped output by 'income_level'. You can override using the\n`.groups` argument.",
+    "text": "0.1 Viz 2: Scores during Covid by Income Level",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Report</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#viz-3-socres-before-covid-by-parent-education-level",
     "title": "Did COVID Cook Our Kids?",
     "section": "\n0.3 Viz 3: Socres Before Covid By Parent Education Level",
-    "text": "0.3 Viz 3: Socres Before Covid By Parent Education Level\n\n\n`summarise()` has grouped output by 'education_level'. You can override using\nthe `.groups` argument.",
+    "text": "0.3 Viz 3: Socres Before Covid By Parent Education Level",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Report</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#viz-4-scores-during-covid-by-parent-education-level",
     "title": "Did COVID Cook Our Kids?",
     "section": "\n0.4 Viz 4: Scores During Covid By Parent Education Level",
-    "text": "0.4 Viz 4: Scores During Covid By Parent Education Level\n\n\n`summarise()` has grouped output by 'education_level'. You can override using\nthe `.groups` argument.",
+    "text": "0.4 Viz 4: Scores During Covid By Parent Education Level",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Report</span>"
     ]
