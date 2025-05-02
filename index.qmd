@@ -5,6 +5,10 @@ execute:
 code-fold: false  # change to true to fold the code chunks
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
 ```{r}
 library(tidyverse)
 library(ggthemes)

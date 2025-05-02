@@ -8,11 +8,9 @@ project:
   type: book
   output-dir: docs
 
-
-
 book:
   title: "Did COVID Cook Our Kids?"
-  author: ["student 1 first and last name", "student 2 first and last name", "student 3 first and last name"]
+  author: ["Marvin Contreras", "Gabriel Donelly-Higgins", "Madeline Willett", "Ruth Lavan"]
   date: today  # use today to update date published based on last time project was edited
   date-format: full
   # favicon: images/logo.png
