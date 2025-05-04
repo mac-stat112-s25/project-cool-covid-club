@@ -16,9 +16,38 @@ library(ggthemes)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
-## Introduction:
+## Motivation:
 
-We 
+We wanted to understand how covid affected the performance of students. We, as students who experienced Covid-19 and the resulting lockdown, wanted to know if it led to worse or better outcomes and whether its effects were influenced by household income and parental education.
+
+
+## Research Question:
+
+Did academic proficiency decrease in the Netherlands during Covid-19 relative to pre-pandemic levels and did it vary by the income level of households or their parental education.
+
+The goal of the research question is to gage whether or not Covid-19 and the lockdown had a negative, neutral, or positive effect on academic proficiency. It also attempts to gage whether the effects of Covid-19 on academic proficiency, if there are any, is affected by household income or parental education.
+
+
+## Background:
+
+Covid-19 is a contagious disease originating from the SARS-CoV-2 Virus. It was first identified in Wuhan, China, and then began to spread internationally. In response to the spread of Covid-19, the Netherlands went through several full lockdowns which closed schools. It first lockdown began in March, 2020. The next was on the 15th of December, 2020. It experienced another in December, 2021.
+
+Covid-19 is also known to cause brain fog, which leads to a trouble concentrating. We also believe that this may have had an effect on students post-pandemic.
+
+
+**References:**
+https://www.who.int/news/item/30-12-2024-milestone-covid-19-five-years-ago
+https://www.containmentnu.nl/articles/timeline?lang=en
+https://www.news-medical.net/health/The-Science-Behind-Long-COVID-Brain-Fog.aspx
+
+
+## Data:
+
+**Collection / Acquisition:**
+The data we used came from the NCO, which is a database owned by the Dutch government. Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government. This means that data on students from private schools that do not receive any government funding was not included. The data used from the NCO database was exam scores prior to the pandemic during the pandemic. The data provided from the NCO, however, is generalized to the entire student population based on whether their household incomes were middle or high, and whether or not their parental education was high or low. The data required for the NCO to categorize each students parents' parental education was also cross referenced from government data, which contained the degrees they held. The data on students' household income was calculated by government data about whether or not the household received government benefits and experienced unemployment. Data about students' proficiency was taken by their exam scores in the categories of reading, spelling, and math.
+
+**Data understanding
+
 
 ## Viz 1: Scores before Covid by Income Level
 
