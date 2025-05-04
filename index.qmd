@@ -16,7 +16,11 @@ library(ggthemes)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
-##Viz 1: Scores before Covid by Income Level
+## Introduction:
+
+We 
+
+## Viz 1: Scores before Covid by Income Level
 
 ```{r}
 covid |>
