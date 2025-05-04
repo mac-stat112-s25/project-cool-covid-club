@@ -44,12 +44,15 @@ https://www.news-medical.net/health/The-Science-Behind-Long-COVID-Brain-Fog.aspx
 ## Data:
 
 **Collection / Acquisition:**
-The data we used came from the NCO, which is a database owned by the Dutch government. Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government. This means that data on students from private schools that do not receive any government funding was not included. The data used from the NCO database was exam scores prior to the pandemic during the pandemic. The data provided from the NCO, however, is generalized to the entire student population based on whether their household incomes were middle or high, and whether or not their parental education was high or low. The data required for the NCO to categorize each students parents' parental education was also cross referenced from government data, which contained the degrees they held. The data on students' household income was calculated by government data about whether or not the household received government benefits and experienced unemployment. Data about students' proficiency was taken by their exam scores in the categories of reading, spelling, and math.
+The data we used came from the NCO, which is a database owned by the Dutch government. Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government. This means that data on students from private schools that do not receive any government funding was not included. The data used from the NCO database was exam scores prior to the pandemic during the pandemic. The data provided from the NCO, however, is generalized to the entire student population based on whether their household incomes were middle or high, whether or not their parental education was high or low, and what grade they were in. The data required for the NCO to categorize each students parents' parental education was also cross referenced from government data, which contained the degrees they held. The data on students' household income was calculated by government data about whether or not the household received government benefits and experienced unemployment. Data about students' proficiency was taken by their exam scores in the categories of reading, spelling, and math. Then, per each grade, the average of all students' exam scores in each grade and for reading, spelling, and math was provided. The score on the exams that students took was graded from 1-100, so each grade's average is a percent of the maximum students could have scored.
 
-**Data understanding
+**Data understanding:**
+Each grade of school had roughly 150k+ students, so we decided that the sample size was large enough. We found that the data set provided needed a lot of cleaning. Many unnecessary variables were included, and they were listed as rows instead of columns. The downloaded csv was not formatted like a csv, and the first row of it needed to be skipped to make the format work. Many variables needed to be renamed, and the dataset needed to be transposed. Lastly, to calculate scores prior to and before covid, new variables needed to be created, and they were standardized as a percent of improvement or decline.
 
 
-## Viz 1: Scores before Covid by Income Level
+## Vizualizations: 
+
+**Viz 1: Scores before Covid-19 by Income Level**
 
 ```{r}
 covid |>
@@ -74,7 +77,9 @@ covid |>
   theme(legend.position = "none")
 ```
 
-## Viz 2: Scores during Covid by Income Level
+
+
+**Viz 2: Scores during Covid-19 by Income Level**
 
 ```{r}
 covid |>
@@ -100,11 +105,14 @@ covid |>
                      breaks = seq(0, 0.07, .02))
 ```
 
-## Observations (Viz 1 & 2)
+**Observations (vizualizations 1 & 2)**
 
 From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
 
-## Viz 3: Socres Before Covid By Parent Education Level
+
+
+**Viz 3: Scores Before Covid-19 By Parent Education Level**
+
 ```{r}
 # Viz 3 
 covid |>
@@ -129,7 +137,7 @@ covid |>
 ```
 
 
-## Viz 4: Scores During Covid By Parent Education Level
+**Viz 4: Scores During Covid-19 By Parent Education Level**
 
 ```{r}
 # Viz 4: Scores During Covid By Parent Education Level
@@ -153,3 +161,7 @@ covid |>
   theme_solarized()  +
   theme(legend.position = "none")
 ```
+
+**Observations (vizualizations 1 & 2)**
+
+From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
