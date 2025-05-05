@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r}
 library(tidyverse)
 library(ggthemes)
+library(ggplot2)
 
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
@@ -77,13 +78,14 @@ covid |>
        title = "Changes In Exam Scores Before Covid-19",
        fill = "") +
   theme_solarized() +
-  scale_color_solarized() +
-  theme(legend.position = "none")  +
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
   scale_y_continuous(limits = c(-0.02, 0.07),
                      breaks = seq(0, 0.07, .02)) +
   theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
         axis.title = element_text(size = 13, family = "serif"),
-        axis.text = element_text(family = "mono"), size = 10, color = )
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
 ```
 
 
@@ -111,7 +113,12 @@ covid |>
   theme_solarized() +
   theme(legend.position = "none") +
   scale_y_continuous(limits = c(-0.02, 0.07),
-                     breaks = seq(0, 0.07, .02))
+                     breaks = seq(0, 0.07, .02)) +
+  scale_fill_solarized() +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
 ```
 
 **Observations (vizualizations 1 & 2)**
@@ -142,7 +149,12 @@ covid |>
        title = "Changes in Exam Scores before Covid-19",
        fill = "") +
   theme_solarized() +
-  theme(legend.position = "none")
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
 ```
 
 
@@ -167,8 +179,13 @@ covid |>
        y = "Average Change in Scores During Covid",
        title = "Changes in Exam Scores during Covid-19",
        fill = "") +
-  theme_solarized()  +
-  theme(legend.position = "none")
+  theme_solarized() +
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
 ```
 
 **Observations (vizualizations 1 & 2)**
