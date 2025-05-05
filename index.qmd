@@ -16,19 +16,21 @@ library(ggthemes)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
-## Motivation:
+![](./data/final_slides.pdf){width=8in height=4in}
+
+## Motivation: {-}
 
 We wanted to understand how covid affected the performance of students. We, as students who experienced Covid-19 and the resulting lockdown, wanted to know if it led to worse or better outcomes and whether its effects were influenced by household income and parental education.
 
 
-## Research Question:
+## Research Question: {-}
 
 Did academic proficiency decrease in the Netherlands during Covid-19 relative to pre-pandemic levels and did it vary by the income level of households or their parental education.
 
 The goal of the research question is to gage whether or not Covid-19 and the lockdown had a negative, neutral, or positive effect on academic proficiency. It also attempts to gage whether the effects of Covid-19 on academic proficiency, if there are any, is affected by household income or parental education.
 
 
-## Background:
+## Background: {-}
 
 Covid-19 is a contagious disease originating from the SARS-CoV-2 Virus. It was first identified in Wuhan, China, and then began to spread internationally. In response to the spread of Covid-19, the Netherlands went through several full lockdowns which closed schools. It first lockdown began in March, 2020. The next was on the 15th of December, 2020. It experienced another in December, 2021.
 
@@ -41,7 +43,7 @@ https://www.containmentnu.nl/articles/timeline?lang=en
 https://www.news-medical.net/health/The-Science-Behind-Long-COVID-Brain-Fog.aspx
 
 
-## Data:
+## Data: {-}
 
 **Collection / Acquisition:**
 The data we used came from the NCO, which is a database owned by the Dutch government. Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government. This means that data on students from private schools that do not receive any government funding was not included. The data used from the NCO database was exam scores prior to the pandemic during the pandemic. The data provided from the NCO, however, is generalized to the entire student population based on whether their household incomes were middle or high, whether or not their parental education was high or low, and what grade they were in. The data required for the NCO to categorize each students parents' parental education was also cross referenced from government data, which contained the degrees they held. The data on students' household income was calculated by government data about whether or not the household received government benefits and experienced unemployment. Data about students' proficiency was taken by their exam scores in the categories of reading, spelling, and math. Then, per each grade, the average of all students' exam scores in each grade and for reading, spelling, and math was provided. The score on the exams that students took was graded from 1-100, so each grade's average is a percent of the maximum students could have scored.
@@ -50,7 +52,7 @@ The data we used came from the NCO, which is a database owned by the Dutch gover
 Each grade of school had roughly 150k+ students, so we decided that the sample size was large enough. We found that the data set provided needed a lot of cleaning. Many unnecessary variables were included, and they were listed as rows instead of columns. The downloaded csv was not formatted like a csv, and the first row of it needed to be skipped to make the format work. Many variables needed to be renamed, and the dataset needed to be transposed. Lastly, to calculate scores prior to and before covid, new variables needed to be created, and they were standardized as a percent of improvement or decline.
 
 
-## Vizualizations: 
+## Vizualizations: {-}
 
 **Viz 1: Scores before Covid-19 by Income Level**
 
@@ -167,3 +169,12 @@ covid |>
 **Observations (vizualizations 1 & 2)**
 
 From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
+
+
+## Limitations and Future Work {-}
+
+The dataset itself is limited, as we only have access to a subset of the data collected during the study referenced above. Our pre-Covid timeframe only includes the 2017-18 school year, whereas the original data scientists had access to a timeline of data, and as such could produce visualizations that much better exemplified trends we were looking for. Also, as mentioned in the introduction, the original study itself only included data from publicly funded schools, meaning this is not representative of private school students, who are presumably in an even higher income bracket. This data could have helped us come to a clearer conclusion.
+
+Even within the data we have, a good portion of the data is labeled as 'missing'. You may have noticed that the categories we have for both parental education level and income status are only medium and high; this categorization implies a 3rd category: low. However, this was not available within the dataset, and instead there was a large group of students for whom these identifiers were missing. We were forced to exclude these students as these categories were exactly what we were looking at, and adding students that did not belong in either category would've confounded our data and obscured any potential observations we could have made.
+
+In terms of future work, an interesting next step would be to look at data for middle schoolers, high schoolers, and public university students if possible. This would give us the ability to look at if age has any significant impact on the relationship we were studying. Extrapolating further, we think it would be useful to also look at data across different countries and see if a country's GDP and economic status has any impact on this as well, especially in terms of a country's response to Covid.
