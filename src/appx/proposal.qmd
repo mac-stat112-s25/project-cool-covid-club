@@ -2,13 +2,17 @@
 title: "Proposal"
 ---
 
-Proposal:
-Names: Madeline Willett, Ruth Lavan, Marvin Contreras, Gabriel Donelly Higgins
+## Names: 
+Madeline Willett, Ruth Lavan, Marvin Contreras, Gabriel Donelly Higgins
 
-Title: Did Covid Cook our Kids? Looking at the relationship between the Covid-19 pandemic  education
+## Title: 
+Did Covid Cook our Kids? Looking at the relationship between the Covid-19 pandemic  education
 
-Short Description: We want to explore the impact the covid 19 and the following lockdown had on the education of students. We are focusing on the impact of covid on american students during and around the time of lockdown and the pandemic.
+## Short Description:
+We want to explore the impact the covid 19 and the following lockdown had on the education of students. We are focusing on the impact of covid on american students during and around the time of lockdown and the pandemic.
 
-Inspiration: Our own experience with covid impacting our education experience.
+## Inspiration: 
+Our own experience with covid impacting our education experience.
 
+## Plan:
 ![table](../../data/table.png)
