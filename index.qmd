@@ -30,12 +30,14 @@ Did academic proficiency decrease in the Netherlands during Covid-19 relative to
 The goal of the research question is to gage whether or not Covid-19 and the lockdown had a negative, neutral, or positive effect on academic proficiency. It also attempts to gage whether the effects of Covid-19 on academic proficiency, if there are any, is affected by household income or parental education.
 
 
+
 ## Background: {-}
 
 Covid-19 is a contagious disease originating from the SARS-CoV-2 Virus. It was first identified in Wuhan, China, and then began to spread internationally. In response to the spread of Covid-19, the Netherlands went through several full lockdowns which closed schools. It first lockdown began in March, 2020. The next was on the 15th of December, 2020. It experienced another in December, 2021.
 
 Covid-19 is also known to cause brain fog, which leads to a trouble concentrating. We also believe that this may have had an effect on students post-pandemic.
 
+For this project we decided to investigate how Covid-19s’ disruption of schools globally impacted children of different socioeconomic backgrounds. We focused on children graded two through five in the Netherlands, using their test scores in Math, Reading, and Spelling to calculate their “Learning gains”. The data we used comes from an article published in the PLOS one journal. The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014. We chose to limit our investigation to scores taken in the semester before the pandemic and the scores taken during the period of school closure. We also decided to focus just on Income and Parental education as the most prominent factors impacting student education.
 
 **References:**
 https://www.who.int/news/item/30-12-2024-milestone-covid-19-five-years-ago
@@ -170,6 +172,11 @@ covid |>
 
 From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
 
+**Observations (vizualizations 3 & 4)**
+
+These graphs compare the average scores of students before covid 19 and during the school closures caused by the pandemic separated by Parental Education Level. Parental education is split between Medium and High. When comparing the scores from before the students items to during covid, the graphs shows improvements in math but worsened in both reading and spelling. When comparing these scores across time it is most important to look at the differences Parental Education had on the scores of students.
+
+While students are shown to improve in math, students from families of high levels of education showed more improvement than the other students. When looking at the subjects where students struggled, the negative impact of covid has more of an impact on students of medium parental education. When comparing these graphs it is clear that the level of parental education had sever impacts on students during school disruptions, even if their scores were improving, flamiles of higher education saw more improvements and less damage.
 
 ## Limitations and Future Work {-}
 
