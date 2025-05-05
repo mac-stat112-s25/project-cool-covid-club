@@ -188,9 +188,6 @@ covid |>
         strip.text = element_text(family = "mono", size = 10)) 
 ```
 
-**Observations (vizualizations 1 & 2)**
-
-From our visualizations, we can see that the average difference in final and midterm scores (accounting for income level) 
 
 **Observations (vizualizations 3 & 4)**
 
