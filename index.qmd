@@ -60,6 +60,7 @@ Each grade of school had roughly 150k+ students, so we decided that the sample s
 **Viz 1: Scores before Covid-19 by Income Level**
 
 ```{r}
+# viz 1: Scores before Covid-19 by Income Level
 covid |>
   select(subject, grade,`income_medium`, `income_high`) |>
   pivot_longer(cols = c(-subject, -grade),
@@ -93,6 +94,7 @@ covid |>
 **Viz 2: Scores during Covid-19 by Income Level**
 
 ```{r}
+# viz 2: Scores during Covid-19 by Income Level
 covid |>
   select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
   pivot_longer(cols = c(-subject, -grade),
@@ -130,7 +132,7 @@ The indicator of interest here that directly answers our question is the height 
 **Viz 3: Scores Before Covid-19 By Parent Education Level**
 
 ```{r}
-# Viz 3 
+# Viz 3: Scores Before Covid-19 By Parent Education Level
 covid |>
   select(subject, grade,education_high, education_medium) |>
   pivot_longer(cols = c(-subject, -grade),
@@ -194,6 +196,53 @@ covid |>
 These graphs compare the average scores of students before covid 19 and during the school closures caused by the pandemic separated by Parental Education Level. Parental education is split between Medium and High. When comparing the scores from before the students items to during covid, the graphs shows improvements in math but worsened in both reading and spelling. When comparing these scores across time it is most important to look at the differences Parental Education had on the scores of students.
 
 While students are shown to improve in math, students from families of high levels of education showed more improvement than the other students. When looking at the subjects where students struggled, the negative impact of covid has more of an impact on students of medium parental education. When comparing these graphs it is clear that the level of parental education had sever impacts on students during school disruptions, even if their scores were improving, flamiles of higher education saw more improvements and less damage.
+
+**Viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households**
+
+```{r}
+# viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households
+
+pre_covid <- read_csv("data/pre_covid.csv")
+
+ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in Medium Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
+
+
+**Viz 6: Change in Scores by Grade Pre/During Covid in High Income Households**
+
+```{r}
+# viz 6: Change in Scores by Grade Pre/During Covid in High Income Households
+ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in High Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
+
+
+**Observations (vizualizations 5 & 6)**
+
+The graphs compare the difference in scores of students, standardized by the percent change, pre and post covid by grade and subject. In the graph for medium income households, it becomes clear that all subjects saw a decrease. However, this effect reduced as grade increased. This possible covid effect, therefore, may have a stronger effect on younger students. But, in high income households, there was either a relatively neutral effect. In spelling, there was an improved score in grade 2, reduced scores in grade 3 and 4, and a near 0% difference in grade 5. Reading saw a nearly 0% difference in scores every year. Math saw a similar pattern, except for a uniquely high increase in the 3rd grade with a higher than 20% increase. What is interesting is that the reverse occurred in the 3rd grade for medium income households, indicating that higher incomes cause some sort of reverse effect. Overall, among high income households, there was relatively little change as grade increased, in contrast to the experience of medium income households. This may mean that money cushions high income households from a negative effect that occurred post pandemic, which medium income households could not cushion themselves from.
 
 ## Limitations and Future Work {-}
 

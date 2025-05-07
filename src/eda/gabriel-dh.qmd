@@ -3,12 +3,17 @@ title: "gabriel-dh"
 format: html
 ---
 
+## Import Necessary Libraries
+
 ```{r}
 library(tidyverse)
 library(ggthemes)
+```
 
-messy_covid_unformatted <- read_csv("../../data/covid_test_scores_2.csv")
 
+## Reshape, Clean, and wrangle the data
+
+```{r}
 messy_covid <- read_csv("../../data/covid_test_scores_2.csv", skip = 1)
 
 clean_covid_formatted <- messy_covid |>
@@ -41,10 +46,6 @@ write.csv(clean_covid_formatted, "../../data/clean_covid_formatted.csv")
 
 clean_covid_formatted
 
-```
-
-
-```{r}
 write.csv(clean_covid_formatted |>
   pivot_longer(cols = c(-VARIABLES), names_to = "type_grade", values_to = "score") |>
   pivot_wider(names_from = VARIABLES, values_from = score) |>
@@ -53,9 +54,7 @@ write.csv(clean_covid_formatted |>
   mutate(subject = as.factor(str_extract(type_grade, "reading|spelling|math")),
          grade = as.numeric(str_extract(type_grade, "1|2|3|4|5"))) |>
   select(-type_grade), "../../data/clean_covid_formatted.csv")
-```
 
-```{r}
 messy_pre_covid <- read_csv("../../data/clean_covid_formatted.csv")
 
 pre_covid <- messy_pre_covid |>
@@ -71,9 +70,23 @@ pre_covid <- messy_pre_covid |>
                               "Spelling" = "spelling",
                               "Reading" = "reading"))
 
+write.csv(pre_covid, "../../data/pre_covid.csv")
 
 pre_covid
 ```
+
+
+## Understand The Structure of The Data
+
+```{r}
+str(pre_covid)
+```
+
+```{r}
+summary(pre_covid)
+```
+
+## Visualize
 
 ```{r}
 # viz 1
@@ -83,18 +96,30 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
               se = FALSE) +
   labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in Medium Income Households") +
   theme_solarized() +
-  scale_color_solarized(name = "Subject")
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
 ```
 
 ```{r}
-# vis 2
+# viz 2
 ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
   geom_point(size = 5) +
   geom_smooth(method = "lm",
               se = FALSE) +
   labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in High Income Households") +
   theme_solarized() +
-  scale_color_solarized(name = "Subject")
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
 
 ```
 
@@ -106,5 +131,11 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_missing, color = subject)) +
               se = FALSE) +
   labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Pre/During Covid in Households with Missing Incomes") +
   theme_solarized() +
-  scale_color_solarized(name = "Subject")
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 14, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 13, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
 ```
