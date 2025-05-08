@@ -1,5 +1,5 @@
 ---
-title: "gabriel-dh"
+title: "Gabriel DH"
 format: html
 ---
 

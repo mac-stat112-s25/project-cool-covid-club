@@ -18,4 +18,4 @@ format: html
 Summary
 Be a aware and mindful of those you work with and focus on clear and respectful communication
 
-https://www.aces.edu/blog/topics/finance-career/10-tips-for-effective-teamwork-in-the-workplace/ 
+<https://www.aces.edu/blog/topics/finance-career/10-tips-for-effective-teamwork-in-the-workplace/> 

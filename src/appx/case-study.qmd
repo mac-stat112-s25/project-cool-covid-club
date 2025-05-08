@@ -4,11 +4,11 @@ title: "Case Study"
 
 ## Observations
 
-Report: http://varianceexplained.org/r/trump-tweets/
+Report: <http://varianceexplained.org/r/trump-tweets/>
 
-- Multiple research questions that culminate in one final conclusion
-- Consistent coloring to distinguish between iPhone and Android category 
-- Included R code in his final website (may be distracting to a general audience)
-- Inconsistent formatting of visualizations
-- Lots of visualizations that correspond to different questions (variety of viz types as well)
-- The conclusion is well-supported by the visualizations, nothing seems unrelated
+-   Multiple research questions that culminate in one final conclusion
+-   Consistent coloring to distinguish between iPhone and Android category
+-   Included R code in his final website (may be distracting to a general audience)
+-   Inconsistent formatting of visualizations
+-   Lots of visualizations that correspond to different questions (variety of viz types as well)
+-   The conclusion is well-supported by the visualizations, nothing seems unrelated

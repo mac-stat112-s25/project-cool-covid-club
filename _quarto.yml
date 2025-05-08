@@ -27,7 +27,7 @@ book:
 
 
   sidebar:
-    title: "sidebar title"
+    title: "COMP112 Final Project"
     collapse-level: 2
     style: "docked"
     pinned: true
@@ -46,6 +46,8 @@ book:
       chapters: 
       - src/eda/marvin-c.qmd
       - src/eda/madeline-w.qmd
+      - src/eda/gabriel-dh.qmd
+      # - src/eda/ruth-l.qmd
     
     
   appendices:
@@ -70,6 +72,7 @@ format:
     code-block-bg: true
     code-block-border-left: "#1482FA"
     code-tools: true
+    code-fold: true
     page-layout: full
 
   # pdf:
@@ -80,8 +83,10 @@ format:
 
 execute:
   cache: true
+  echo: false
+  warning: false
+  error: false
 #   freeze: auto # remove when using GitHub action to execute code
-
 
 
 editor: 
