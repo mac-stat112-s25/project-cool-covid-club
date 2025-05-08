@@ -212,7 +212,7 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/eda/gabriel-dh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">gabriel-dh</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Gabriel DH</span></span></a>
   </div>
 </li>
       </ul>
@@ -266,55 +266,6 @@ cookieconsent.run({
 
 
 </header><div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'readxl' was built under R version 4.4.3</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>closed_schools <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"../../data/school_closures.csv"</span>, <span class="at">delim =</span> <span class="st">';'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 162750 Columns: 19
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ";"
-chr  (15): Country ID, Country, Region Type 1, Region 1, Region Type 2, Regi...
-dbl   (3): School Age Population (Pre-Primary to Upper Secondary), Weeks par...
-date  (1): Date
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"../../data/covid_test_scores.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-• `` -&gt; `...1`
-• `` -&gt; `...3`
-• `` -&gt; `...4`
-• `` -&gt; `...5`
-• `` -&gt; `...7`
-• `` -&gt; `...8`
-• `` -&gt; `...9`
-• `` -&gt; `...10`
-• `` -&gt; `...12`
-• `` -&gt; `...13`
-• `` -&gt; `...14`
-• `` -&gt; `...15`</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Variables/Row in dataset (What is our unit of observation?)</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">names</span>(closed_schools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "Date"                                                  
  [2] "Country ID"                                            
@@ -336,7 +287,6 @@ date  (1): Date
 [18] "Weeks partially open"                                  
 [19] "Weeks fully closed"                                    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">head</span>(closed_schools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 19
   Date       `Country ID` Country `Region Type 1` `Region 1`     `Region Type 2`
@@ -355,10 +305,6 @@ date  (1): Date
 #   `Distance learning modalities (TV)` &lt;chr&gt;,
 #   `Distance learning modalities (Radio)` &lt;chr&gt;, …</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Unit of observation is specific dates</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a></span>
-<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Countries available in our dataset/more info on variables</span></span>
-<span id="cb13-4"><a href="#cb13-4"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span>Country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "Aruba"                                               
   [2] "Afghanistan"                                         
@@ -571,7 +517,6 @@ date  (1): Date
 [209] "Zambia"                                              
 [210] "Zimbabwe"                                            </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 1</span><span class="st">`</span>) <span class="co"># World region </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "ECLAC: Latin America and the Caribbean"
 [2] "ESCAP: Asia and the Pacific"           
@@ -580,7 +525,6 @@ date  (1): Date
 [5] "ESCWA: Western Asia"                   
 [6] NA                                      </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 2</span><span class="st">`</span>) <span class="co"># Pretty much same thing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "SDG: Latin America and the Caribbean" 
 [2] "SDG: Asia (Central and Southern)"     
@@ -590,13 +534,11 @@ date  (1): Date
 [6] "SDG: Oceania"                         
 [7] "SDG: Asia (Eastern and South-eastern)"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>) <span class="co"># Economic status as income level for a country/region</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "WB: High income"         "WB: Low income"         
 [3] "WB: Lower middle income" NA                       
 [5] "WB: Upper middle income"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">str</span>(closed_schools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>spc_tbl_ [162,750 × 19] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ Date                                                  : Date[1:162750], format: "2020-02-16" "2020-02-17" ...
@@ -644,33 +586,9 @@ date  (1): Date
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="co"># Summary of datapoints in the US (How many units in the US?)</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>closed_schools_us <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
-<span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country ID</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"USA"</span>) </span>
-<span id="cb23-4"><a href="#cb23-4"></a></span>
-<span id="cb23-5"><a href="#cb23-5"></a><span class="fu">dim</span>(closed_schools_us)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 775  19</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="co"># Converting character vectors to factors + recoding</span></span>
-<span id="cb25-2"><a href="#cb25-2"></a>tidy_us_schools <span class="ot">&lt;-</span> closed_schools_us <span class="sc">|&gt;</span></span>
-<span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">mutate</span>(<span class="at">dl_method =</span> <span class="fu">as.factor</span>(<span class="st">`</span><span class="at">Distance learning modalities (Global)</span><span class="st">`</span>), </span>
-<span id="cb25-4"><a href="#cb25-4"></a>         <span class="at">income_level =</span> <span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>, </span>
-<span id="cb25-5"><a href="#cb25-5"></a>         <span class="at">weeks_partial_open =</span> <span class="st">`</span><span class="at">Weeks partially open</span><span class="st">`</span>, </span>
-<span id="cb25-6"><a href="#cb25-6"></a>         <span class="at">weeks_closed =</span> <span class="st">`</span><span class="at">Weeks fully closed</span><span class="st">`</span>, </span>
-<span id="cb25-7"><a href="#cb25-7"></a>         <span class="at">open_status =</span> <span class="fu">fct_recode</span>(Status,</span>
-<span id="cb25-8"><a href="#cb25-8"></a>                                  <span class="st">"Academic break"</span> <span class="ot">=</span> <span class="st">"break"</span>,</span>
-<span id="cb25-9"><a href="#cb25-9"></a>                                  <span class="st">"Partially open"</span> <span class="ot">=</span> <span class="st">"partial"</span>,</span>
-<span id="cb25-10"><a href="#cb25-10"></a>                                  <span class="st">"Fully open"</span> <span class="ot">=</span> <span class="st">"full"</span>), </span>
-<span id="cb25-11"><a href="#cb25-11"></a>         <span class="at">date =</span> Date) <span class="sc">|&gt;</span></span>
-<span id="cb25-12"><a href="#cb25-12"></a>  <span class="fu">select</span>(date, income_level, open_status, dl_method, weeks_partial_open, weeks_closed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There was 1 warning in `mutate()`.
-ℹ In argument: `open_status = fct_recode(...)`.
-Caused by warning:
-! Unknown levels in `f`: break, partial, full</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">head</span>(tidy_us_schools, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 6
   date       income_level  open_status dl_method weeks_partial_open weeks_closed
@@ -683,36 +601,20 @@ Caused by warning:
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="co"># What is the distribution of our factors (status, dl_method)?</span></span>
-<span id="cb29-2"><a href="#cb29-2"></a></span>
-<span id="cb29-3"><a href="#cb29-3"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb29-4"><a href="#cb29-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> dl_method)) <span class="sc">+</span></span>
-<span id="cb29-5"><a href="#cb29-5"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><img src="marvin-c_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="co"># The designated distance learning method throughout our time period was Online+TV</span></span>
-<span id="cb30-2"><a href="#cb30-2"></a></span>
-<span id="cb30-3"><a href="#cb30-3"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb30-4"><a href="#cb30-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> open_status)) <span class="sc">+</span></span>
-<span id="cb30-5"><a href="#cb30-5"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><img src="marvin-c_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="co"># The majority of the time schools were partially open</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="co"># How did open status change over the course of our time period?</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a></span>
-<span id="cb32-3"><a href="#cb32-3"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb32-4"><a href="#cb32-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> date, <span class="at">fill =</span> open_status)) <span class="sc">+</span></span>
-<span id="cb32-5"><a href="#cb32-5"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><img src="marvin-c_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
@@ -721,35 +623,6 @@ Caused by warning:
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>nld_schools <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">filter</span>(Country <span class="sc">==</span> <span class="st">'Netherlands'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="co"># Importing final dataset</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 1088 Columns: 6
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," chr
-(1): VARIABLES dbl (2): ...1, grade num (3): spelling_value, math_value,
-reading_value
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="co"># Pivoting final dataset to include subject category</span></span>
-<span id="cb36-2"><a href="#cb36-2"></a>clean_covid <span class="ot">&lt;-</span> covid <span class="sc">|&gt;</span></span>
-<span id="cb36-3"><a href="#cb36-3"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(spelling_value, reading_value, math_value),</span>
-<span id="cb36-4"><a href="#cb36-4"></a>               <span class="at">names_to =</span> <span class="st">'subject'</span>,</span>
-<span id="cb36-5"><a href="#cb36-5"></a>               <span class="at">values_to =</span> <span class="st">'scores_diff'</span>,</span>
-<span id="cb36-6"><a href="#cb36-6"></a>               <span class="at">names_pattern =</span> <span class="st">"(.*)_value"</span>,</span>
-<span id="cb36-7"><a href="#cb36-7"></a>               <span class="at">names_transform =</span> <span class="fu">list</span>(<span class="at">subject =</span> as.factor))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">unique</span>(clean_covid<span class="sc">$</span>VARIABLES)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "COVID-19 year (2019/2020)"                 
  [2] "Medium"                                    
@@ -766,24 +639,8 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 [13] "R-squared"                                 
 [14] "Clusters"                                  </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="co"># Removing unnecessary observations </span></span>
-<span id="cb39-2"><a href="#cb39-2"></a>factored_covid <span class="ot">&lt;-</span> clean_covid <span class="sc">|&gt;</span></span>
-<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(VARIABLES <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Constant"</span>, <span class="st">"Observations"</span>, <span class="st">"R-squared"</span>, <span class="st">"Clusters"</span>))) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a>clean_covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid_formatted.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 12 Columns: 16
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," chr
-(1): subject dbl (15): ...1, COVID-19 year (2019/2020), income_medium,
-income_high, incom...
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a>clean_covid</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 12 × 16
     ...1 `COVID-19 year (2019/2020)` income_medium income_high income_missing
@@ -1444,114 +1301,114 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb44" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb44-1"><a href="#cb44-1"></a><span class="co">---</span></span>
-<span id="cb44-2"><a href="#cb44-2"></a><span class="an">title:</span><span class="co"> "Marvin C"</span></span>
-<span id="cb44-3"><a href="#cb44-3"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb44-4"><a href="#cb44-4"></a><span class="co">---</span></span>
-<span id="cb44-5"><a href="#cb44-5"></a></span>
-<span id="cb44-8"><a href="#cb44-8"></a><span class="in">```{r}</span></span>
-<span id="cb44-9"><a href="#cb44-9"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb44-10"><a href="#cb44-10"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb44-11"><a href="#cb44-11"></a></span>
-<span id="cb44-12"><a href="#cb44-12"></a>closed_schools <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"../../data/school_closures.csv"</span>, <span class="at">delim =</span> <span class="st">';'</span>)</span>
-<span id="cb44-13"><a href="#cb44-13"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"../../data/covid_test_scores.xlsx"</span>)</span>
-<span id="cb44-14"><a href="#cb44-14"></a><span class="in">```</span></span>
-<span id="cb44-15"><a href="#cb44-15"></a></span>
-<span id="cb44-16"><a href="#cb44-16"></a></span>
-<span id="cb44-19"><a href="#cb44-19"></a><span class="in">```{r}</span></span>
-<span id="cb44-20"><a href="#cb44-20"></a><span class="co"># Variables/Row in dataset (What is our unit of observation?)</span></span>
-<span id="cb44-21"><a href="#cb44-21"></a><span class="fu">names</span>(closed_schools)</span>
-<span id="cb44-22"><a href="#cb44-22"></a><span class="fu">head</span>(closed_schools)</span>
-<span id="cb44-23"><a href="#cb44-23"></a><span class="co"># Unit of observation is specific dates</span></span>
-<span id="cb44-24"><a href="#cb44-24"></a></span>
-<span id="cb44-25"><a href="#cb44-25"></a><span class="co"># Countries available in our dataset/more info on variables</span></span>
-<span id="cb44-26"><a href="#cb44-26"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span>Country)</span>
-<span id="cb44-27"><a href="#cb44-27"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 1</span><span class="st">`</span>) <span class="co"># World region </span></span>
-<span id="cb44-28"><a href="#cb44-28"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 2</span><span class="st">`</span>) <span class="co"># Pretty much same thing</span></span>
-<span id="cb44-29"><a href="#cb44-29"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>) <span class="co"># Economic status as income level for a country/region</span></span>
-<span id="cb44-30"><a href="#cb44-30"></a></span>
-<span id="cb44-31"><a href="#cb44-31"></a><span class="fu">str</span>(closed_schools)</span>
-<span id="cb44-32"><a href="#cb44-32"></a><span class="in">```</span></span>
-<span id="cb44-33"><a href="#cb44-33"></a></span>
-<span id="cb44-36"><a href="#cb44-36"></a><span class="in">```{r}</span></span>
-<span id="cb44-37"><a href="#cb44-37"></a><span class="co"># Summary of datapoints in the US (How many units in the US?)</span></span>
-<span id="cb44-38"><a href="#cb44-38"></a>closed_schools_us <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
-<span id="cb44-39"><a href="#cb44-39"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country ID</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"USA"</span>) </span>
-<span id="cb44-40"><a href="#cb44-40"></a></span>
-<span id="cb44-41"><a href="#cb44-41"></a><span class="fu">dim</span>(closed_schools_us)</span>
-<span id="cb44-42"><a href="#cb44-42"></a></span>
-<span id="cb44-43"><a href="#cb44-43"></a><span class="co"># Converting character vectors to factors + recoding</span></span>
-<span id="cb44-44"><a href="#cb44-44"></a>tidy_us_schools <span class="ot">&lt;-</span> closed_schools_us <span class="sc">|&gt;</span></span>
-<span id="cb44-45"><a href="#cb44-45"></a>  <span class="fu">mutate</span>(<span class="at">dl_method =</span> <span class="fu">as.factor</span>(<span class="st">`</span><span class="at">Distance learning modalities (Global)</span><span class="st">`</span>), </span>
-<span id="cb44-46"><a href="#cb44-46"></a>         <span class="at">income_level =</span> <span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>, </span>
-<span id="cb44-47"><a href="#cb44-47"></a>         <span class="at">weeks_partial_open =</span> <span class="st">`</span><span class="at">Weeks partially open</span><span class="st">`</span>, </span>
-<span id="cb44-48"><a href="#cb44-48"></a>         <span class="at">weeks_closed =</span> <span class="st">`</span><span class="at">Weeks fully closed</span><span class="st">`</span>, </span>
-<span id="cb44-49"><a href="#cb44-49"></a>         <span class="at">open_status =</span> <span class="fu">fct_recode</span>(Status,</span>
-<span id="cb44-50"><a href="#cb44-50"></a>                                  <span class="st">"Academic break"</span> <span class="ot">=</span> <span class="st">"break"</span>,</span>
-<span id="cb44-51"><a href="#cb44-51"></a>                                  <span class="st">"Partially open"</span> <span class="ot">=</span> <span class="st">"partial"</span>,</span>
-<span id="cb44-52"><a href="#cb44-52"></a>                                  <span class="st">"Fully open"</span> <span class="ot">=</span> <span class="st">"full"</span>), </span>
-<span id="cb44-53"><a href="#cb44-53"></a>         <span class="at">date =</span> Date) <span class="sc">|&gt;</span></span>
-<span id="cb44-54"><a href="#cb44-54"></a>  <span class="fu">select</span>(date, income_level, open_status, dl_method, weeks_partial_open, weeks_closed)</span>
-<span id="cb44-55"><a href="#cb44-55"></a></span>
-<span id="cb44-56"><a href="#cb44-56"></a><span class="fu">head</span>(tidy_us_schools, <span class="dv">5</span>)</span>
-<span id="cb44-57"><a href="#cb44-57"></a><span class="in">```</span></span>
-<span id="cb44-58"><a href="#cb44-58"></a></span>
-<span id="cb44-61"><a href="#cb44-61"></a><span class="in">```{r}</span></span>
-<span id="cb44-62"><a href="#cb44-62"></a><span class="co"># What is the distribution of our factors (status, dl_method)?</span></span>
-<span id="cb44-63"><a href="#cb44-63"></a></span>
-<span id="cb44-64"><a href="#cb44-64"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb44-65"><a href="#cb44-65"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> dl_method)) <span class="sc">+</span></span>
-<span id="cb44-66"><a href="#cb44-66"></a>  <span class="fu">geom_bar</span>()</span>
-<span id="cb44-67"><a href="#cb44-67"></a><span class="co"># The designated distance learning method throughout our time period was Online+TV</span></span>
-<span id="cb44-68"><a href="#cb44-68"></a></span>
-<span id="cb44-69"><a href="#cb44-69"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb44-70"><a href="#cb44-70"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> open_status)) <span class="sc">+</span></span>
-<span id="cb44-71"><a href="#cb44-71"></a>  <span class="fu">geom_bar</span>()</span>
-<span id="cb44-72"><a href="#cb44-72"></a><span class="co"># The majority of the time schools were partially open</span></span>
-<span id="cb44-73"><a href="#cb44-73"></a><span class="in">```</span></span>
-<span id="cb44-74"><a href="#cb44-74"></a></span>
-<span id="cb44-77"><a href="#cb44-77"></a><span class="in">```{r}</span></span>
-<span id="cb44-78"><a href="#cb44-78"></a><span class="co"># How did open status change over the course of our time period?</span></span>
-<span id="cb44-79"><a href="#cb44-79"></a></span>
-<span id="cb44-80"><a href="#cb44-80"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
-<span id="cb44-81"><a href="#cb44-81"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> date, <span class="at">fill =</span> open_status)) <span class="sc">+</span></span>
-<span id="cb44-82"><a href="#cb44-82"></a>  <span class="fu">geom_bar</span>()</span>
-<span id="cb44-83"><a href="#cb44-83"></a><span class="in">```</span></span>
-<span id="cb44-84"><a href="#cb44-84"></a></span>
-<span id="cb44-87"><a href="#cb44-87"></a><span class="in">```{r}</span></span>
-<span id="cb44-88"><a href="#cb44-88"></a>nld_schools <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
-<span id="cb44-89"><a href="#cb44-89"></a>  <span class="fu">filter</span>(Country <span class="sc">==</span> <span class="st">'Netherlands'</span>)</span>
-<span id="cb44-90"><a href="#cb44-90"></a><span class="in">```</span></span>
-<span id="cb44-91"><a href="#cb44-91"></a></span>
-<span id="cb44-94"><a href="#cb44-94"></a><span class="in">```{r}</span></span>
-<span id="cb44-95"><a href="#cb44-95"></a><span class="co"># Importing final dataset</span></span>
-<span id="cb44-96"><a href="#cb44-96"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid.csv"</span>)</span>
-<span id="cb44-97"><a href="#cb44-97"></a><span class="in">```</span></span>
-<span id="cb44-98"><a href="#cb44-98"></a></span>
-<span id="cb44-99"><a href="#cb44-99"></a></span>
-<span id="cb44-102"><a href="#cb44-102"></a><span class="in">```{r}</span></span>
-<span id="cb44-103"><a href="#cb44-103"></a><span class="co"># Pivoting final dataset to include subject category</span></span>
-<span id="cb44-104"><a href="#cb44-104"></a>clean_covid <span class="ot">&lt;-</span> covid <span class="sc">|&gt;</span></span>
-<span id="cb44-105"><a href="#cb44-105"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(spelling_value, reading_value, math_value),</span>
-<span id="cb44-106"><a href="#cb44-106"></a>               <span class="at">names_to =</span> <span class="st">'subject'</span>,</span>
-<span id="cb44-107"><a href="#cb44-107"></a>               <span class="at">values_to =</span> <span class="st">'scores_diff'</span>,</span>
-<span id="cb44-108"><a href="#cb44-108"></a>               <span class="at">names_pattern =</span> <span class="st">"(.*)_value"</span>,</span>
-<span id="cb44-109"><a href="#cb44-109"></a>               <span class="at">names_transform =</span> <span class="fu">list</span>(<span class="at">subject =</span> as.factor))</span>
-<span id="cb44-110"><a href="#cb44-110"></a><span class="in">```</span></span>
-<span id="cb44-111"><a href="#cb44-111"></a></span>
-<span id="cb44-114"><a href="#cb44-114"></a><span class="in">```{r}</span></span>
-<span id="cb44-115"><a href="#cb44-115"></a><span class="fu">unique</span>(clean_covid<span class="sc">$</span>VARIABLES)</span>
-<span id="cb44-116"><a href="#cb44-116"></a></span>
-<span id="cb44-117"><a href="#cb44-117"></a><span class="co"># Removing unnecessary observations </span></span>
-<span id="cb44-118"><a href="#cb44-118"></a>factored_covid <span class="ot">&lt;-</span> clean_covid <span class="sc">|&gt;</span></span>
-<span id="cb44-119"><a href="#cb44-119"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(VARIABLES <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Constant"</span>, <span class="st">"Observations"</span>, <span class="st">"R-squared"</span>, <span class="st">"Clusters"</span>))) </span>
-<span id="cb44-120"><a href="#cb44-120"></a><span class="in">```</span></span>
-<span id="cb44-121"><a href="#cb44-121"></a></span>
-<span id="cb44-124"><a href="#cb44-124"></a><span class="in">```{r}</span></span>
-<span id="cb44-125"><a href="#cb44-125"></a>clean_covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid_formatted.csv"</span>)</span>
-<span id="cb44-126"><a href="#cb44-126"></a></span>
-<span id="cb44-127"><a href="#cb44-127"></a>clean_covid</span>
-<span id="cb44-128"><a href="#cb44-128"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">---</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="an">title:</span><span class="co"> "Marvin C"</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="co">---</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="in">```{r}</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb12-11"><a href="#cb12-11"></a></span>
+<span id="cb12-12"><a href="#cb12-12"></a>closed_schools <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"../../data/school_closures.csv"</span>, <span class="at">delim =</span> <span class="st">';'</span>)</span>
+<span id="cb12-13"><a href="#cb12-13"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"../../data/covid_test_scores.xlsx"</span>)</span>
+<span id="cb12-14"><a href="#cb12-14"></a><span class="in">```</span></span>
+<span id="cb12-15"><a href="#cb12-15"></a></span>
+<span id="cb12-16"><a href="#cb12-16"></a></span>
+<span id="cb12-19"><a href="#cb12-19"></a><span class="in">```{r}</span></span>
+<span id="cb12-20"><a href="#cb12-20"></a><span class="co"># Variables/Row in dataset (What is our unit of observation?)</span></span>
+<span id="cb12-21"><a href="#cb12-21"></a><span class="fu">names</span>(closed_schools)</span>
+<span id="cb12-22"><a href="#cb12-22"></a><span class="fu">head</span>(closed_schools)</span>
+<span id="cb12-23"><a href="#cb12-23"></a><span class="co"># Unit of observation is specific dates</span></span>
+<span id="cb12-24"><a href="#cb12-24"></a></span>
+<span id="cb12-25"><a href="#cb12-25"></a><span class="co"># Countries available in our dataset/more info on variables</span></span>
+<span id="cb12-26"><a href="#cb12-26"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span>Country)</span>
+<span id="cb12-27"><a href="#cb12-27"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 1</span><span class="st">`</span>) <span class="co"># World region </span></span>
+<span id="cb12-28"><a href="#cb12-28"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 2</span><span class="st">`</span>) <span class="co"># Pretty much same thing</span></span>
+<span id="cb12-29"><a href="#cb12-29"></a><span class="fu">unique</span>(closed_schools<span class="sc">$</span><span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>) <span class="co"># Economic status as income level for a country/region</span></span>
+<span id="cb12-30"><a href="#cb12-30"></a></span>
+<span id="cb12-31"><a href="#cb12-31"></a><span class="fu">str</span>(closed_schools)</span>
+<span id="cb12-32"><a href="#cb12-32"></a><span class="in">```</span></span>
+<span id="cb12-33"><a href="#cb12-33"></a></span>
+<span id="cb12-36"><a href="#cb12-36"></a><span class="in">```{r}</span></span>
+<span id="cb12-37"><a href="#cb12-37"></a><span class="co"># Summary of datapoints in the US (How many units in the US?)</span></span>
+<span id="cb12-38"><a href="#cb12-38"></a>closed_schools_us <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
+<span id="cb12-39"><a href="#cb12-39"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country ID</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"USA"</span>) </span>
+<span id="cb12-40"><a href="#cb12-40"></a></span>
+<span id="cb12-41"><a href="#cb12-41"></a><span class="fu">dim</span>(closed_schools_us)</span>
+<span id="cb12-42"><a href="#cb12-42"></a></span>
+<span id="cb12-43"><a href="#cb12-43"></a><span class="co"># Converting character vectors to factors + recoding</span></span>
+<span id="cb12-44"><a href="#cb12-44"></a>tidy_us_schools <span class="ot">&lt;-</span> closed_schools_us <span class="sc">|&gt;</span></span>
+<span id="cb12-45"><a href="#cb12-45"></a>  <span class="fu">mutate</span>(<span class="at">dl_method =</span> <span class="fu">as.factor</span>(<span class="st">`</span><span class="at">Distance learning modalities (Global)</span><span class="st">`</span>), </span>
+<span id="cb12-46"><a href="#cb12-46"></a>         <span class="at">income_level =</span> <span class="st">`</span><span class="at">Region 3</span><span class="st">`</span>, </span>
+<span id="cb12-47"><a href="#cb12-47"></a>         <span class="at">weeks_partial_open =</span> <span class="st">`</span><span class="at">Weeks partially open</span><span class="st">`</span>, </span>
+<span id="cb12-48"><a href="#cb12-48"></a>         <span class="at">weeks_closed =</span> <span class="st">`</span><span class="at">Weeks fully closed</span><span class="st">`</span>, </span>
+<span id="cb12-49"><a href="#cb12-49"></a>         <span class="at">open_status =</span> <span class="fu">fct_recode</span>(Status,</span>
+<span id="cb12-50"><a href="#cb12-50"></a>                                  <span class="st">"Academic break"</span> <span class="ot">=</span> <span class="st">"break"</span>,</span>
+<span id="cb12-51"><a href="#cb12-51"></a>                                  <span class="st">"Partially open"</span> <span class="ot">=</span> <span class="st">"partial"</span>,</span>
+<span id="cb12-52"><a href="#cb12-52"></a>                                  <span class="st">"Fully open"</span> <span class="ot">=</span> <span class="st">"full"</span>), </span>
+<span id="cb12-53"><a href="#cb12-53"></a>         <span class="at">date =</span> Date) <span class="sc">|&gt;</span></span>
+<span id="cb12-54"><a href="#cb12-54"></a>  <span class="fu">select</span>(date, income_level, open_status, dl_method, weeks_partial_open, weeks_closed)</span>
+<span id="cb12-55"><a href="#cb12-55"></a></span>
+<span id="cb12-56"><a href="#cb12-56"></a><span class="fu">head</span>(tidy_us_schools, <span class="dv">5</span>)</span>
+<span id="cb12-57"><a href="#cb12-57"></a><span class="in">```</span></span>
+<span id="cb12-58"><a href="#cb12-58"></a></span>
+<span id="cb12-61"><a href="#cb12-61"></a><span class="in">```{r}</span></span>
+<span id="cb12-62"><a href="#cb12-62"></a><span class="co"># What is the distribution of our factors (status, dl_method)?</span></span>
+<span id="cb12-63"><a href="#cb12-63"></a></span>
+<span id="cb12-64"><a href="#cb12-64"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
+<span id="cb12-65"><a href="#cb12-65"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> dl_method)) <span class="sc">+</span></span>
+<span id="cb12-66"><a href="#cb12-66"></a>  <span class="fu">geom_bar</span>()</span>
+<span id="cb12-67"><a href="#cb12-67"></a><span class="co"># The designated distance learning method throughout our time period was Online+TV</span></span>
+<span id="cb12-68"><a href="#cb12-68"></a></span>
+<span id="cb12-69"><a href="#cb12-69"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
+<span id="cb12-70"><a href="#cb12-70"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> open_status)) <span class="sc">+</span></span>
+<span id="cb12-71"><a href="#cb12-71"></a>  <span class="fu">geom_bar</span>()</span>
+<span id="cb12-72"><a href="#cb12-72"></a><span class="co"># The majority of the time schools were partially open</span></span>
+<span id="cb12-73"><a href="#cb12-73"></a><span class="in">```</span></span>
+<span id="cb12-74"><a href="#cb12-74"></a></span>
+<span id="cb12-77"><a href="#cb12-77"></a><span class="in">```{r}</span></span>
+<span id="cb12-78"><a href="#cb12-78"></a><span class="co"># How did open status change over the course of our time period?</span></span>
+<span id="cb12-79"><a href="#cb12-79"></a></span>
+<span id="cb12-80"><a href="#cb12-80"></a>tidy_us_schools <span class="sc">|&gt;</span></span>
+<span id="cb12-81"><a href="#cb12-81"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> date, <span class="at">fill =</span> open_status)) <span class="sc">+</span></span>
+<span id="cb12-82"><a href="#cb12-82"></a>  <span class="fu">geom_bar</span>()</span>
+<span id="cb12-83"><a href="#cb12-83"></a><span class="in">```</span></span>
+<span id="cb12-84"><a href="#cb12-84"></a></span>
+<span id="cb12-87"><a href="#cb12-87"></a><span class="in">```{r}</span></span>
+<span id="cb12-88"><a href="#cb12-88"></a>nld_schools <span class="ot">&lt;-</span> closed_schools <span class="sc">|&gt;</span></span>
+<span id="cb12-89"><a href="#cb12-89"></a>  <span class="fu">filter</span>(Country <span class="sc">==</span> <span class="st">'Netherlands'</span>)</span>
+<span id="cb12-90"><a href="#cb12-90"></a><span class="in">```</span></span>
+<span id="cb12-91"><a href="#cb12-91"></a></span>
+<span id="cb12-94"><a href="#cb12-94"></a><span class="in">```{r}</span></span>
+<span id="cb12-95"><a href="#cb12-95"></a><span class="co"># Importing final dataset</span></span>
+<span id="cb12-96"><a href="#cb12-96"></a>covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid.csv"</span>)</span>
+<span id="cb12-97"><a href="#cb12-97"></a><span class="in">```</span></span>
+<span id="cb12-98"><a href="#cb12-98"></a></span>
+<span id="cb12-99"><a href="#cb12-99"></a></span>
+<span id="cb12-102"><a href="#cb12-102"></a><span class="in">```{r}</span></span>
+<span id="cb12-103"><a href="#cb12-103"></a><span class="co"># Pivoting final dataset to include subject category</span></span>
+<span id="cb12-104"><a href="#cb12-104"></a>clean_covid <span class="ot">&lt;-</span> covid <span class="sc">|&gt;</span></span>
+<span id="cb12-105"><a href="#cb12-105"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(spelling_value, reading_value, math_value),</span>
+<span id="cb12-106"><a href="#cb12-106"></a>               <span class="at">names_to =</span> <span class="st">'subject'</span>,</span>
+<span id="cb12-107"><a href="#cb12-107"></a>               <span class="at">values_to =</span> <span class="st">'scores_diff'</span>,</span>
+<span id="cb12-108"><a href="#cb12-108"></a>               <span class="at">names_pattern =</span> <span class="st">"(.*)_value"</span>,</span>
+<span id="cb12-109"><a href="#cb12-109"></a>               <span class="at">names_transform =</span> <span class="fu">list</span>(<span class="at">subject =</span> as.factor))</span>
+<span id="cb12-110"><a href="#cb12-110"></a><span class="in">```</span></span>
+<span id="cb12-111"><a href="#cb12-111"></a></span>
+<span id="cb12-114"><a href="#cb12-114"></a><span class="in">```{r}</span></span>
+<span id="cb12-115"><a href="#cb12-115"></a><span class="fu">unique</span>(clean_covid<span class="sc">$</span>VARIABLES)</span>
+<span id="cb12-116"><a href="#cb12-116"></a></span>
+<span id="cb12-117"><a href="#cb12-117"></a><span class="co"># Removing unnecessary observations </span></span>
+<span id="cb12-118"><a href="#cb12-118"></a>factored_covid <span class="ot">&lt;-</span> clean_covid <span class="sc">|&gt;</span></span>
+<span id="cb12-119"><a href="#cb12-119"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(VARIABLES <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Constant"</span>, <span class="st">"Observations"</span>, <span class="st">"R-squared"</span>, <span class="st">"Clusters"</span>))) </span>
+<span id="cb12-120"><a href="#cb12-120"></a><span class="in">```</span></span>
+<span id="cb12-121"><a href="#cb12-121"></a></span>
+<span id="cb12-124"><a href="#cb12-124"></a><span class="in">```{r}</span></span>
+<span id="cb12-125"><a href="#cb12-125"></a>clean_covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../data/clean_covid_formatted.csv"</span>)</span>
+<span id="cb12-126"><a href="#cb12-126"></a></span>
+<span id="cb12-127"><a href="#cb12-127"></a>clean_covid</span>
+<span id="cb12-128"><a href="#cb12-128"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
