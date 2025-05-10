@@ -1,0 +1,128 @@
+---
+title: "ruth-l"
+format: html
+---
+
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+```
+
+
+
+Your report will go here.
+
+## Viz 1: Scores before Covid by Income Level
+
+```{r}
+clean_covid_formatted |>
+  select(subject, grade,`income_medium`, `income_high`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
+  mutate(income_level = fct_relevel(income_level, c("medium", "high")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = income_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Income Level",
+       y = "Average Change in Scores from Midterms to Finals",
+       title = "Comparing the Change in Exam Scores before Covid-19 between Income Levels")
+
+# Control: bar graphs compare learning gains for high and medium income outcome before Covid, faceted by subject, averaged grade.
+# x = income status, y = average grade difference pre-Covid, facet = subject
+
+```
+
+
+Viz 5, 2nd version
+```{r}
+
+clean_covid_formatted |>
+  select(subject, grade,`income_medium`, `income_high`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
+  mutate(income_level = fct_relevel(income_level, c("medium", "high")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+  
+  ggplot(aes(x = grade, y = scores_diff, color = subject)) +
+  facet_wrap(~income_level) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Grade", y = "Score Difference from Midterm to Final", facet_wrap = "Household Income", title = "Score Improvement by Household Income Before Covid") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+
+```
+Viz 6, 2nd version
+
+```{r}
+clean_covid_formatted |>
+  select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "Medium|High")))) |>
+  mutate(income_level = fct_relevel(income_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+
+  ggplot(aes(x = grade, y = scores_diff, color = subject)) +
+  facet_wrap(~income_level) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Grade", y = "Score Difference from Midterm to Final", facet_wrap = "Household Income", title = "Score Improvement by Household Income During Covid") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+ 
+```
+
+Viz 7, same thing but for parental ed before covid
+```{r}
+clean_covid_formatted |>
+  select(subject, grade,education_high, education_medium) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+
+  ggplot(aes(x = grade, y = scores_diff, color = subject)) +
+  facet_wrap(~education_level) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Grade", y = "Score Difference from Midterm to Final", facet_wrap = "Parental Education", title = "Score Improvement by Parental Education Before Covid") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+```
+Viz 8, parental ed during covid
+
+```{r}
+clean_covid_formatted |>
+  select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+  
+  ggplot(aes(x = grade, y = scores_diff, color = subject)) +
+  facet_wrap(~education_level) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Grade", y = "Score Difference from Midterm to Final", facet_wrap = "Parental Education", title = "Score Improvement by Parental Education During Covid") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject")
+
+```

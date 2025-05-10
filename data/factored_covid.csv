@@ -1,0 +1,2497 @@
+"","...1","VARIABLES","grade","subject","scores_diff"
+"1",1,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"2",1,"COVID-19 year (2019/2020)",2,"reading",-0.0931
+"3",1,"COVID-19 year (2019/2020)",2,"math",-0.285
+"4",2,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"5",2,"COVID-19 year (2019/2020)",2,"reading",-0.18
+"6",2,"COVID-19 year (2019/2020)",2,"math",-0.285
+"7",3,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"8",3,"COVID-19 year (2019/2020)",2,"reading",-0.137
+"9",3,"COVID-19 year (2019/2020)",2,"math",-0.285
+"10",4,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"11",4,"COVID-19 year (2019/2020)",2,"reading",-0.205
+"12",4,"COVID-19 year (2019/2020)",2,"math",-0.285
+"13",5,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"14",5,"COVID-19 year (2019/2020)",2,"reading",-0.0931
+"15",5,"COVID-19 year (2019/2020)",2,"math",-0.313
+"16",6,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"17",6,"COVID-19 year (2019/2020)",2,"reading",-0.18
+"18",6,"COVID-19 year (2019/2020)",2,"math",-0.313
+"19",7,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"20",7,"COVID-19 year (2019/2020)",2,"reading",-0.137
+"21",7,"COVID-19 year (2019/2020)",2,"math",-0.313
+"22",8,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"23",8,"COVID-19 year (2019/2020)",2,"reading",-0.205
+"24",8,"COVID-19 year (2019/2020)",2,"math",-0.313
+"25",9,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"26",9,"COVID-19 year (2019/2020)",2,"reading",-0.0931
+"27",9,"COVID-19 year (2019/2020)",2,"math",-0.383
+"28",10,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"29",10,"COVID-19 year (2019/2020)",2,"reading",-0.18
+"30",10,"COVID-19 year (2019/2020)",2,"math",-0.383
+"31",11,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"32",11,"COVID-19 year (2019/2020)",2,"reading",-0.137
+"33",11,"COVID-19 year (2019/2020)",2,"math",-0.383
+"34",12,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"35",12,"COVID-19 year (2019/2020)",2,"reading",-0.205
+"36",12,"COVID-19 year (2019/2020)",2,"math",-0.383
+"37",13,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"38",13,"COVID-19 year (2019/2020)",2,"reading",-0.0931
+"39",13,"COVID-19 year (2019/2020)",2,"math",-0.378
+"40",14,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"41",14,"COVID-19 year (2019/2020)",2,"reading",-0.18
+"42",14,"COVID-19 year (2019/2020)",2,"math",-0.378
+"43",15,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"44",15,"COVID-19 year (2019/2020)",2,"reading",-0.137
+"45",15,"COVID-19 year (2019/2020)",2,"math",-0.378
+"46",16,"COVID-19 year (2019/2020)",2,"spelling",-0.211
+"47",16,"COVID-19 year (2019/2020)",2,"reading",-0.205
+"48",16,"COVID-19 year (2019/2020)",2,"math",-0.378
+"49",17,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"50",17,"COVID-19 year (2019/2020)",3,"reading",-0.0931
+"51",17,"COVID-19 year (2019/2020)",3,"math",-0.285
+"52",18,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"53",18,"COVID-19 year (2019/2020)",3,"reading",-0.18
+"54",18,"COVID-19 year (2019/2020)",3,"math",-0.285
+"55",19,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"56",19,"COVID-19 year (2019/2020)",3,"reading",-0.137
+"57",19,"COVID-19 year (2019/2020)",3,"math",-0.285
+"58",20,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"59",20,"COVID-19 year (2019/2020)",3,"reading",-0.205
+"60",20,"COVID-19 year (2019/2020)",3,"math",-0.285
+"61",21,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"62",21,"COVID-19 year (2019/2020)",3,"reading",-0.0931
+"63",21,"COVID-19 year (2019/2020)",3,"math",-0.313
+"64",22,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"65",22,"COVID-19 year (2019/2020)",3,"reading",-0.18
+"66",22,"COVID-19 year (2019/2020)",3,"math",-0.313
+"67",23,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"68",23,"COVID-19 year (2019/2020)",3,"reading",-0.137
+"69",23,"COVID-19 year (2019/2020)",3,"math",-0.313
+"70",24,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"71",24,"COVID-19 year (2019/2020)",3,"reading",-0.205
+"72",24,"COVID-19 year (2019/2020)",3,"math",-0.313
+"73",25,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"74",25,"COVID-19 year (2019/2020)",3,"reading",-0.0931
+"75",25,"COVID-19 year (2019/2020)",3,"math",-0.383
+"76",26,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"77",26,"COVID-19 year (2019/2020)",3,"reading",-0.18
+"78",26,"COVID-19 year (2019/2020)",3,"math",-0.383
+"79",27,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"80",27,"COVID-19 year (2019/2020)",3,"reading",-0.137
+"81",27,"COVID-19 year (2019/2020)",3,"math",-0.383
+"82",28,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"83",28,"COVID-19 year (2019/2020)",3,"reading",-0.205
+"84",28,"COVID-19 year (2019/2020)",3,"math",-0.383
+"85",29,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"86",29,"COVID-19 year (2019/2020)",3,"reading",-0.0931
+"87",29,"COVID-19 year (2019/2020)",3,"math",-0.378
+"88",30,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"89",30,"COVID-19 year (2019/2020)",3,"reading",-0.18
+"90",30,"COVID-19 year (2019/2020)",3,"math",-0.378
+"91",31,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"92",31,"COVID-19 year (2019/2020)",3,"reading",-0.137
+"93",31,"COVID-19 year (2019/2020)",3,"math",-0.378
+"94",32,"COVID-19 year (2019/2020)",3,"spelling",-0.194
+"95",32,"COVID-19 year (2019/2020)",3,"reading",-0.205
+"96",32,"COVID-19 year (2019/2020)",3,"math",-0.378
+"97",33,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"98",33,"COVID-19 year (2019/2020)",4,"reading",-0.0931
+"99",33,"COVID-19 year (2019/2020)",4,"math",-0.285
+"100",34,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"101",34,"COVID-19 year (2019/2020)",4,"reading",-0.18
+"102",34,"COVID-19 year (2019/2020)",4,"math",-0.285
+"103",35,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"104",35,"COVID-19 year (2019/2020)",4,"reading",-0.137
+"105",35,"COVID-19 year (2019/2020)",4,"math",-0.285
+"106",36,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"107",36,"COVID-19 year (2019/2020)",4,"reading",-0.205
+"108",36,"COVID-19 year (2019/2020)",4,"math",-0.285
+"109",37,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"110",37,"COVID-19 year (2019/2020)",4,"reading",-0.0931
+"111",37,"COVID-19 year (2019/2020)",4,"math",-0.313
+"112",38,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"113",38,"COVID-19 year (2019/2020)",4,"reading",-0.18
+"114",38,"COVID-19 year (2019/2020)",4,"math",-0.313
+"115",39,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"116",39,"COVID-19 year (2019/2020)",4,"reading",-0.137
+"117",39,"COVID-19 year (2019/2020)",4,"math",-0.313
+"118",40,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"119",40,"COVID-19 year (2019/2020)",4,"reading",-0.205
+"120",40,"COVID-19 year (2019/2020)",4,"math",-0.313
+"121",41,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"122",41,"COVID-19 year (2019/2020)",4,"reading",-0.0931
+"123",41,"COVID-19 year (2019/2020)",4,"math",-0.383
+"124",42,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"125",42,"COVID-19 year (2019/2020)",4,"reading",-0.18
+"126",42,"COVID-19 year (2019/2020)",4,"math",-0.383
+"127",43,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"128",43,"COVID-19 year (2019/2020)",4,"reading",-0.137
+"129",43,"COVID-19 year (2019/2020)",4,"math",-0.383
+"130",44,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"131",44,"COVID-19 year (2019/2020)",4,"reading",-0.205
+"132",44,"COVID-19 year (2019/2020)",4,"math",-0.383
+"133",45,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"134",45,"COVID-19 year (2019/2020)",4,"reading",-0.0931
+"135",45,"COVID-19 year (2019/2020)",4,"math",-0.378
+"136",46,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"137",46,"COVID-19 year (2019/2020)",4,"reading",-0.18
+"138",46,"COVID-19 year (2019/2020)",4,"math",-0.378
+"139",47,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"140",47,"COVID-19 year (2019/2020)",4,"reading",-0.137
+"141",47,"COVID-19 year (2019/2020)",4,"math",-0.378
+"142",48,"COVID-19 year (2019/2020)",4,"spelling",-0.146
+"143",48,"COVID-19 year (2019/2020)",4,"reading",-0.205
+"144",48,"COVID-19 year (2019/2020)",4,"math",-0.378
+"145",49,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"146",49,"COVID-19 year (2019/2020)",5,"reading",-0.0931
+"147",49,"COVID-19 year (2019/2020)",5,"math",-0.285
+"148",50,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"149",50,"COVID-19 year (2019/2020)",5,"reading",-0.18
+"150",50,"COVID-19 year (2019/2020)",5,"math",-0.285
+"151",51,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"152",51,"COVID-19 year (2019/2020)",5,"reading",-0.137
+"153",51,"COVID-19 year (2019/2020)",5,"math",-0.285
+"154",52,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"155",52,"COVID-19 year (2019/2020)",5,"reading",-0.205
+"156",52,"COVID-19 year (2019/2020)",5,"math",-0.285
+"157",53,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"158",53,"COVID-19 year (2019/2020)",5,"reading",-0.0931
+"159",53,"COVID-19 year (2019/2020)",5,"math",-0.313
+"160",54,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"161",54,"COVID-19 year (2019/2020)",5,"reading",-0.18
+"162",54,"COVID-19 year (2019/2020)",5,"math",-0.313
+"163",55,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"164",55,"COVID-19 year (2019/2020)",5,"reading",-0.137
+"165",55,"COVID-19 year (2019/2020)",5,"math",-0.313
+"166",56,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"167",56,"COVID-19 year (2019/2020)",5,"reading",-0.205
+"168",56,"COVID-19 year (2019/2020)",5,"math",-0.313
+"169",57,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"170",57,"COVID-19 year (2019/2020)",5,"reading",-0.0931
+"171",57,"COVID-19 year (2019/2020)",5,"math",-0.383
+"172",58,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"173",58,"COVID-19 year (2019/2020)",5,"reading",-0.18
+"174",58,"COVID-19 year (2019/2020)",5,"math",-0.383
+"175",59,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"176",59,"COVID-19 year (2019/2020)",5,"reading",-0.137
+"177",59,"COVID-19 year (2019/2020)",5,"math",-0.383
+"178",60,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"179",60,"COVID-19 year (2019/2020)",5,"reading",-0.205
+"180",60,"COVID-19 year (2019/2020)",5,"math",-0.383
+"181",61,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"182",61,"COVID-19 year (2019/2020)",5,"reading",-0.0931
+"183",61,"COVID-19 year (2019/2020)",5,"math",-0.378
+"184",62,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"185",62,"COVID-19 year (2019/2020)",5,"reading",-0.18
+"186",62,"COVID-19 year (2019/2020)",5,"math",-0.378
+"187",63,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"188",63,"COVID-19 year (2019/2020)",5,"reading",-0.137
+"189",63,"COVID-19 year (2019/2020)",5,"math",-0.378
+"190",64,"COVID-19 year (2019/2020)",5,"spelling",-0.181
+"191",64,"COVID-19 year (2019/2020)",5,"reading",-0.205
+"192",64,"COVID-19 year (2019/2020)",5,"math",-0.378
+"193",65,"Medium",2,"spelling",-0.0156
+"194",65,"Medium",2,"reading",-0.0233
+"195",65,"Medium",2,"math",-0.0247
+"196",66,"Medium",2,"spelling",-0.0156
+"197",66,"Medium",2,"reading",-0.0105
+"198",66,"Medium",2,"math",-0.0247
+"199",67,"Medium",2,"spelling",-0.0156
+"200",67,"Medium",2,"reading",-0.00709
+"201",67,"Medium",2,"math",-0.0247
+"202",68,"Medium",2,"spelling",-0.0156
+"203",68,"Medium",2,"reading",0.0186
+"204",68,"Medium",2,"math",-0.0247
+"205",69,"Medium",2,"spelling",-0.0156
+"206",69,"Medium",2,"reading",-0.0233
+"207",69,"Medium",2,"math",-0.00393
+"208",70,"Medium",2,"spelling",-0.0156
+"209",70,"Medium",2,"reading",-0.0105
+"210",70,"Medium",2,"math",-0.00393
+"211",71,"Medium",2,"spelling",-0.0156
+"212",71,"Medium",2,"reading",-0.00709
+"213",71,"Medium",2,"math",-0.00393
+"214",72,"Medium",2,"spelling",-0.0156
+"215",72,"Medium",2,"reading",0.0186
+"216",72,"Medium",2,"math",-0.00393
+"217",73,"Medium",2,"spelling",-0.0156
+"218",73,"Medium",2,"reading",-0.0233
+"219",73,"Medium",2,"math",-0.0162
+"220",74,"Medium",2,"spelling",-0.0156
+"221",74,"Medium",2,"reading",-0.0105
+"222",74,"Medium",2,"math",-0.0162
+"223",75,"Medium",2,"spelling",-0.0156
+"224",75,"Medium",2,"reading",-0.00709
+"225",75,"Medium",2,"math",-0.0162
+"226",76,"Medium",2,"spelling",-0.0156
+"227",76,"Medium",2,"reading",0.0186
+"228",76,"Medium",2,"math",-0.0162
+"229",77,"Medium",2,"spelling",-0.0156
+"230",77,"Medium",2,"reading",-0.0233
+"231",77,"Medium",2,"math",-0.0144
+"232",78,"Medium",2,"spelling",-0.0156
+"233",78,"Medium",2,"reading",-0.0105
+"234",78,"Medium",2,"math",-0.0144
+"235",79,"Medium",2,"spelling",-0.0156
+"236",79,"Medium",2,"reading",-0.00709
+"237",79,"Medium",2,"math",-0.0144
+"238",80,"Medium",2,"spelling",-0.0156
+"239",80,"Medium",2,"reading",0.0186
+"240",80,"Medium",2,"math",-0.0144
+"241",81,"Medium",3,"spelling",-0.0212
+"242",81,"Medium",3,"reading",-0.0233
+"243",81,"Medium",3,"math",-0.0247
+"244",82,"Medium",3,"spelling",-0.0212
+"245",82,"Medium",3,"reading",-0.0105
+"246",82,"Medium",3,"math",-0.0247
+"247",83,"Medium",3,"spelling",-0.0212
+"248",83,"Medium",3,"reading",-0.00709
+"249",83,"Medium",3,"math",-0.0247
+"250",84,"Medium",3,"spelling",-0.0212
+"251",84,"Medium",3,"reading",0.0186
+"252",84,"Medium",3,"math",-0.0247
+"253",85,"Medium",3,"spelling",-0.0212
+"254",85,"Medium",3,"reading",-0.0233
+"255",85,"Medium",3,"math",-0.00393
+"256",86,"Medium",3,"spelling",-0.0212
+"257",86,"Medium",3,"reading",-0.0105
+"258",86,"Medium",3,"math",-0.00393
+"259",87,"Medium",3,"spelling",-0.0212
+"260",87,"Medium",3,"reading",-0.00709
+"261",87,"Medium",3,"math",-0.00393
+"262",88,"Medium",3,"spelling",-0.0212
+"263",88,"Medium",3,"reading",0.0186
+"264",88,"Medium",3,"math",-0.00393
+"265",89,"Medium",3,"spelling",-0.0212
+"266",89,"Medium",3,"reading",-0.0233
+"267",89,"Medium",3,"math",-0.0162
+"268",90,"Medium",3,"spelling",-0.0212
+"269",90,"Medium",3,"reading",-0.0105
+"270",90,"Medium",3,"math",-0.0162
+"271",91,"Medium",3,"spelling",-0.0212
+"272",91,"Medium",3,"reading",-0.00709
+"273",91,"Medium",3,"math",-0.0162
+"274",92,"Medium",3,"spelling",-0.0212
+"275",92,"Medium",3,"reading",0.0186
+"276",92,"Medium",3,"math",-0.0162
+"277",93,"Medium",3,"spelling",-0.0212
+"278",93,"Medium",3,"reading",-0.0233
+"279",93,"Medium",3,"math",-0.0144
+"280",94,"Medium",3,"spelling",-0.0212
+"281",94,"Medium",3,"reading",-0.0105
+"282",94,"Medium",3,"math",-0.0144
+"283",95,"Medium",3,"spelling",-0.0212
+"284",95,"Medium",3,"reading",-0.00709
+"285",95,"Medium",3,"math",-0.0144
+"286",96,"Medium",3,"spelling",-0.0212
+"287",96,"Medium",3,"reading",0.0186
+"288",96,"Medium",3,"math",-0.0144
+"289",97,"Medium",4,"spelling",-0.0161
+"290",97,"Medium",4,"reading",-0.0233
+"291",97,"Medium",4,"math",-0.0247
+"292",98,"Medium",4,"spelling",-0.0161
+"293",98,"Medium",4,"reading",-0.0105
+"294",98,"Medium",4,"math",-0.0247
+"295",99,"Medium",4,"spelling",-0.0161
+"296",99,"Medium",4,"reading",-0.00709
+"297",99,"Medium",4,"math",-0.0247
+"298",100,"Medium",4,"spelling",-0.0161
+"299",100,"Medium",4,"reading",0.0186
+"300",100,"Medium",4,"math",-0.0247
+"301",101,"Medium",4,"spelling",-0.0161
+"302",101,"Medium",4,"reading",-0.0233
+"303",101,"Medium",4,"math",-0.00393
+"304",102,"Medium",4,"spelling",-0.0161
+"305",102,"Medium",4,"reading",-0.0105
+"306",102,"Medium",4,"math",-0.00393
+"307",103,"Medium",4,"spelling",-0.0161
+"308",103,"Medium",4,"reading",-0.00709
+"309",103,"Medium",4,"math",-0.00393
+"310",104,"Medium",4,"spelling",-0.0161
+"311",104,"Medium",4,"reading",0.0186
+"312",104,"Medium",4,"math",-0.00393
+"313",105,"Medium",4,"spelling",-0.0161
+"314",105,"Medium",4,"reading",-0.0233
+"315",105,"Medium",4,"math",-0.0162
+"316",106,"Medium",4,"spelling",-0.0161
+"317",106,"Medium",4,"reading",-0.0105
+"318",106,"Medium",4,"math",-0.0162
+"319",107,"Medium",4,"spelling",-0.0161
+"320",107,"Medium",4,"reading",-0.00709
+"321",107,"Medium",4,"math",-0.0162
+"322",108,"Medium",4,"spelling",-0.0161
+"323",108,"Medium",4,"reading",0.0186
+"324",108,"Medium",4,"math",-0.0162
+"325",109,"Medium",4,"spelling",-0.0161
+"326",109,"Medium",4,"reading",-0.0233
+"327",109,"Medium",4,"math",-0.0144
+"328",110,"Medium",4,"spelling",-0.0161
+"329",110,"Medium",4,"reading",-0.0105
+"330",110,"Medium",4,"math",-0.0144
+"331",111,"Medium",4,"spelling",-0.0161
+"332",111,"Medium",4,"reading",-0.00709
+"333",111,"Medium",4,"math",-0.0144
+"334",112,"Medium",4,"spelling",-0.0161
+"335",112,"Medium",4,"reading",0.0186
+"336",112,"Medium",4,"math",-0.0144
+"337",113,"Medium",5,"spelling",0.0046
+"338",113,"Medium",5,"reading",-0.0233
+"339",113,"Medium",5,"math",-0.0247
+"340",114,"Medium",5,"spelling",0.0046
+"341",114,"Medium",5,"reading",-0.0105
+"342",114,"Medium",5,"math",-0.0247
+"343",115,"Medium",5,"spelling",0.0046
+"344",115,"Medium",5,"reading",-0.00709
+"345",115,"Medium",5,"math",-0.0247
+"346",116,"Medium",5,"spelling",0.0046
+"347",116,"Medium",5,"reading",0.0186
+"348",116,"Medium",5,"math",-0.0247
+"349",117,"Medium",5,"spelling",0.0046
+"350",117,"Medium",5,"reading",-0.0233
+"351",117,"Medium",5,"math",-0.00393
+"352",118,"Medium",5,"spelling",0.0046
+"353",118,"Medium",5,"reading",-0.0105
+"354",118,"Medium",5,"math",-0.00393
+"355",119,"Medium",5,"spelling",0.0046
+"356",119,"Medium",5,"reading",-0.00709
+"357",119,"Medium",5,"math",-0.00393
+"358",120,"Medium",5,"spelling",0.0046
+"359",120,"Medium",5,"reading",0.0186
+"360",120,"Medium",5,"math",-0.00393
+"361",121,"Medium",5,"spelling",0.0046
+"362",121,"Medium",5,"reading",-0.0233
+"363",121,"Medium",5,"math",-0.0162
+"364",122,"Medium",5,"spelling",0.0046
+"365",122,"Medium",5,"reading",-0.0105
+"366",122,"Medium",5,"math",-0.0162
+"367",123,"Medium",5,"spelling",0.0046
+"368",123,"Medium",5,"reading",-0.00709
+"369",123,"Medium",5,"math",-0.0162
+"370",124,"Medium",5,"spelling",0.0046
+"371",124,"Medium",5,"reading",0.0186
+"372",124,"Medium",5,"math",-0.0162
+"373",125,"Medium",5,"spelling",0.0046
+"374",125,"Medium",5,"reading",-0.0233
+"375",125,"Medium",5,"math",-0.0144
+"376",126,"Medium",5,"spelling",0.0046
+"377",126,"Medium",5,"reading",-0.0105
+"378",126,"Medium",5,"math",-0.0144
+"379",127,"Medium",5,"spelling",0.0046
+"380",127,"Medium",5,"reading",-0.00709
+"381",127,"Medium",5,"math",-0.0144
+"382",128,"Medium",5,"spelling",0.0046
+"383",128,"Medium",5,"reading",0.0186
+"384",128,"Medium",5,"math",-0.0144
+"385",129,"High",2,"spelling",0.0176
+"386",129,"High",2,"reading",0.0181
+"387",129,"High",2,"math",-0.0427
+"388",130,"High",2,"spelling",0.0176
+"389",130,"High",2,"reading",0.0326
+"390",130,"High",2,"math",-0.0427
+"391",131,"High",2,"spelling",0.0176
+"392",131,"High",2,"reading",0.0291
+"393",131,"High",2,"math",-0.0427
+"394",132,"High",2,"spelling",0.0176
+"395",132,"High",2,"reading",0.0327
+"396",132,"High",2,"math",-0.0427
+"397",133,"High",2,"spelling",0.0176
+"398",133,"High",2,"reading",0.0181
+"399",133,"High",2,"math",0.00333
+"400",134,"High",2,"spelling",0.0176
+"401",134,"High",2,"reading",0.0326
+"402",134,"High",2,"math",0.00333
+"403",135,"High",2,"spelling",0.0176
+"404",135,"High",2,"reading",0.0291
+"405",135,"High",2,"math",0.00333
+"406",136,"High",2,"spelling",0.0176
+"407",136,"High",2,"reading",0.0327
+"408",136,"High",2,"math",0.00333
+"409",137,"High",2,"spelling",0.0176
+"410",137,"High",2,"reading",0.0181
+"411",137,"High",2,"math",0.012
+"412",138,"High",2,"spelling",0.0176
+"413",138,"High",2,"reading",0.0326
+"414",138,"High",2,"math",0.012
+"415",139,"High",2,"spelling",0.0176
+"416",139,"High",2,"reading",0.0291
+"417",139,"High",2,"math",0.012
+"418",140,"High",2,"spelling",0.0176
+"419",140,"High",2,"reading",0.0327
+"420",140,"High",2,"math",0.012
+"421",141,"High",2,"spelling",0.0176
+"422",141,"High",2,"reading",0.0181
+"423",141,"High",2,"math",-0.00313
+"424",142,"High",2,"spelling",0.0176
+"425",142,"High",2,"reading",0.0326
+"426",142,"High",2,"math",-0.00313
+"427",143,"High",2,"spelling",0.0176
+"428",143,"High",2,"reading",0.0291
+"429",143,"High",2,"math",-0.00313
+"430",144,"High",2,"spelling",0.0176
+"431",144,"High",2,"reading",0.0327
+"432",144,"High",2,"math",-0.00313
+"433",145,"High",3,"spelling",-0.0323
+"434",145,"High",3,"reading",0.0181
+"435",145,"High",3,"math",-0.0427
+"436",146,"High",3,"spelling",-0.0323
+"437",146,"High",3,"reading",0.0326
+"438",146,"High",3,"math",-0.0427
+"439",147,"High",3,"spelling",-0.0323
+"440",147,"High",3,"reading",0.0291
+"441",147,"High",3,"math",-0.0427
+"442",148,"High",3,"spelling",-0.0323
+"443",148,"High",3,"reading",0.0327
+"444",148,"High",3,"math",-0.0427
+"445",149,"High",3,"spelling",-0.0323
+"446",149,"High",3,"reading",0.0181
+"447",149,"High",3,"math",0.00333
+"448",150,"High",3,"spelling",-0.0323
+"449",150,"High",3,"reading",0.0326
+"450",150,"High",3,"math",0.00333
+"451",151,"High",3,"spelling",-0.0323
+"452",151,"High",3,"reading",0.0291
+"453",151,"High",3,"math",0.00333
+"454",152,"High",3,"spelling",-0.0323
+"455",152,"High",3,"reading",0.0327
+"456",152,"High",3,"math",0.00333
+"457",153,"High",3,"spelling",-0.0323
+"458",153,"High",3,"reading",0.0181
+"459",153,"High",3,"math",0.012
+"460",154,"High",3,"spelling",-0.0323
+"461",154,"High",3,"reading",0.0326
+"462",154,"High",3,"math",0.012
+"463",155,"High",3,"spelling",-0.0323
+"464",155,"High",3,"reading",0.0291
+"465",155,"High",3,"math",0.012
+"466",156,"High",3,"spelling",-0.0323
+"467",156,"High",3,"reading",0.0327
+"468",156,"High",3,"math",0.012
+"469",157,"High",3,"spelling",-0.0323
+"470",157,"High",3,"reading",0.0181
+"471",157,"High",3,"math",-0.00313
+"472",158,"High",3,"spelling",-0.0323
+"473",158,"High",3,"reading",0.0326
+"474",158,"High",3,"math",-0.00313
+"475",159,"High",3,"spelling",-0.0323
+"476",159,"High",3,"reading",0.0291
+"477",159,"High",3,"math",-0.00313
+"478",160,"High",3,"spelling",-0.0323
+"479",160,"High",3,"reading",0.0327
+"480",160,"High",3,"math",-0.00313
+"481",161,"High",4,"spelling",-0.0214
+"482",161,"High",4,"reading",0.0181
+"483",161,"High",4,"math",-0.0427
+"484",162,"High",4,"spelling",-0.0214
+"485",162,"High",4,"reading",0.0326
+"486",162,"High",4,"math",-0.0427
+"487",163,"High",4,"spelling",-0.0214
+"488",163,"High",4,"reading",0.0291
+"489",163,"High",4,"math",-0.0427
+"490",164,"High",4,"spelling",-0.0214
+"491",164,"High",4,"reading",0.0327
+"492",164,"High",4,"math",-0.0427
+"493",165,"High",4,"spelling",-0.0214
+"494",165,"High",4,"reading",0.0181
+"495",165,"High",4,"math",0.00333
+"496",166,"High",4,"spelling",-0.0214
+"497",166,"High",4,"reading",0.0326
+"498",166,"High",4,"math",0.00333
+"499",167,"High",4,"spelling",-0.0214
+"500",167,"High",4,"reading",0.0291
+"501",167,"High",4,"math",0.00333
+"502",168,"High",4,"spelling",-0.0214
+"503",168,"High",4,"reading",0.0327
+"504",168,"High",4,"math",0.00333
+"505",169,"High",4,"spelling",-0.0214
+"506",169,"High",4,"reading",0.0181
+"507",169,"High",4,"math",0.012
+"508",170,"High",4,"spelling",-0.0214
+"509",170,"High",4,"reading",0.0326
+"510",170,"High",4,"math",0.012
+"511",171,"High",4,"spelling",-0.0214
+"512",171,"High",4,"reading",0.0291
+"513",171,"High",4,"math",0.012
+"514",172,"High",4,"spelling",-0.0214
+"515",172,"High",4,"reading",0.0327
+"516",172,"High",4,"math",0.012
+"517",173,"High",4,"spelling",-0.0214
+"518",173,"High",4,"reading",0.0181
+"519",173,"High",4,"math",-0.00313
+"520",174,"High",4,"spelling",-0.0214
+"521",174,"High",4,"reading",0.0326
+"522",174,"High",4,"math",-0.00313
+"523",175,"High",4,"spelling",-0.0214
+"524",175,"High",4,"reading",0.0291
+"525",175,"High",4,"math",-0.00313
+"526",176,"High",4,"spelling",-0.0214
+"527",176,"High",4,"reading",0.0327
+"528",176,"High",4,"math",-0.00313
+"529",177,"High",5,"spelling",0.0145
+"530",177,"High",5,"reading",0.0181
+"531",177,"High",5,"math",-0.0427
+"532",178,"High",5,"spelling",0.0145
+"533",178,"High",5,"reading",0.0326
+"534",178,"High",5,"math",-0.0427
+"535",179,"High",5,"spelling",0.0145
+"536",179,"High",5,"reading",0.0291
+"537",179,"High",5,"math",-0.0427
+"538",180,"High",5,"spelling",0.0145
+"539",180,"High",5,"reading",0.0327
+"540",180,"High",5,"math",-0.0427
+"541",181,"High",5,"spelling",0.0145
+"542",181,"High",5,"reading",0.0181
+"543",181,"High",5,"math",0.00333
+"544",182,"High",5,"spelling",0.0145
+"545",182,"High",5,"reading",0.0326
+"546",182,"High",5,"math",0.00333
+"547",183,"High",5,"spelling",0.0145
+"548",183,"High",5,"reading",0.0291
+"549",183,"High",5,"math",0.00333
+"550",184,"High",5,"spelling",0.0145
+"551",184,"High",5,"reading",0.0327
+"552",184,"High",5,"math",0.00333
+"553",185,"High",5,"spelling",0.0145
+"554",185,"High",5,"reading",0.0181
+"555",185,"High",5,"math",0.012
+"556",186,"High",5,"spelling",0.0145
+"557",186,"High",5,"reading",0.0326
+"558",186,"High",5,"math",0.012
+"559",187,"High",5,"spelling",0.0145
+"560",187,"High",5,"reading",0.0291
+"561",187,"High",5,"math",0.012
+"562",188,"High",5,"spelling",0.0145
+"563",188,"High",5,"reading",0.0327
+"564",188,"High",5,"math",0.012
+"565",189,"High",5,"spelling",0.0145
+"566",189,"High",5,"reading",0.0181
+"567",189,"High",5,"math",-0.00313
+"568",190,"High",5,"spelling",0.0145
+"569",190,"High",5,"reading",0.0326
+"570",190,"High",5,"math",-0.00313
+"571",191,"High",5,"spelling",0.0145
+"572",191,"High",5,"reading",0.0291
+"573",191,"High",5,"math",-0.00313
+"574",192,"High",5,"spelling",0.0145
+"575",192,"High",5,"reading",0.0327
+"576",192,"High",5,"math",-0.00313
+"577",193,"Missing",2,"spelling",0.207
+"578",193,"Missing",2,"reading",0.0498
+"579",193,"Missing",2,"math",0.0372
+"580",194,"Missing",2,"spelling",0.207
+"581",194,"Missing",2,"reading",0.0456
+"582",194,"Missing",2,"math",0.0372
+"583",195,"Missing",2,"spelling",0.207
+"584",195,"Missing",2,"reading",0.111
+"585",195,"Missing",2,"math",0.0372
+"586",196,"Missing",2,"spelling",0.207
+"587",196,"Missing",2,"reading",0.117
+"588",196,"Missing",2,"math",0.0372
+"589",197,"Missing",2,"spelling",0.207
+"590",197,"Missing",2,"reading",0.0498
+"591",197,"Missing",2,"math",0.0135
+"592",198,"Missing",2,"spelling",0.207
+"593",198,"Missing",2,"reading",0.0456
+"594",198,"Missing",2,"math",0.0135
+"595",199,"Missing",2,"spelling",0.207
+"596",199,"Missing",2,"reading",0.111
+"597",199,"Missing",2,"math",0.0135
+"598",200,"Missing",2,"spelling",0.207
+"599",200,"Missing",2,"reading",0.117
+"600",200,"Missing",2,"math",0.0135
+"601",201,"Missing",2,"spelling",0.207
+"602",201,"Missing",2,"reading",0.0498
+"603",201,"Missing",2,"math",0.0834
+"604",202,"Missing",2,"spelling",0.207
+"605",202,"Missing",2,"reading",0.0456
+"606",202,"Missing",2,"math",0.0834
+"607",203,"Missing",2,"spelling",0.207
+"608",203,"Missing",2,"reading",0.111
+"609",203,"Missing",2,"math",0.0834
+"610",204,"Missing",2,"spelling",0.207
+"611",204,"Missing",2,"reading",0.117
+"612",204,"Missing",2,"math",0.0834
+"613",205,"Missing",2,"spelling",0.207
+"614",205,"Missing",2,"reading",0.0498
+"615",205,"Missing",2,"math",0.0846
+"616",206,"Missing",2,"spelling",0.207
+"617",206,"Missing",2,"reading",0.0456
+"618",206,"Missing",2,"math",0.0846
+"619",207,"Missing",2,"spelling",0.207
+"620",207,"Missing",2,"reading",0.111
+"621",207,"Missing",2,"math",0.0846
+"622",208,"Missing",2,"spelling",0.207
+"623",208,"Missing",2,"reading",0.117
+"624",208,"Missing",2,"math",0.0846
+"625",209,"Missing",3,"spelling",0.0962
+"626",209,"Missing",3,"reading",0.0498
+"627",209,"Missing",3,"math",0.0372
+"628",210,"Missing",3,"spelling",0.0962
+"629",210,"Missing",3,"reading",0.0456
+"630",210,"Missing",3,"math",0.0372
+"631",211,"Missing",3,"spelling",0.0962
+"632",211,"Missing",3,"reading",0.111
+"633",211,"Missing",3,"math",0.0372
+"634",212,"Missing",3,"spelling",0.0962
+"635",212,"Missing",3,"reading",0.117
+"636",212,"Missing",3,"math",0.0372
+"637",213,"Missing",3,"spelling",0.0962
+"638",213,"Missing",3,"reading",0.0498
+"639",213,"Missing",3,"math",0.0135
+"640",214,"Missing",3,"spelling",0.0962
+"641",214,"Missing",3,"reading",0.0456
+"642",214,"Missing",3,"math",0.0135
+"643",215,"Missing",3,"spelling",0.0962
+"644",215,"Missing",3,"reading",0.111
+"645",215,"Missing",3,"math",0.0135
+"646",216,"Missing",3,"spelling",0.0962
+"647",216,"Missing",3,"reading",0.117
+"648",216,"Missing",3,"math",0.0135
+"649",217,"Missing",3,"spelling",0.0962
+"650",217,"Missing",3,"reading",0.0498
+"651",217,"Missing",3,"math",0.0834
+"652",218,"Missing",3,"spelling",0.0962
+"653",218,"Missing",3,"reading",0.0456
+"654",218,"Missing",3,"math",0.0834
+"655",219,"Missing",3,"spelling",0.0962
+"656",219,"Missing",3,"reading",0.111
+"657",219,"Missing",3,"math",0.0834
+"658",220,"Missing",3,"spelling",0.0962
+"659",220,"Missing",3,"reading",0.117
+"660",220,"Missing",3,"math",0.0834
+"661",221,"Missing",3,"spelling",0.0962
+"662",221,"Missing",3,"reading",0.0498
+"663",221,"Missing",3,"math",0.0846
+"664",222,"Missing",3,"spelling",0.0962
+"665",222,"Missing",3,"reading",0.0456
+"666",222,"Missing",3,"math",0.0846
+"667",223,"Missing",3,"spelling",0.0962
+"668",223,"Missing",3,"reading",0.111
+"669",223,"Missing",3,"math",0.0846
+"670",224,"Missing",3,"spelling",0.0962
+"671",224,"Missing",3,"reading",0.117
+"672",224,"Missing",3,"math",0.0846
+"673",225,"Missing",4,"spelling",0.284
+"674",225,"Missing",4,"reading",0.0498
+"675",225,"Missing",4,"math",0.0372
+"676",226,"Missing",4,"spelling",0.284
+"677",226,"Missing",4,"reading",0.0456
+"678",226,"Missing",4,"math",0.0372
+"679",227,"Missing",4,"spelling",0.284
+"680",227,"Missing",4,"reading",0.111
+"681",227,"Missing",4,"math",0.0372
+"682",228,"Missing",4,"spelling",0.284
+"683",228,"Missing",4,"reading",0.117
+"684",228,"Missing",4,"math",0.0372
+"685",229,"Missing",4,"spelling",0.284
+"686",229,"Missing",4,"reading",0.0498
+"687",229,"Missing",4,"math",0.0135
+"688",230,"Missing",4,"spelling",0.284
+"689",230,"Missing",4,"reading",0.0456
+"690",230,"Missing",4,"math",0.0135
+"691",231,"Missing",4,"spelling",0.284
+"692",231,"Missing",4,"reading",0.111
+"693",231,"Missing",4,"math",0.0135
+"694",232,"Missing",4,"spelling",0.284
+"695",232,"Missing",4,"reading",0.117
+"696",232,"Missing",4,"math",0.0135
+"697",233,"Missing",4,"spelling",0.284
+"698",233,"Missing",4,"reading",0.0498
+"699",233,"Missing",4,"math",0.0834
+"700",234,"Missing",4,"spelling",0.284
+"701",234,"Missing",4,"reading",0.0456
+"702",234,"Missing",4,"math",0.0834
+"703",235,"Missing",4,"spelling",0.284
+"704",235,"Missing",4,"reading",0.111
+"705",235,"Missing",4,"math",0.0834
+"706",236,"Missing",4,"spelling",0.284
+"707",236,"Missing",4,"reading",0.117
+"708",236,"Missing",4,"math",0.0834
+"709",237,"Missing",4,"spelling",0.284
+"710",237,"Missing",4,"reading",0.0498
+"711",237,"Missing",4,"math",0.0846
+"712",238,"Missing",4,"spelling",0.284
+"713",238,"Missing",4,"reading",0.0456
+"714",238,"Missing",4,"math",0.0846
+"715",239,"Missing",4,"spelling",0.284
+"716",239,"Missing",4,"reading",0.111
+"717",239,"Missing",4,"math",0.0846
+"718",240,"Missing",4,"spelling",0.284
+"719",240,"Missing",4,"reading",0.117
+"720",240,"Missing",4,"math",0.0846
+"721",241,"Missing",5,"spelling",0.213
+"722",241,"Missing",5,"reading",0.0498
+"723",241,"Missing",5,"math",0.0372
+"724",242,"Missing",5,"spelling",0.213
+"725",242,"Missing",5,"reading",0.0456
+"726",242,"Missing",5,"math",0.0372
+"727",243,"Missing",5,"spelling",0.213
+"728",243,"Missing",5,"reading",0.111
+"729",243,"Missing",5,"math",0.0372
+"730",244,"Missing",5,"spelling",0.213
+"731",244,"Missing",5,"reading",0.117
+"732",244,"Missing",5,"math",0.0372
+"733",245,"Missing",5,"spelling",0.213
+"734",245,"Missing",5,"reading",0.0498
+"735",245,"Missing",5,"math",0.0135
+"736",246,"Missing",5,"spelling",0.213
+"737",246,"Missing",5,"reading",0.0456
+"738",246,"Missing",5,"math",0.0135
+"739",247,"Missing",5,"spelling",0.213
+"740",247,"Missing",5,"reading",0.111
+"741",247,"Missing",5,"math",0.0135
+"742",248,"Missing",5,"spelling",0.213
+"743",248,"Missing",5,"reading",0.117
+"744",248,"Missing",5,"math",0.0135
+"745",249,"Missing",5,"spelling",0.213
+"746",249,"Missing",5,"reading",0.0498
+"747",249,"Missing",5,"math",0.0834
+"748",250,"Missing",5,"spelling",0.213
+"749",250,"Missing",5,"reading",0.0456
+"750",250,"Missing",5,"math",0.0834
+"751",251,"Missing",5,"spelling",0.213
+"752",251,"Missing",5,"reading",0.111
+"753",251,"Missing",5,"math",0.0834
+"754",252,"Missing",5,"spelling",0.213
+"755",252,"Missing",5,"reading",0.117
+"756",252,"Missing",5,"math",0.0834
+"757",253,"Missing",5,"spelling",0.213
+"758",253,"Missing",5,"reading",0.0498
+"759",253,"Missing",5,"math",0.0846
+"760",254,"Missing",5,"spelling",0.213
+"761",254,"Missing",5,"reading",0.0456
+"762",254,"Missing",5,"math",0.0846
+"763",255,"Missing",5,"spelling",0.213
+"764",255,"Missing",5,"reading",0.111
+"765",255,"Missing",5,"math",0.0846
+"766",256,"Missing",5,"spelling",0.213
+"767",256,"Missing",5,"reading",0.117
+"768",256,"Missing",5,"math",0.0846
+"769",257,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"770",257,"COVID-19 year * Medium income household",2,"reading",0.0352
+"771",257,"COVID-19 year * Medium income household",2,"math",0.0934
+"772",258,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"773",258,"COVID-19 year * Medium income household",2,"reading",0.0632
+"774",258,"COVID-19 year * Medium income household",2,"math",0.0934
+"775",259,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"776",259,"COVID-19 year * Medium income household",2,"reading",0.0403
+"777",259,"COVID-19 year * Medium income household",2,"math",0.0934
+"778",260,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"779",260,"COVID-19 year * Medium income household",2,"reading",0.0397
+"780",260,"COVID-19 year * Medium income household",2,"math",0.0934
+"781",261,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"782",261,"COVID-19 year * Medium income household",2,"reading",0.0352
+"783",261,"COVID-19 year * Medium income household",2,"math",0.0727
+"784",262,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"785",262,"COVID-19 year * Medium income household",2,"reading",0.0632
+"786",262,"COVID-19 year * Medium income household",2,"math",0.0727
+"787",263,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"788",263,"COVID-19 year * Medium income household",2,"reading",0.0403
+"789",263,"COVID-19 year * Medium income household",2,"math",0.0727
+"790",264,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"791",264,"COVID-19 year * Medium income household",2,"reading",0.0397
+"792",264,"COVID-19 year * Medium income household",2,"math",0.0727
+"793",265,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"794",265,"COVID-19 year * Medium income household",2,"reading",0.0352
+"795",265,"COVID-19 year * Medium income household",2,"math",0.057
+"796",266,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"797",266,"COVID-19 year * Medium income household",2,"reading",0.0632
+"798",266,"COVID-19 year * Medium income household",2,"math",0.057
+"799",267,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"800",267,"COVID-19 year * Medium income household",2,"reading",0.0403
+"801",267,"COVID-19 year * Medium income household",2,"math",0.057
+"802",268,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"803",268,"COVID-19 year * Medium income household",2,"reading",0.0397
+"804",268,"COVID-19 year * Medium income household",2,"math",0.057
+"805",269,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"806",269,"COVID-19 year * Medium income household",2,"reading",0.0352
+"807",269,"COVID-19 year * Medium income household",2,"math",0.0312
+"808",270,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"809",270,"COVID-19 year * Medium income household",2,"reading",0.0632
+"810",270,"COVID-19 year * Medium income household",2,"math",0.0312
+"811",271,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"812",271,"COVID-19 year * Medium income household",2,"reading",0.0403
+"813",271,"COVID-19 year * Medium income household",2,"math",0.0312
+"814",272,"COVID-19 year * Medium income household",2,"spelling",0.0478
+"815",272,"COVID-19 year * Medium income household",2,"reading",0.0397
+"816",272,"COVID-19 year * Medium income household",2,"math",0.0312
+"817",273,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"818",273,"COVID-19 year * Medium income household",3,"reading",0.0352
+"819",273,"COVID-19 year * Medium income household",3,"math",0.0934
+"820",274,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"821",274,"COVID-19 year * Medium income household",3,"reading",0.0632
+"822",274,"COVID-19 year * Medium income household",3,"math",0.0934
+"823",275,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"824",275,"COVID-19 year * Medium income household",3,"reading",0.0403
+"825",275,"COVID-19 year * Medium income household",3,"math",0.0934
+"826",276,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"827",276,"COVID-19 year * Medium income household",3,"reading",0.0397
+"828",276,"COVID-19 year * Medium income household",3,"math",0.0934
+"829",277,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"830",277,"COVID-19 year * Medium income household",3,"reading",0.0352
+"831",277,"COVID-19 year * Medium income household",3,"math",0.0727
+"832",278,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"833",278,"COVID-19 year * Medium income household",3,"reading",0.0632
+"834",278,"COVID-19 year * Medium income household",3,"math",0.0727
+"835",279,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"836",279,"COVID-19 year * Medium income household",3,"reading",0.0403
+"837",279,"COVID-19 year * Medium income household",3,"math",0.0727
+"838",280,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"839",280,"COVID-19 year * Medium income household",3,"reading",0.0397
+"840",280,"COVID-19 year * Medium income household",3,"math",0.0727
+"841",281,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"842",281,"COVID-19 year * Medium income household",3,"reading",0.0352
+"843",281,"COVID-19 year * Medium income household",3,"math",0.057
+"844",282,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"845",282,"COVID-19 year * Medium income household",3,"reading",0.0632
+"846",282,"COVID-19 year * Medium income household",3,"math",0.057
+"847",283,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"848",283,"COVID-19 year * Medium income household",3,"reading",0.0403
+"849",283,"COVID-19 year * Medium income household",3,"math",0.057
+"850",284,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"851",284,"COVID-19 year * Medium income household",3,"reading",0.0397
+"852",284,"COVID-19 year * Medium income household",3,"math",0.057
+"853",285,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"854",285,"COVID-19 year * Medium income household",3,"reading",0.0352
+"855",285,"COVID-19 year * Medium income household",3,"math",0.0312
+"856",286,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"857",286,"COVID-19 year * Medium income household",3,"reading",0.0632
+"858",286,"COVID-19 year * Medium income household",3,"math",0.0312
+"859",287,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"860",287,"COVID-19 year * Medium income household",3,"reading",0.0403
+"861",287,"COVID-19 year * Medium income household",3,"math",0.0312
+"862",288,"COVID-19 year * Medium income household",3,"spelling",0.0419
+"863",288,"COVID-19 year * Medium income household",3,"reading",0.0397
+"864",288,"COVID-19 year * Medium income household",3,"math",0.0312
+"865",289,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"866",289,"COVID-19 year * Medium income household",4,"reading",0.0352
+"867",289,"COVID-19 year * Medium income household",4,"math",0.0934
+"868",290,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"869",290,"COVID-19 year * Medium income household",4,"reading",0.0632
+"870",290,"COVID-19 year * Medium income household",4,"math",0.0934
+"871",291,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"872",291,"COVID-19 year * Medium income household",4,"reading",0.0403
+"873",291,"COVID-19 year * Medium income household",4,"math",0.0934
+"874",292,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"875",292,"COVID-19 year * Medium income household",4,"reading",0.0397
+"876",292,"COVID-19 year * Medium income household",4,"math",0.0934
+"877",293,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"878",293,"COVID-19 year * Medium income household",4,"reading",0.0352
+"879",293,"COVID-19 year * Medium income household",4,"math",0.0727
+"880",294,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"881",294,"COVID-19 year * Medium income household",4,"reading",0.0632
+"882",294,"COVID-19 year * Medium income household",4,"math",0.0727
+"883",295,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"884",295,"COVID-19 year * Medium income household",4,"reading",0.0403
+"885",295,"COVID-19 year * Medium income household",4,"math",0.0727
+"886",296,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"887",296,"COVID-19 year * Medium income household",4,"reading",0.0397
+"888",296,"COVID-19 year * Medium income household",4,"math",0.0727
+"889",297,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"890",297,"COVID-19 year * Medium income household",4,"reading",0.0352
+"891",297,"COVID-19 year * Medium income household",4,"math",0.057
+"892",298,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"893",298,"COVID-19 year * Medium income household",4,"reading",0.0632
+"894",298,"COVID-19 year * Medium income household",4,"math",0.057
+"895",299,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"896",299,"COVID-19 year * Medium income household",4,"reading",0.0403
+"897",299,"COVID-19 year * Medium income household",4,"math",0.057
+"898",300,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"899",300,"COVID-19 year * Medium income household",4,"reading",0.0397
+"900",300,"COVID-19 year * Medium income household",4,"math",0.057
+"901",301,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"902",301,"COVID-19 year * Medium income household",4,"reading",0.0352
+"903",301,"COVID-19 year * Medium income household",4,"math",0.0312
+"904",302,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"905",302,"COVID-19 year * Medium income household",4,"reading",0.0632
+"906",302,"COVID-19 year * Medium income household",4,"math",0.0312
+"907",303,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"908",303,"COVID-19 year * Medium income household",4,"reading",0.0403
+"909",303,"COVID-19 year * Medium income household",4,"math",0.0312
+"910",304,"COVID-19 year * Medium income household",4,"spelling",0.00458
+"911",304,"COVID-19 year * Medium income household",4,"reading",0.0397
+"912",304,"COVID-19 year * Medium income household",4,"math",0.0312
+"913",305,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"914",305,"COVID-19 year * Medium income household",5,"reading",0.0352
+"915",305,"COVID-19 year * Medium income household",5,"math",0.0934
+"916",306,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"917",306,"COVID-19 year * Medium income household",5,"reading",0.0632
+"918",306,"COVID-19 year * Medium income household",5,"math",0.0934
+"919",307,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"920",307,"COVID-19 year * Medium income household",5,"reading",0.0403
+"921",307,"COVID-19 year * Medium income household",5,"math",0.0934
+"922",308,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"923",308,"COVID-19 year * Medium income household",5,"reading",0.0397
+"924",308,"COVID-19 year * Medium income household",5,"math",0.0934
+"925",309,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"926",309,"COVID-19 year * Medium income household",5,"reading",0.0352
+"927",309,"COVID-19 year * Medium income household",5,"math",0.0727
+"928",310,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"929",310,"COVID-19 year * Medium income household",5,"reading",0.0632
+"930",310,"COVID-19 year * Medium income household",5,"math",0.0727
+"931",311,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"932",311,"COVID-19 year * Medium income household",5,"reading",0.0403
+"933",311,"COVID-19 year * Medium income household",5,"math",0.0727
+"934",312,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"935",312,"COVID-19 year * Medium income household",5,"reading",0.0397
+"936",312,"COVID-19 year * Medium income household",5,"math",0.0727
+"937",313,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"938",313,"COVID-19 year * Medium income household",5,"reading",0.0352
+"939",313,"COVID-19 year * Medium income household",5,"math",0.057
+"940",314,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"941",314,"COVID-19 year * Medium income household",5,"reading",0.0632
+"942",314,"COVID-19 year * Medium income household",5,"math",0.057
+"943",315,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"944",315,"COVID-19 year * Medium income household",5,"reading",0.0403
+"945",315,"COVID-19 year * Medium income household",5,"math",0.057
+"946",316,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"947",316,"COVID-19 year * Medium income household",5,"reading",0.0397
+"948",316,"COVID-19 year * Medium income household",5,"math",0.057
+"949",317,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"950",317,"COVID-19 year * Medium income household",5,"reading",0.0352
+"951",317,"COVID-19 year * Medium income household",5,"math",0.0312
+"952",318,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"953",318,"COVID-19 year * Medium income household",5,"reading",0.0632
+"954",318,"COVID-19 year * Medium income household",5,"math",0.0312
+"955",319,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"956",319,"COVID-19 year * Medium income household",5,"reading",0.0403
+"957",319,"COVID-19 year * Medium income household",5,"math",0.0312
+"958",320,"COVID-19 year * Medium income household",5,"spelling",0.0168
+"959",320,"COVID-19 year * Medium income household",5,"reading",0.0397
+"960",320,"COVID-19 year * Medium income household",5,"math",0.0312
+"961",321,"COVID-19 year * High income household",2,"spelling",0.0911
+"962",321,"COVID-19 year * High income household",2,"reading",0.00549
+"963",321,"COVID-19 year * High income household",2,"math",0.122
+"964",322,"COVID-19 year * High income household",2,"spelling",0.0911
+"965",322,"COVID-19 year * High income household",2,"reading",0.0516
+"966",322,"COVID-19 year * High income household",2,"math",0.122
+"967",323,"COVID-19 year * High income household",2,"spelling",0.0911
+"968",323,"COVID-19 year * High income household",2,"reading",0.033
+"969",323,"COVID-19 year * High income household",2,"math",0.122
+"970",324,"COVID-19 year * High income household",2,"spelling",0.0911
+"971",324,"COVID-19 year * High income household",2,"reading",0.043
+"972",324,"COVID-19 year * High income household",2,"math",0.122
+"973",325,"COVID-19 year * High income household",2,"spelling",0.0911
+"974",325,"COVID-19 year * High income household",2,"reading",0.00549
+"975",325,"COVID-19 year * High income household",2,"math",0.094
+"976",326,"COVID-19 year * High income household",2,"spelling",0.0911
+"977",326,"COVID-19 year * High income household",2,"reading",0.0516
+"978",326,"COVID-19 year * High income household",2,"math",0.094
+"979",327,"COVID-19 year * High income household",2,"spelling",0.0911
+"980",327,"COVID-19 year * High income household",2,"reading",0.033
+"981",327,"COVID-19 year * High income household",2,"math",0.094
+"982",328,"COVID-19 year * High income household",2,"spelling",0.0911
+"983",328,"COVID-19 year * High income household",2,"reading",0.043
+"984",328,"COVID-19 year * High income household",2,"math",0.094
+"985",329,"COVID-19 year * High income household",2,"spelling",0.0911
+"986",329,"COVID-19 year * High income household",2,"reading",0.00549
+"987",329,"COVID-19 year * High income household",2,"math",0.0441
+"988",330,"COVID-19 year * High income household",2,"spelling",0.0911
+"989",330,"COVID-19 year * High income household",2,"reading",0.0516
+"990",330,"COVID-19 year * High income household",2,"math",0.0441
+"991",331,"COVID-19 year * High income household",2,"spelling",0.0911
+"992",331,"COVID-19 year * High income household",2,"reading",0.033
+"993",331,"COVID-19 year * High income household",2,"math",0.0441
+"994",332,"COVID-19 year * High income household",2,"spelling",0.0911
+"995",332,"COVID-19 year * High income household",2,"reading",0.043
+"996",332,"COVID-19 year * High income household",2,"math",0.0441
+"997",333,"COVID-19 year * High income household",2,"spelling",0.0911
+"998",333,"COVID-19 year * High income household",2,"reading",0.00549
+"999",333,"COVID-19 year * High income household",2,"math",0.0186
+"1000",334,"COVID-19 year * High income household",2,"spelling",0.0911
+"1001",334,"COVID-19 year * High income household",2,"reading",0.0516
+"1002",334,"COVID-19 year * High income household",2,"math",0.0186
+"1003",335,"COVID-19 year * High income household",2,"spelling",0.0911
+"1004",335,"COVID-19 year * High income household",2,"reading",0.033
+"1005",335,"COVID-19 year * High income household",2,"math",0.0186
+"1006",336,"COVID-19 year * High income household",2,"spelling",0.0911
+"1007",336,"COVID-19 year * High income household",2,"reading",0.043
+"1008",336,"COVID-19 year * High income household",2,"math",0.0186
+"1009",337,"COVID-19 year * High income household",3,"spelling",0.0724
+"1010",337,"COVID-19 year * High income household",3,"reading",0.00549
+"1011",337,"COVID-19 year * High income household",3,"math",0.122
+"1012",338,"COVID-19 year * High income household",3,"spelling",0.0724
+"1013",338,"COVID-19 year * High income household",3,"reading",0.0516
+"1014",338,"COVID-19 year * High income household",3,"math",0.122
+"1015",339,"COVID-19 year * High income household",3,"spelling",0.0724
+"1016",339,"COVID-19 year * High income household",3,"reading",0.033
+"1017",339,"COVID-19 year * High income household",3,"math",0.122
+"1018",340,"COVID-19 year * High income household",3,"spelling",0.0724
+"1019",340,"COVID-19 year * High income household",3,"reading",0.043
+"1020",340,"COVID-19 year * High income household",3,"math",0.122
+"1021",341,"COVID-19 year * High income household",3,"spelling",0.0724
+"1022",341,"COVID-19 year * High income household",3,"reading",0.00549
+"1023",341,"COVID-19 year * High income household",3,"math",0.094
+"1024",342,"COVID-19 year * High income household",3,"spelling",0.0724
+"1025",342,"COVID-19 year * High income household",3,"reading",0.0516
+"1026",342,"COVID-19 year * High income household",3,"math",0.094
+"1027",343,"COVID-19 year * High income household",3,"spelling",0.0724
+"1028",343,"COVID-19 year * High income household",3,"reading",0.033
+"1029",343,"COVID-19 year * High income household",3,"math",0.094
+"1030",344,"COVID-19 year * High income household",3,"spelling",0.0724
+"1031",344,"COVID-19 year * High income household",3,"reading",0.043
+"1032",344,"COVID-19 year * High income household",3,"math",0.094
+"1033",345,"COVID-19 year * High income household",3,"spelling",0.0724
+"1034",345,"COVID-19 year * High income household",3,"reading",0.00549
+"1035",345,"COVID-19 year * High income household",3,"math",0.0441
+"1036",346,"COVID-19 year * High income household",3,"spelling",0.0724
+"1037",346,"COVID-19 year * High income household",3,"reading",0.0516
+"1038",346,"COVID-19 year * High income household",3,"math",0.0441
+"1039",347,"COVID-19 year * High income household",3,"spelling",0.0724
+"1040",347,"COVID-19 year * High income household",3,"reading",0.033
+"1041",347,"COVID-19 year * High income household",3,"math",0.0441
+"1042",348,"COVID-19 year * High income household",3,"spelling",0.0724
+"1043",348,"COVID-19 year * High income household",3,"reading",0.043
+"1044",348,"COVID-19 year * High income household",3,"math",0.0441
+"1045",349,"COVID-19 year * High income household",3,"spelling",0.0724
+"1046",349,"COVID-19 year * High income household",3,"reading",0.00549
+"1047",349,"COVID-19 year * High income household",3,"math",0.0186
+"1048",350,"COVID-19 year * High income household",3,"spelling",0.0724
+"1049",350,"COVID-19 year * High income household",3,"reading",0.0516
+"1050",350,"COVID-19 year * High income household",3,"math",0.0186
+"1051",351,"COVID-19 year * High income household",3,"spelling",0.0724
+"1052",351,"COVID-19 year * High income household",3,"reading",0.033
+"1053",351,"COVID-19 year * High income household",3,"math",0.0186
+"1054",352,"COVID-19 year * High income household",3,"spelling",0.0724
+"1055",352,"COVID-19 year * High income household",3,"reading",0.043
+"1056",352,"COVID-19 year * High income household",3,"math",0.0186
+"1057",353,"COVID-19 year * High income household",4,"spelling",0.0647
+"1058",353,"COVID-19 year * High income household",4,"reading",0.00549
+"1059",353,"COVID-19 year * High income household",4,"math",0.122
+"1060",354,"COVID-19 year * High income household",4,"spelling",0.0647
+"1061",354,"COVID-19 year * High income household",4,"reading",0.0516
+"1062",354,"COVID-19 year * High income household",4,"math",0.122
+"1063",355,"COVID-19 year * High income household",4,"spelling",0.0647
+"1064",355,"COVID-19 year * High income household",4,"reading",0.033
+"1065",355,"COVID-19 year * High income household",4,"math",0.122
+"1066",356,"COVID-19 year * High income household",4,"spelling",0.0647
+"1067",356,"COVID-19 year * High income household",4,"reading",0.043
+"1068",356,"COVID-19 year * High income household",4,"math",0.122
+"1069",357,"COVID-19 year * High income household",4,"spelling",0.0647
+"1070",357,"COVID-19 year * High income household",4,"reading",0.00549
+"1071",357,"COVID-19 year * High income household",4,"math",0.094
+"1072",358,"COVID-19 year * High income household",4,"spelling",0.0647
+"1073",358,"COVID-19 year * High income household",4,"reading",0.0516
+"1074",358,"COVID-19 year * High income household",4,"math",0.094
+"1075",359,"COVID-19 year * High income household",4,"spelling",0.0647
+"1076",359,"COVID-19 year * High income household",4,"reading",0.033
+"1077",359,"COVID-19 year * High income household",4,"math",0.094
+"1078",360,"COVID-19 year * High income household",4,"spelling",0.0647
+"1079",360,"COVID-19 year * High income household",4,"reading",0.043
+"1080",360,"COVID-19 year * High income household",4,"math",0.094
+"1081",361,"COVID-19 year * High income household",4,"spelling",0.0647
+"1082",361,"COVID-19 year * High income household",4,"reading",0.00549
+"1083",361,"COVID-19 year * High income household",4,"math",0.0441
+"1084",362,"COVID-19 year * High income household",4,"spelling",0.0647
+"1085",362,"COVID-19 year * High income household",4,"reading",0.0516
+"1086",362,"COVID-19 year * High income household",4,"math",0.0441
+"1087",363,"COVID-19 year * High income household",4,"spelling",0.0647
+"1088",363,"COVID-19 year * High income household",4,"reading",0.033
+"1089",363,"COVID-19 year * High income household",4,"math",0.0441
+"1090",364,"COVID-19 year * High income household",4,"spelling",0.0647
+"1091",364,"COVID-19 year * High income household",4,"reading",0.043
+"1092",364,"COVID-19 year * High income household",4,"math",0.0441
+"1093",365,"COVID-19 year * High income household",4,"spelling",0.0647
+"1094",365,"COVID-19 year * High income household",4,"reading",0.00549
+"1095",365,"COVID-19 year * High income household",4,"math",0.0186
+"1096",366,"COVID-19 year * High income household",4,"spelling",0.0647
+"1097",366,"COVID-19 year * High income household",4,"reading",0.0516
+"1098",366,"COVID-19 year * High income household",4,"math",0.0186
+"1099",367,"COVID-19 year * High income household",4,"spelling",0.0647
+"1100",367,"COVID-19 year * High income household",4,"reading",0.033
+"1101",367,"COVID-19 year * High income household",4,"math",0.0186
+"1102",368,"COVID-19 year * High income household",4,"spelling",0.0647
+"1103",368,"COVID-19 year * High income household",4,"reading",0.043
+"1104",368,"COVID-19 year * High income household",4,"math",0.0186
+"1105",369,"COVID-19 year * High income household",5,"spelling",0.00992
+"1106",369,"COVID-19 year * High income household",5,"reading",0.00549
+"1107",369,"COVID-19 year * High income household",5,"math",0.122
+"1108",370,"COVID-19 year * High income household",5,"spelling",0.00992
+"1109",370,"COVID-19 year * High income household",5,"reading",0.0516
+"1110",370,"COVID-19 year * High income household",5,"math",0.122
+"1111",371,"COVID-19 year * High income household",5,"spelling",0.00992
+"1112",371,"COVID-19 year * High income household",5,"reading",0.033
+"1113",371,"COVID-19 year * High income household",5,"math",0.122
+"1114",372,"COVID-19 year * High income household",5,"spelling",0.00992
+"1115",372,"COVID-19 year * High income household",5,"reading",0.043
+"1116",372,"COVID-19 year * High income household",5,"math",0.122
+"1117",373,"COVID-19 year * High income household",5,"spelling",0.00992
+"1118",373,"COVID-19 year * High income household",5,"reading",0.00549
+"1119",373,"COVID-19 year * High income household",5,"math",0.094
+"1120",374,"COVID-19 year * High income household",5,"spelling",0.00992
+"1121",374,"COVID-19 year * High income household",5,"reading",0.0516
+"1122",374,"COVID-19 year * High income household",5,"math",0.094
+"1123",375,"COVID-19 year * High income household",5,"spelling",0.00992
+"1124",375,"COVID-19 year * High income household",5,"reading",0.033
+"1125",375,"COVID-19 year * High income household",5,"math",0.094
+"1126",376,"COVID-19 year * High income household",5,"spelling",0.00992
+"1127",376,"COVID-19 year * High income household",5,"reading",0.043
+"1128",376,"COVID-19 year * High income household",5,"math",0.094
+"1129",377,"COVID-19 year * High income household",5,"spelling",0.00992
+"1130",377,"COVID-19 year * High income household",5,"reading",0.00549
+"1131",377,"COVID-19 year * High income household",5,"math",0.0441
+"1132",378,"COVID-19 year * High income household",5,"spelling",0.00992
+"1133",378,"COVID-19 year * High income household",5,"reading",0.0516
+"1134",378,"COVID-19 year * High income household",5,"math",0.0441
+"1135",379,"COVID-19 year * High income household",5,"spelling",0.00992
+"1136",379,"COVID-19 year * High income household",5,"reading",0.033
+"1137",379,"COVID-19 year * High income household",5,"math",0.0441
+"1138",380,"COVID-19 year * High income household",5,"spelling",0.00992
+"1139",380,"COVID-19 year * High income household",5,"reading",0.043
+"1140",380,"COVID-19 year * High income household",5,"math",0.0441
+"1141",381,"COVID-19 year * High income household",5,"spelling",0.00992
+"1142",381,"COVID-19 year * High income household",5,"reading",0.00549
+"1143",381,"COVID-19 year * High income household",5,"math",0.0186
+"1144",382,"COVID-19 year * High income household",5,"spelling",0.00992
+"1145",382,"COVID-19 year * High income household",5,"reading",0.0516
+"1146",382,"COVID-19 year * High income household",5,"math",0.0186
+"1147",383,"COVID-19 year * High income household",5,"spelling",0.00992
+"1148",383,"COVID-19 year * High income household",5,"reading",0.033
+"1149",383,"COVID-19 year * High income household",5,"math",0.0186
+"1150",384,"COVID-19 year * High income household",5,"spelling",0.00992
+"1151",384,"COVID-19 year * High income household",5,"reading",0.043
+"1152",384,"COVID-19 year * High income household",5,"math",0.0186
+"1153",385,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1154",385,"COVID-19 year * Household income missing",2,"reading",-0.0243
+"1155",385,"COVID-19 year * Household income missing",2,"math",-0.0218
+"1156",386,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1157",386,"COVID-19 year * Household income missing",2,"reading",0.0611
+"1158",386,"COVID-19 year * Household income missing",2,"math",-0.0218
+"1159",387,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1160",387,"COVID-19 year * Household income missing",2,"reading",-0.0627
+"1161",387,"COVID-19 year * Household income missing",2,"math",-0.0218
+"1162",388,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1163",388,"COVID-19 year * Household income missing",2,"reading",0.197
+"1164",388,"COVID-19 year * Household income missing",2,"math",-0.0218
+"1165",389,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1166",389,"COVID-19 year * Household income missing",2,"reading",-0.0243
+"1167",389,"COVID-19 year * Household income missing",2,"math",0.0881
+"1168",390,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1169",390,"COVID-19 year * Household income missing",2,"reading",0.0611
+"1170",390,"COVID-19 year * Household income missing",2,"math",0.0881
+"1171",391,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1172",391,"COVID-19 year * Household income missing",2,"reading",-0.0627
+"1173",391,"COVID-19 year * Household income missing",2,"math",0.0881
+"1174",392,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1175",392,"COVID-19 year * Household income missing",2,"reading",0.197
+"1176",392,"COVID-19 year * Household income missing",2,"math",0.0881
+"1177",393,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1178",393,"COVID-19 year * Household income missing",2,"reading",-0.0243
+"1179",393,"COVID-19 year * Household income missing",2,"math",0.0165
+"1180",394,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1181",394,"COVID-19 year * Household income missing",2,"reading",0.0611
+"1182",394,"COVID-19 year * Household income missing",2,"math",0.0165
+"1183",395,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1184",395,"COVID-19 year * Household income missing",2,"reading",-0.0627
+"1185",395,"COVID-19 year * Household income missing",2,"math",0.0165
+"1186",396,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1187",396,"COVID-19 year * Household income missing",2,"reading",0.197
+"1188",396,"COVID-19 year * Household income missing",2,"math",0.0165
+"1189",397,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1190",397,"COVID-19 year * Household income missing",2,"reading",-0.0243
+"1191",397,"COVID-19 year * Household income missing",2,"math",-0.0434
+"1192",398,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1193",398,"COVID-19 year * Household income missing",2,"reading",0.0611
+"1194",398,"COVID-19 year * Household income missing",2,"math",-0.0434
+"1195",399,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1196",399,"COVID-19 year * Household income missing",2,"reading",-0.0627
+"1197",399,"COVID-19 year * Household income missing",2,"math",-0.0434
+"1198",400,"COVID-19 year * Household income missing",2,"spelling",0.035
+"1199",400,"COVID-19 year * Household income missing",2,"reading",0.197
+"1200",400,"COVID-19 year * Household income missing",2,"math",-0.0434
+"1201",401,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1202",401,"COVID-19 year * Household income missing",3,"reading",-0.0243
+"1203",401,"COVID-19 year * Household income missing",3,"math",-0.0218
+"1204",402,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1205",402,"COVID-19 year * Household income missing",3,"reading",0.0611
+"1206",402,"COVID-19 year * Household income missing",3,"math",-0.0218
+"1207",403,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1208",403,"COVID-19 year * Household income missing",3,"reading",-0.0627
+"1209",403,"COVID-19 year * Household income missing",3,"math",-0.0218
+"1210",404,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1211",404,"COVID-19 year * Household income missing",3,"reading",0.197
+"1212",404,"COVID-19 year * Household income missing",3,"math",-0.0218
+"1213",405,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1214",405,"COVID-19 year * Household income missing",3,"reading",-0.0243
+"1215",405,"COVID-19 year * Household income missing",3,"math",0.0881
+"1216",406,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1217",406,"COVID-19 year * Household income missing",3,"reading",0.0611
+"1218",406,"COVID-19 year * Household income missing",3,"math",0.0881
+"1219",407,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1220",407,"COVID-19 year * Household income missing",3,"reading",-0.0627
+"1221",407,"COVID-19 year * Household income missing",3,"math",0.0881
+"1222",408,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1223",408,"COVID-19 year * Household income missing",3,"reading",0.197
+"1224",408,"COVID-19 year * Household income missing",3,"math",0.0881
+"1225",409,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1226",409,"COVID-19 year * Household income missing",3,"reading",-0.0243
+"1227",409,"COVID-19 year * Household income missing",3,"math",0.0165
+"1228",410,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1229",410,"COVID-19 year * Household income missing",3,"reading",0.0611
+"1230",410,"COVID-19 year * Household income missing",3,"math",0.0165
+"1231",411,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1232",411,"COVID-19 year * Household income missing",3,"reading",-0.0627
+"1233",411,"COVID-19 year * Household income missing",3,"math",0.0165
+"1234",412,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1235",412,"COVID-19 year * Household income missing",3,"reading",0.197
+"1236",412,"COVID-19 year * Household income missing",3,"math",0.0165
+"1237",413,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1238",413,"COVID-19 year * Household income missing",3,"reading",-0.0243
+"1239",413,"COVID-19 year * Household income missing",3,"math",-0.0434
+"1240",414,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1241",414,"COVID-19 year * Household income missing",3,"reading",0.0611
+"1242",414,"COVID-19 year * Household income missing",3,"math",-0.0434
+"1243",415,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1244",415,"COVID-19 year * Household income missing",3,"reading",-0.0627
+"1245",415,"COVID-19 year * Household income missing",3,"math",-0.0434
+"1246",416,"COVID-19 year * Household income missing",3,"spelling",0.159
+"1247",416,"COVID-19 year * Household income missing",3,"reading",0.197
+"1248",416,"COVID-19 year * Household income missing",3,"math",-0.0434
+"1249",417,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1250",417,"COVID-19 year * Household income missing",4,"reading",-0.0243
+"1251",417,"COVID-19 year * Household income missing",4,"math",-0.0218
+"1252",418,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1253",418,"COVID-19 year * Household income missing",4,"reading",0.0611
+"1254",418,"COVID-19 year * Household income missing",4,"math",-0.0218
+"1255",419,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1256",419,"COVID-19 year * Household income missing",4,"reading",-0.0627
+"1257",419,"COVID-19 year * Household income missing",4,"math",-0.0218
+"1258",420,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1259",420,"COVID-19 year * Household income missing",4,"reading",0.197
+"1260",420,"COVID-19 year * Household income missing",4,"math",-0.0218
+"1261",421,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1262",421,"COVID-19 year * Household income missing",4,"reading",-0.0243
+"1263",421,"COVID-19 year * Household income missing",4,"math",0.0881
+"1264",422,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1265",422,"COVID-19 year * Household income missing",4,"reading",0.0611
+"1266",422,"COVID-19 year * Household income missing",4,"math",0.0881
+"1267",423,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1268",423,"COVID-19 year * Household income missing",4,"reading",-0.0627
+"1269",423,"COVID-19 year * Household income missing",4,"math",0.0881
+"1270",424,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1271",424,"COVID-19 year * Household income missing",4,"reading",0.197
+"1272",424,"COVID-19 year * Household income missing",4,"math",0.0881
+"1273",425,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1274",425,"COVID-19 year * Household income missing",4,"reading",-0.0243
+"1275",425,"COVID-19 year * Household income missing",4,"math",0.0165
+"1276",426,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1277",426,"COVID-19 year * Household income missing",4,"reading",0.0611
+"1278",426,"COVID-19 year * Household income missing",4,"math",0.0165
+"1279",427,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1280",427,"COVID-19 year * Household income missing",4,"reading",-0.0627
+"1281",427,"COVID-19 year * Household income missing",4,"math",0.0165
+"1282",428,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1283",428,"COVID-19 year * Household income missing",4,"reading",0.197
+"1284",428,"COVID-19 year * Household income missing",4,"math",0.0165
+"1285",429,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1286",429,"COVID-19 year * Household income missing",4,"reading",-0.0243
+"1287",429,"COVID-19 year * Household income missing",4,"math",-0.0434
+"1288",430,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1289",430,"COVID-19 year * Household income missing",4,"reading",0.0611
+"1290",430,"COVID-19 year * Household income missing",4,"math",-0.0434
+"1291",431,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1292",431,"COVID-19 year * Household income missing",4,"reading",-0.0627
+"1293",431,"COVID-19 year * Household income missing",4,"math",-0.0434
+"1294",432,"COVID-19 year * Household income missing",4,"spelling",-0.018
+"1295",432,"COVID-19 year * Household income missing",4,"reading",0.197
+"1296",432,"COVID-19 year * Household income missing",4,"math",-0.0434
+"1297",433,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1298",433,"COVID-19 year * Household income missing",5,"reading",-0.0243
+"1299",433,"COVID-19 year * Household income missing",5,"math",-0.0218
+"1300",434,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1301",434,"COVID-19 year * Household income missing",5,"reading",0.0611
+"1302",434,"COVID-19 year * Household income missing",5,"math",-0.0218
+"1303",435,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1304",435,"COVID-19 year * Household income missing",5,"reading",-0.0627
+"1305",435,"COVID-19 year * Household income missing",5,"math",-0.0218
+"1306",436,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1307",436,"COVID-19 year * Household income missing",5,"reading",0.197
+"1308",436,"COVID-19 year * Household income missing",5,"math",-0.0218
+"1309",437,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1310",437,"COVID-19 year * Household income missing",5,"reading",-0.0243
+"1311",437,"COVID-19 year * Household income missing",5,"math",0.0881
+"1312",438,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1313",438,"COVID-19 year * Household income missing",5,"reading",0.0611
+"1314",438,"COVID-19 year * Household income missing",5,"math",0.0881
+"1315",439,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1316",439,"COVID-19 year * Household income missing",5,"reading",-0.0627
+"1317",439,"COVID-19 year * Household income missing",5,"math",0.0881
+"1318",440,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1319",440,"COVID-19 year * Household income missing",5,"reading",0.197
+"1320",440,"COVID-19 year * Household income missing",5,"math",0.0881
+"1321",441,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1322",441,"COVID-19 year * Household income missing",5,"reading",-0.0243
+"1323",441,"COVID-19 year * Household income missing",5,"math",0.0165
+"1324",442,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1325",442,"COVID-19 year * Household income missing",5,"reading",0.0611
+"1326",442,"COVID-19 year * Household income missing",5,"math",0.0165
+"1327",443,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1328",443,"COVID-19 year * Household income missing",5,"reading",-0.0627
+"1329",443,"COVID-19 year * Household income missing",5,"math",0.0165
+"1330",444,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1331",444,"COVID-19 year * Household income missing",5,"reading",0.197
+"1332",444,"COVID-19 year * Household income missing",5,"math",0.0165
+"1333",445,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1334",445,"COVID-19 year * Household income missing",5,"reading",-0.0243
+"1335",445,"COVID-19 year * Household income missing",5,"math",-0.0434
+"1336",446,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1337",446,"COVID-19 year * Household income missing",5,"reading",0.0611
+"1338",446,"COVID-19 year * Household income missing",5,"math",-0.0434
+"1339",447,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1340",447,"COVID-19 year * Household income missing",5,"reading",-0.0627
+"1341",447,"COVID-19 year * Household income missing",5,"math",-0.0434
+"1342",448,"COVID-19 year * Household income missing",5,"spelling",-0.19
+"1343",448,"COVID-19 year * Household income missing",5,"reading",0.197
+"1344",448,"COVID-19 year * Household income missing",5,"math",-0.0434
+"1345",449,"Medium",2,"spelling",-0.018
+"1346",449,"Medium",2,"reading",0.00413
+"1347",449,"Medium",2,"math",-0.0106
+"1348",450,"Medium",2,"spelling",-0.018
+"1349",450,"Medium",2,"reading",0.0461
+"1350",450,"Medium",2,"math",-0.0106
+"1351",451,"Medium",2,"spelling",-0.018
+"1352",451,"Medium",2,"reading",0.0362
+"1353",451,"Medium",2,"math",-0.0106
+"1354",452,"Medium",2,"spelling",-0.018
+"1355",452,"Medium",2,"reading",0.0209
+"1356",452,"Medium",2,"math",-0.0106
+"1357",453,"Medium",2,"spelling",-0.018
+"1358",453,"Medium",2,"reading",0.00413
+"1359",453,"Medium",2,"math",-0.0249
+"1360",454,"Medium",2,"spelling",-0.018
+"1361",454,"Medium",2,"reading",0.0461
+"1362",454,"Medium",2,"math",-0.0249
+"1363",455,"Medium",2,"spelling",-0.018
+"1364",455,"Medium",2,"reading",0.0362
+"1365",455,"Medium",2,"math",-0.0249
+"1366",456,"Medium",2,"spelling",-0.018
+"1367",456,"Medium",2,"reading",0.0209
+"1368",456,"Medium",2,"math",-0.0249
+"1369",457,"Medium",2,"spelling",-0.018
+"1370",457,"Medium",2,"reading",0.00413
+"1371",457,"Medium",2,"math",0.00206
+"1372",458,"Medium",2,"spelling",-0.018
+"1373",458,"Medium",2,"reading",0.0461
+"1374",458,"Medium",2,"math",0.00206
+"1375",459,"Medium",2,"spelling",-0.018
+"1376",459,"Medium",2,"reading",0.0362
+"1377",459,"Medium",2,"math",0.00206
+"1378",460,"Medium",2,"spelling",-0.018
+"1379",460,"Medium",2,"reading",0.0209
+"1380",460,"Medium",2,"math",0.00206
+"1381",461,"Medium",2,"spelling",-0.018
+"1382",461,"Medium",2,"reading",0.00413
+"1383",461,"Medium",2,"math",0.00977
+"1384",462,"Medium",2,"spelling",-0.018
+"1385",462,"Medium",2,"reading",0.0461
+"1386",462,"Medium",2,"math",0.00977
+"1387",463,"Medium",2,"spelling",-0.018
+"1388",463,"Medium",2,"reading",0.0362
+"1389",463,"Medium",2,"math",0.00977
+"1390",464,"Medium",2,"spelling",-0.018
+"1391",464,"Medium",2,"reading",0.0209
+"1392",464,"Medium",2,"math",0.00977
+"1393",465,"Medium",3,"spelling",0.0156
+"1394",465,"Medium",3,"reading",0.00413
+"1395",465,"Medium",3,"math",-0.0106
+"1396",466,"Medium",3,"spelling",0.0156
+"1397",466,"Medium",3,"reading",0.0461
+"1398",466,"Medium",3,"math",-0.0106
+"1399",467,"Medium",3,"spelling",0.0156
+"1400",467,"Medium",3,"reading",0.0362
+"1401",467,"Medium",3,"math",-0.0106
+"1402",468,"Medium",3,"spelling",0.0156
+"1403",468,"Medium",3,"reading",0.0209
+"1404",468,"Medium",3,"math",-0.0106
+"1405",469,"Medium",3,"spelling",0.0156
+"1406",469,"Medium",3,"reading",0.00413
+"1407",469,"Medium",3,"math",-0.0249
+"1408",470,"Medium",3,"spelling",0.0156
+"1409",470,"Medium",3,"reading",0.0461
+"1410",470,"Medium",3,"math",-0.0249
+"1411",471,"Medium",3,"spelling",0.0156
+"1412",471,"Medium",3,"reading",0.0362
+"1413",471,"Medium",3,"math",-0.0249
+"1414",472,"Medium",3,"spelling",0.0156
+"1415",472,"Medium",3,"reading",0.0209
+"1416",472,"Medium",3,"math",-0.0249
+"1417",473,"Medium",3,"spelling",0.0156
+"1418",473,"Medium",3,"reading",0.00413
+"1419",473,"Medium",3,"math",0.00206
+"1420",474,"Medium",3,"spelling",0.0156
+"1421",474,"Medium",3,"reading",0.0461
+"1422",474,"Medium",3,"math",0.00206
+"1423",475,"Medium",3,"spelling",0.0156
+"1424",475,"Medium",3,"reading",0.0362
+"1425",475,"Medium",3,"math",0.00206
+"1426",476,"Medium",3,"spelling",0.0156
+"1427",476,"Medium",3,"reading",0.0209
+"1428",476,"Medium",3,"math",0.00206
+"1429",477,"Medium",3,"spelling",0.0156
+"1430",477,"Medium",3,"reading",0.00413
+"1431",477,"Medium",3,"math",0.00977
+"1432",478,"Medium",3,"spelling",0.0156
+"1433",478,"Medium",3,"reading",0.0461
+"1434",478,"Medium",3,"math",0.00977
+"1435",479,"Medium",3,"spelling",0.0156
+"1436",479,"Medium",3,"reading",0.0362
+"1437",479,"Medium",3,"math",0.00977
+"1438",480,"Medium",3,"spelling",0.0156
+"1439",480,"Medium",3,"reading",0.0209
+"1440",480,"Medium",3,"math",0.00977
+"1441",481,"Medium",4,"spelling",-0.016
+"1442",481,"Medium",4,"reading",0.00413
+"1443",481,"Medium",4,"math",-0.0106
+"1444",482,"Medium",4,"spelling",-0.016
+"1445",482,"Medium",4,"reading",0.0461
+"1446",482,"Medium",4,"math",-0.0106
+"1447",483,"Medium",4,"spelling",-0.016
+"1448",483,"Medium",4,"reading",0.0362
+"1449",483,"Medium",4,"math",-0.0106
+"1450",484,"Medium",4,"spelling",-0.016
+"1451",484,"Medium",4,"reading",0.0209
+"1452",484,"Medium",4,"math",-0.0106
+"1453",485,"Medium",4,"spelling",-0.016
+"1454",485,"Medium",4,"reading",0.00413
+"1455",485,"Medium",4,"math",-0.0249
+"1456",486,"Medium",4,"spelling",-0.016
+"1457",486,"Medium",4,"reading",0.0461
+"1458",486,"Medium",4,"math",-0.0249
+"1459",487,"Medium",4,"spelling",-0.016
+"1460",487,"Medium",4,"reading",0.0362
+"1461",487,"Medium",4,"math",-0.0249
+"1462",488,"Medium",4,"spelling",-0.016
+"1463",488,"Medium",4,"reading",0.0209
+"1464",488,"Medium",4,"math",-0.0249
+"1465",489,"Medium",4,"spelling",-0.016
+"1466",489,"Medium",4,"reading",0.00413
+"1467",489,"Medium",4,"math",0.00206
+"1468",490,"Medium",4,"spelling",-0.016
+"1469",490,"Medium",4,"reading",0.0461
+"1470",490,"Medium",4,"math",0.00206
+"1471",491,"Medium",4,"spelling",-0.016
+"1472",491,"Medium",4,"reading",0.0362
+"1473",491,"Medium",4,"math",0.00206
+"1474",492,"Medium",4,"spelling",-0.016
+"1475",492,"Medium",4,"reading",0.0209
+"1476",492,"Medium",4,"math",0.00206
+"1477",493,"Medium",4,"spelling",-0.016
+"1478",493,"Medium",4,"reading",0.00413
+"1479",493,"Medium",4,"math",0.00977
+"1480",494,"Medium",4,"spelling",-0.016
+"1481",494,"Medium",4,"reading",0.0461
+"1482",494,"Medium",4,"math",0.00977
+"1483",495,"Medium",4,"spelling",-0.016
+"1484",495,"Medium",4,"reading",0.0362
+"1485",495,"Medium",4,"math",0.00977
+"1486",496,"Medium",4,"spelling",-0.016
+"1487",496,"Medium",4,"reading",0.0209
+"1488",496,"Medium",4,"math",0.00977
+"1489",497,"Medium",5,"spelling",0.0832
+"1490",497,"Medium",5,"reading",0.00413
+"1491",497,"Medium",5,"math",-0.0106
+"1492",498,"Medium",5,"spelling",0.0832
+"1493",498,"Medium",5,"reading",0.0461
+"1494",498,"Medium",5,"math",-0.0106
+"1495",499,"Medium",5,"spelling",0.0832
+"1496",499,"Medium",5,"reading",0.0362
+"1497",499,"Medium",5,"math",-0.0106
+"1498",500,"Medium",5,"spelling",0.0832
+"1499",500,"Medium",5,"reading",0.0209
+"1500",500,"Medium",5,"math",-0.0106
+"1501",501,"Medium",5,"spelling",0.0832
+"1502",501,"Medium",5,"reading",0.00413
+"1503",501,"Medium",5,"math",-0.0249
+"1504",502,"Medium",5,"spelling",0.0832
+"1505",502,"Medium",5,"reading",0.0461
+"1506",502,"Medium",5,"math",-0.0249
+"1507",503,"Medium",5,"spelling",0.0832
+"1508",503,"Medium",5,"reading",0.0362
+"1509",503,"Medium",5,"math",-0.0249
+"1510",504,"Medium",5,"spelling",0.0832
+"1511",504,"Medium",5,"reading",0.0209
+"1512",504,"Medium",5,"math",-0.0249
+"1513",505,"Medium",5,"spelling",0.0832
+"1514",505,"Medium",5,"reading",0.00413
+"1515",505,"Medium",5,"math",0.00206
+"1516",506,"Medium",5,"spelling",0.0832
+"1517",506,"Medium",5,"reading",0.0461
+"1518",506,"Medium",5,"math",0.00206
+"1519",507,"Medium",5,"spelling",0.0832
+"1520",507,"Medium",5,"reading",0.0362
+"1521",507,"Medium",5,"math",0.00206
+"1522",508,"Medium",5,"spelling",0.0832
+"1523",508,"Medium",5,"reading",0.0209
+"1524",508,"Medium",5,"math",0.00206
+"1525",509,"Medium",5,"spelling",0.0832
+"1526",509,"Medium",5,"reading",0.00413
+"1527",509,"Medium",5,"math",0.00977
+"1528",510,"Medium",5,"spelling",0.0832
+"1529",510,"Medium",5,"reading",0.0461
+"1530",510,"Medium",5,"math",0.00977
+"1531",511,"Medium",5,"spelling",0.0832
+"1532",511,"Medium",5,"reading",0.0362
+"1533",511,"Medium",5,"math",0.00977
+"1534",512,"Medium",5,"spelling",0.0832
+"1535",512,"Medium",5,"reading",0.0209
+"1536",512,"Medium",5,"math",0.00977
+"1537",513,"High",2,"spelling",0.0315
+"1538",513,"High",2,"reading",0.0235
+"1539",513,"High",2,"math",-0.00397
+"1540",514,"High",2,"spelling",0.0315
+"1541",514,"High",2,"reading",0.118
+"1542",514,"High",2,"math",-0.00397
+"1543",515,"High",2,"spelling",0.0315
+"1544",515,"High",2,"reading",0.11
+"1545",515,"High",2,"math",-0.00397
+"1546",516,"High",2,"spelling",0.0315
+"1547",516,"High",2,"reading",0.0467
+"1548",516,"High",2,"math",-0.00397
+"1549",517,"High",2,"spelling",0.0315
+"1550",517,"High",2,"reading",0.0235
+"1551",517,"High",2,"math",-0.00166
+"1552",518,"High",2,"spelling",0.0315
+"1553",518,"High",2,"reading",0.118
+"1554",518,"High",2,"math",-0.00166
+"1555",519,"High",2,"spelling",0.0315
+"1556",519,"High",2,"reading",0.11
+"1557",519,"High",2,"math",-0.00166
+"1558",520,"High",2,"spelling",0.0315
+"1559",520,"High",2,"reading",0.0467
+"1560",520,"High",2,"math",-0.00166
+"1561",521,"High",2,"spelling",0.0315
+"1562",521,"High",2,"reading",0.0235
+"1563",521,"High",2,"math",0.0061
+"1564",522,"High",2,"spelling",0.0315
+"1565",522,"High",2,"reading",0.118
+"1566",522,"High",2,"math",0.0061
+"1567",523,"High",2,"spelling",0.0315
+"1568",523,"High",2,"reading",0.11
+"1569",523,"High",2,"math",0.0061
+"1570",524,"High",2,"spelling",0.0315
+"1571",524,"High",2,"reading",0.0467
+"1572",524,"High",2,"math",0.0061
+"1573",525,"High",2,"spelling",0.0315
+"1574",525,"High",2,"reading",0.0235
+"1575",525,"High",2,"math",0.0153
+"1576",526,"High",2,"spelling",0.0315
+"1577",526,"High",2,"reading",0.118
+"1578",526,"High",2,"math",0.0153
+"1579",527,"High",2,"spelling",0.0315
+"1580",527,"High",2,"reading",0.11
+"1581",527,"High",2,"math",0.0153
+"1582",528,"High",2,"spelling",0.0315
+"1583",528,"High",2,"reading",0.0467
+"1584",528,"High",2,"math",0.0153
+"1585",529,"High",3,"spelling",0.0329
+"1586",529,"High",3,"reading",0.0235
+"1587",529,"High",3,"math",-0.00397
+"1588",530,"High",3,"spelling",0.0329
+"1589",530,"High",3,"reading",0.118
+"1590",530,"High",3,"math",-0.00397
+"1591",531,"High",3,"spelling",0.0329
+"1592",531,"High",3,"reading",0.11
+"1593",531,"High",3,"math",-0.00397
+"1594",532,"High",3,"spelling",0.0329
+"1595",532,"High",3,"reading",0.0467
+"1596",532,"High",3,"math",-0.00397
+"1597",533,"High",3,"spelling",0.0329
+"1598",533,"High",3,"reading",0.0235
+"1599",533,"High",3,"math",-0.00166
+"1600",534,"High",3,"spelling",0.0329
+"1601",534,"High",3,"reading",0.118
+"1602",534,"High",3,"math",-0.00166
+"1603",535,"High",3,"spelling",0.0329
+"1604",535,"High",3,"reading",0.11
+"1605",535,"High",3,"math",-0.00166
+"1606",536,"High",3,"spelling",0.0329
+"1607",536,"High",3,"reading",0.0467
+"1608",536,"High",3,"math",-0.00166
+"1609",537,"High",3,"spelling",0.0329
+"1610",537,"High",3,"reading",0.0235
+"1611",537,"High",3,"math",0.0061
+"1612",538,"High",3,"spelling",0.0329
+"1613",538,"High",3,"reading",0.118
+"1614",538,"High",3,"math",0.0061
+"1615",539,"High",3,"spelling",0.0329
+"1616",539,"High",3,"reading",0.11
+"1617",539,"High",3,"math",0.0061
+"1618",540,"High",3,"spelling",0.0329
+"1619",540,"High",3,"reading",0.0467
+"1620",540,"High",3,"math",0.0061
+"1621",541,"High",3,"spelling",0.0329
+"1622",541,"High",3,"reading",0.0235
+"1623",541,"High",3,"math",0.0153
+"1624",542,"High",3,"spelling",0.0329
+"1625",542,"High",3,"reading",0.118
+"1626",542,"High",3,"math",0.0153
+"1627",543,"High",3,"spelling",0.0329
+"1628",543,"High",3,"reading",0.11
+"1629",543,"High",3,"math",0.0153
+"1630",544,"High",3,"spelling",0.0329
+"1631",544,"High",3,"reading",0.0467
+"1632",544,"High",3,"math",0.0153
+"1633",545,"High",4,"spelling",-0.0142
+"1634",545,"High",4,"reading",0.0235
+"1635",545,"High",4,"math",-0.00397
+"1636",546,"High",4,"spelling",-0.0142
+"1637",546,"High",4,"reading",0.118
+"1638",546,"High",4,"math",-0.00397
+"1639",547,"High",4,"spelling",-0.0142
+"1640",547,"High",4,"reading",0.11
+"1641",547,"High",4,"math",-0.00397
+"1642",548,"High",4,"spelling",-0.0142
+"1643",548,"High",4,"reading",0.0467
+"1644",548,"High",4,"math",-0.00397
+"1645",549,"High",4,"spelling",-0.0142
+"1646",549,"High",4,"reading",0.0235
+"1647",549,"High",4,"math",-0.00166
+"1648",550,"High",4,"spelling",-0.0142
+"1649",550,"High",4,"reading",0.118
+"1650",550,"High",4,"math",-0.00166
+"1651",551,"High",4,"spelling",-0.0142
+"1652",551,"High",4,"reading",0.11
+"1653",551,"High",4,"math",-0.00166
+"1654",552,"High",4,"spelling",-0.0142
+"1655",552,"High",4,"reading",0.0467
+"1656",552,"High",4,"math",-0.00166
+"1657",553,"High",4,"spelling",-0.0142
+"1658",553,"High",4,"reading",0.0235
+"1659",553,"High",4,"math",0.0061
+"1660",554,"High",4,"spelling",-0.0142
+"1661",554,"High",4,"reading",0.118
+"1662",554,"High",4,"math",0.0061
+"1663",555,"High",4,"spelling",-0.0142
+"1664",555,"High",4,"reading",0.11
+"1665",555,"High",4,"math",0.0061
+"1666",556,"High",4,"spelling",-0.0142
+"1667",556,"High",4,"reading",0.0467
+"1668",556,"High",4,"math",0.0061
+"1669",557,"High",4,"spelling",-0.0142
+"1670",557,"High",4,"reading",0.0235
+"1671",557,"High",4,"math",0.0153
+"1672",558,"High",4,"spelling",-0.0142
+"1673",558,"High",4,"reading",0.118
+"1674",558,"High",4,"math",0.0153
+"1675",559,"High",4,"spelling",-0.0142
+"1676",559,"High",4,"reading",0.11
+"1677",559,"High",4,"math",0.0153
+"1678",560,"High",4,"spelling",-0.0142
+"1679",560,"High",4,"reading",0.0467
+"1680",560,"High",4,"math",0.0153
+"1681",561,"High",5,"spelling",0.127
+"1682",561,"High",5,"reading",0.0235
+"1683",561,"High",5,"math",-0.00397
+"1684",562,"High",5,"spelling",0.127
+"1685",562,"High",5,"reading",0.118
+"1686",562,"High",5,"math",-0.00397
+"1687",563,"High",5,"spelling",0.127
+"1688",563,"High",5,"reading",0.11
+"1689",563,"High",5,"math",-0.00397
+"1690",564,"High",5,"spelling",0.127
+"1691",564,"High",5,"reading",0.0467
+"1692",564,"High",5,"math",-0.00397
+"1693",565,"High",5,"spelling",0.127
+"1694",565,"High",5,"reading",0.0235
+"1695",565,"High",5,"math",-0.00166
+"1696",566,"High",5,"spelling",0.127
+"1697",566,"High",5,"reading",0.118
+"1698",566,"High",5,"math",-0.00166
+"1699",567,"High",5,"spelling",0.127
+"1700",567,"High",5,"reading",0.11
+"1701",567,"High",5,"math",-0.00166
+"1702",568,"High",5,"spelling",0.127
+"1703",568,"High",5,"reading",0.0467
+"1704",568,"High",5,"math",-0.00166
+"1705",569,"High",5,"spelling",0.127
+"1706",569,"High",5,"reading",0.0235
+"1707",569,"High",5,"math",0.0061
+"1708",570,"High",5,"spelling",0.127
+"1709",570,"High",5,"reading",0.118
+"1710",570,"High",5,"math",0.0061
+"1711",571,"High",5,"spelling",0.127
+"1712",571,"High",5,"reading",0.11
+"1713",571,"High",5,"math",0.0061
+"1714",572,"High",5,"spelling",0.127
+"1715",572,"High",5,"reading",0.0467
+"1716",572,"High",5,"math",0.0061
+"1717",573,"High",5,"spelling",0.127
+"1718",573,"High",5,"reading",0.0235
+"1719",573,"High",5,"math",0.0153
+"1720",574,"High",5,"spelling",0.127
+"1721",574,"High",5,"reading",0.118
+"1722",574,"High",5,"math",0.0153
+"1723",575,"High",5,"spelling",0.127
+"1724",575,"High",5,"reading",0.11
+"1725",575,"High",5,"math",0.0153
+"1726",576,"High",5,"spelling",0.127
+"1727",576,"High",5,"reading",0.0467
+"1728",576,"High",5,"math",0.0153
+"1729",577,"Missing",2,"spelling",0.0127
+"1730",577,"Missing",2,"reading",-0.0303
+"1731",577,"Missing",2,"math",-0.018
+"1732",578,"Missing",2,"spelling",0.0127
+"1733",578,"Missing",2,"reading",0.0483
+"1734",578,"Missing",2,"math",-0.018
+"1735",579,"Missing",2,"spelling",0.0127
+"1736",579,"Missing",2,"reading",0.0301
+"1737",579,"Missing",2,"math",-0.018
+"1738",580,"Missing",2,"spelling",0.0127
+"1739",580,"Missing",2,"reading",0.0459
+"1740",580,"Missing",2,"math",-0.018
+"1741",581,"Missing",2,"spelling",0.0127
+"1742",581,"Missing",2,"reading",-0.0303
+"1743",581,"Missing",2,"math",-0.0241
+"1744",582,"Missing",2,"spelling",0.0127
+"1745",582,"Missing",2,"reading",0.0483
+"1746",582,"Missing",2,"math",-0.0241
+"1747",583,"Missing",2,"spelling",0.0127
+"1748",583,"Missing",2,"reading",0.0301
+"1749",583,"Missing",2,"math",-0.0241
+"1750",584,"Missing",2,"spelling",0.0127
+"1751",584,"Missing",2,"reading",0.0459
+"1752",584,"Missing",2,"math",-0.0241
+"1753",585,"Missing",2,"spelling",0.0127
+"1754",585,"Missing",2,"reading",-0.0303
+"1755",585,"Missing",2,"math",0.0169
+"1756",586,"Missing",2,"spelling",0.0127
+"1757",586,"Missing",2,"reading",0.0483
+"1758",586,"Missing",2,"math",0.0169
+"1759",587,"Missing",2,"spelling",0.0127
+"1760",587,"Missing",2,"reading",0.0301
+"1761",587,"Missing",2,"math",0.0169
+"1762",588,"Missing",2,"spelling",0.0127
+"1763",588,"Missing",2,"reading",0.0459
+"1764",588,"Missing",2,"math",0.0169
+"1765",589,"Missing",2,"spelling",0.0127
+"1766",589,"Missing",2,"reading",-0.0303
+"1767",589,"Missing",2,"math",0.0181
+"1768",590,"Missing",2,"spelling",0.0127
+"1769",590,"Missing",2,"reading",0.0483
+"1770",590,"Missing",2,"math",0.0181
+"1771",591,"Missing",2,"spelling",0.0127
+"1772",591,"Missing",2,"reading",0.0301
+"1773",591,"Missing",2,"math",0.0181
+"1774",592,"Missing",2,"spelling",0.0127
+"1775",592,"Missing",2,"reading",0.0459
+"1776",592,"Missing",2,"math",0.0181
+"1777",593,"Missing",3,"spelling",0.045
+"1778",593,"Missing",3,"reading",-0.0303
+"1779",593,"Missing",3,"math",-0.018
+"1780",594,"Missing",3,"spelling",0.045
+"1781",594,"Missing",3,"reading",0.0483
+"1782",594,"Missing",3,"math",-0.018
+"1783",595,"Missing",3,"spelling",0.045
+"1784",595,"Missing",3,"reading",0.0301
+"1785",595,"Missing",3,"math",-0.018
+"1786",596,"Missing",3,"spelling",0.045
+"1787",596,"Missing",3,"reading",0.0459
+"1788",596,"Missing",3,"math",-0.018
+"1789",597,"Missing",3,"spelling",0.045
+"1790",597,"Missing",3,"reading",-0.0303
+"1791",597,"Missing",3,"math",-0.0241
+"1792",598,"Missing",3,"spelling",0.045
+"1793",598,"Missing",3,"reading",0.0483
+"1794",598,"Missing",3,"math",-0.0241
+"1795",599,"Missing",3,"spelling",0.045
+"1796",599,"Missing",3,"reading",0.0301
+"1797",599,"Missing",3,"math",-0.0241
+"1798",600,"Missing",3,"spelling",0.045
+"1799",600,"Missing",3,"reading",0.0459
+"1800",600,"Missing",3,"math",-0.0241
+"1801",601,"Missing",3,"spelling",0.045
+"1802",601,"Missing",3,"reading",-0.0303
+"1803",601,"Missing",3,"math",0.0169
+"1804",602,"Missing",3,"spelling",0.045
+"1805",602,"Missing",3,"reading",0.0483
+"1806",602,"Missing",3,"math",0.0169
+"1807",603,"Missing",3,"spelling",0.045
+"1808",603,"Missing",3,"reading",0.0301
+"1809",603,"Missing",3,"math",0.0169
+"1810",604,"Missing",3,"spelling",0.045
+"1811",604,"Missing",3,"reading",0.0459
+"1812",604,"Missing",3,"math",0.0169
+"1813",605,"Missing",3,"spelling",0.045
+"1814",605,"Missing",3,"reading",-0.0303
+"1815",605,"Missing",3,"math",0.0181
+"1816",606,"Missing",3,"spelling",0.045
+"1817",606,"Missing",3,"reading",0.0483
+"1818",606,"Missing",3,"math",0.0181
+"1819",607,"Missing",3,"spelling",0.045
+"1820",607,"Missing",3,"reading",0.0301
+"1821",607,"Missing",3,"math",0.0181
+"1822",608,"Missing",3,"spelling",0.045
+"1823",608,"Missing",3,"reading",0.0459
+"1824",608,"Missing",3,"math",0.0181
+"1825",609,"Missing",4,"spelling",-0.0115
+"1826",609,"Missing",4,"reading",-0.0303
+"1827",609,"Missing",4,"math",-0.018
+"1828",610,"Missing",4,"spelling",-0.0115
+"1829",610,"Missing",4,"reading",0.0483
+"1830",610,"Missing",4,"math",-0.018
+"1831",611,"Missing",4,"spelling",-0.0115
+"1832",611,"Missing",4,"reading",0.0301
+"1833",611,"Missing",4,"math",-0.018
+"1834",612,"Missing",4,"spelling",-0.0115
+"1835",612,"Missing",4,"reading",0.0459
+"1836",612,"Missing",4,"math",-0.018
+"1837",613,"Missing",4,"spelling",-0.0115
+"1838",613,"Missing",4,"reading",-0.0303
+"1839",613,"Missing",4,"math",-0.0241
+"1840",614,"Missing",4,"spelling",-0.0115
+"1841",614,"Missing",4,"reading",0.0483
+"1842",614,"Missing",4,"math",-0.0241
+"1843",615,"Missing",4,"spelling",-0.0115
+"1844",615,"Missing",4,"reading",0.0301
+"1845",615,"Missing",4,"math",-0.0241
+"1846",616,"Missing",4,"spelling",-0.0115
+"1847",616,"Missing",4,"reading",0.0459
+"1848",616,"Missing",4,"math",-0.0241
+"1849",617,"Missing",4,"spelling",-0.0115
+"1850",617,"Missing",4,"reading",-0.0303
+"1851",617,"Missing",4,"math",0.0169
+"1852",618,"Missing",4,"spelling",-0.0115
+"1853",618,"Missing",4,"reading",0.0483
+"1854",618,"Missing",4,"math",0.0169
+"1855",619,"Missing",4,"spelling",-0.0115
+"1856",619,"Missing",4,"reading",0.0301
+"1857",619,"Missing",4,"math",0.0169
+"1858",620,"Missing",4,"spelling",-0.0115
+"1859",620,"Missing",4,"reading",0.0459
+"1860",620,"Missing",4,"math",0.0169
+"1861",621,"Missing",4,"spelling",-0.0115
+"1862",621,"Missing",4,"reading",-0.0303
+"1863",621,"Missing",4,"math",0.0181
+"1864",622,"Missing",4,"spelling",-0.0115
+"1865",622,"Missing",4,"reading",0.0483
+"1866",622,"Missing",4,"math",0.0181
+"1867",623,"Missing",4,"spelling",-0.0115
+"1868",623,"Missing",4,"reading",0.0301
+"1869",623,"Missing",4,"math",0.0181
+"1870",624,"Missing",4,"spelling",-0.0115
+"1871",624,"Missing",4,"reading",0.0459
+"1872",624,"Missing",4,"math",0.0181
+"1873",625,"Missing",5,"spelling",0.068
+"1874",625,"Missing",5,"reading",-0.0303
+"1875",625,"Missing",5,"math",-0.018
+"1876",626,"Missing",5,"spelling",0.068
+"1877",626,"Missing",5,"reading",0.0483
+"1878",626,"Missing",5,"math",-0.018
+"1879",627,"Missing",5,"spelling",0.068
+"1880",627,"Missing",5,"reading",0.0301
+"1881",627,"Missing",5,"math",-0.018
+"1882",628,"Missing",5,"spelling",0.068
+"1883",628,"Missing",5,"reading",0.0459
+"1884",628,"Missing",5,"math",-0.018
+"1885",629,"Missing",5,"spelling",0.068
+"1886",629,"Missing",5,"reading",-0.0303
+"1887",629,"Missing",5,"math",-0.0241
+"1888",630,"Missing",5,"spelling",0.068
+"1889",630,"Missing",5,"reading",0.0483
+"1890",630,"Missing",5,"math",-0.0241
+"1891",631,"Missing",5,"spelling",0.068
+"1892",631,"Missing",5,"reading",0.0301
+"1893",631,"Missing",5,"math",-0.0241
+"1894",632,"Missing",5,"spelling",0.068
+"1895",632,"Missing",5,"reading",0.0459
+"1896",632,"Missing",5,"math",-0.0241
+"1897",633,"Missing",5,"spelling",0.068
+"1898",633,"Missing",5,"reading",-0.0303
+"1899",633,"Missing",5,"math",0.0169
+"1900",634,"Missing",5,"spelling",0.068
+"1901",634,"Missing",5,"reading",0.0483
+"1902",634,"Missing",5,"math",0.0169
+"1903",635,"Missing",5,"spelling",0.068
+"1904",635,"Missing",5,"reading",0.0301
+"1905",635,"Missing",5,"math",0.0169
+"1906",636,"Missing",5,"spelling",0.068
+"1907",636,"Missing",5,"reading",0.0459
+"1908",636,"Missing",5,"math",0.0169
+"1909",637,"Missing",5,"spelling",0.068
+"1910",637,"Missing",5,"reading",-0.0303
+"1911",637,"Missing",5,"math",0.0181
+"1912",638,"Missing",5,"spelling",0.068
+"1913",638,"Missing",5,"reading",0.0483
+"1914",638,"Missing",5,"math",0.0181
+"1915",639,"Missing",5,"spelling",0.068
+"1916",639,"Missing",5,"reading",0.0301
+"1917",639,"Missing",5,"math",0.0181
+"1918",640,"Missing",5,"spelling",0.068
+"1919",640,"Missing",5,"reading",0.0459
+"1920",640,"Missing",5,"math",0.0181
+"1921",641,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1922",641,"COVID-19 year * Parental education medium",2,"reading",-0.0321
+"1923",641,"COVID-19 year * Parental education medium",2,"math",0.0428
+"1924",642,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1925",642,"COVID-19 year * Parental education medium",2,"reading",-0.053
+"1926",642,"COVID-19 year * Parental education medium",2,"math",0.0428
+"1927",643,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1928",643,"COVID-19 year * Parental education medium",2,"reading",-0.056
+"1929",643,"COVID-19 year * Parental education medium",2,"math",0.0428
+"1930",644,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1931",644,"COVID-19 year * Parental education medium",2,"reading",-0.0416
+"1932",644,"COVID-19 year * Parental education medium",2,"math",0.0428
+"1933",645,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1934",645,"COVID-19 year * Parental education medium",2,"reading",-0.0321
+"1935",645,"COVID-19 year * Parental education medium",2,"math",0.0626
+"1936",646,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1937",646,"COVID-19 year * Parental education medium",2,"reading",-0.053
+"1938",646,"COVID-19 year * Parental education medium",2,"math",0.0626
+"1939",647,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1940",647,"COVID-19 year * Parental education medium",2,"reading",-0.056
+"1941",647,"COVID-19 year * Parental education medium",2,"math",0.0626
+"1942",648,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1943",648,"COVID-19 year * Parental education medium",2,"reading",-0.0416
+"1944",648,"COVID-19 year * Parental education medium",2,"math",0.0626
+"1945",649,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1946",649,"COVID-19 year * Parental education medium",2,"reading",-0.0321
+"1947",649,"COVID-19 year * Parental education medium",2,"math",0.0339
+"1948",650,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1949",650,"COVID-19 year * Parental education medium",2,"reading",-0.053
+"1950",650,"COVID-19 year * Parental education medium",2,"math",0.0339
+"1951",651,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1952",651,"COVID-19 year * Parental education medium",2,"reading",-0.056
+"1953",651,"COVID-19 year * Parental education medium",2,"math",0.0339
+"1954",652,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1955",652,"COVID-19 year * Parental education medium",2,"reading",-0.0416
+"1956",652,"COVID-19 year * Parental education medium",2,"math",0.0339
+"1957",653,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1958",653,"COVID-19 year * Parental education medium",2,"reading",-0.0321
+"1959",653,"COVID-19 year * Parental education medium",2,"math",0.0162
+"1960",654,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1961",654,"COVID-19 year * Parental education medium",2,"reading",-0.053
+"1962",654,"COVID-19 year * Parental education medium",2,"math",0.0162
+"1963",655,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1964",655,"COVID-19 year * Parental education medium",2,"reading",-0.056
+"1965",655,"COVID-19 year * Parental education medium",2,"math",0.0162
+"1966",656,"COVID-19 year * Parental education medium",2,"spelling",0.044
+"1967",656,"COVID-19 year * Parental education medium",2,"reading",-0.0416
+"1968",656,"COVID-19 year * Parental education medium",2,"math",0.0162
+"1969",657,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1970",657,"COVID-19 year * Parental education medium",3,"reading",-0.0321
+"1971",657,"COVID-19 year * Parental education medium",3,"math",0.0428
+"1972",658,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1973",658,"COVID-19 year * Parental education medium",3,"reading",-0.053
+"1974",658,"COVID-19 year * Parental education medium",3,"math",0.0428
+"1975",659,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1976",659,"COVID-19 year * Parental education medium",3,"reading",-0.056
+"1977",659,"COVID-19 year * Parental education medium",3,"math",0.0428
+"1978",660,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1979",660,"COVID-19 year * Parental education medium",3,"reading",-0.0416
+"1980",660,"COVID-19 year * Parental education medium",3,"math",0.0428
+"1981",661,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1982",661,"COVID-19 year * Parental education medium",3,"reading",-0.0321
+"1983",661,"COVID-19 year * Parental education medium",3,"math",0.0626
+"1984",662,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1985",662,"COVID-19 year * Parental education medium",3,"reading",-0.053
+"1986",662,"COVID-19 year * Parental education medium",3,"math",0.0626
+"1987",663,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1988",663,"COVID-19 year * Parental education medium",3,"reading",-0.056
+"1989",663,"COVID-19 year * Parental education medium",3,"math",0.0626
+"1990",664,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1991",664,"COVID-19 year * Parental education medium",3,"reading",-0.0416
+"1992",664,"COVID-19 year * Parental education medium",3,"math",0.0626
+"1993",665,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1994",665,"COVID-19 year * Parental education medium",3,"reading",-0.0321
+"1995",665,"COVID-19 year * Parental education medium",3,"math",0.0339
+"1996",666,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"1997",666,"COVID-19 year * Parental education medium",3,"reading",-0.053
+"1998",666,"COVID-19 year * Parental education medium",3,"math",0.0339
+"1999",667,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2000",667,"COVID-19 year * Parental education medium",3,"reading",-0.056
+"2001",667,"COVID-19 year * Parental education medium",3,"math",0.0339
+"2002",668,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2003",668,"COVID-19 year * Parental education medium",3,"reading",-0.0416
+"2004",668,"COVID-19 year * Parental education medium",3,"math",0.0339
+"2005",669,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2006",669,"COVID-19 year * Parental education medium",3,"reading",-0.0321
+"2007",669,"COVID-19 year * Parental education medium",3,"math",0.0162
+"2008",670,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2009",670,"COVID-19 year * Parental education medium",3,"reading",-0.053
+"2010",670,"COVID-19 year * Parental education medium",3,"math",0.0162
+"2011",671,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2012",671,"COVID-19 year * Parental education medium",3,"reading",-0.056
+"2013",671,"COVID-19 year * Parental education medium",3,"math",0.0162
+"2014",672,"COVID-19 year * Parental education medium",3,"spelling",-0.0248
+"2015",672,"COVID-19 year * Parental education medium",3,"reading",-0.0416
+"2016",672,"COVID-19 year * Parental education medium",3,"math",0.0162
+"2017",673,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2018",673,"COVID-19 year * Parental education medium",4,"reading",-0.0321
+"2019",673,"COVID-19 year * Parental education medium",4,"math",0.0428
+"2020",674,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2021",674,"COVID-19 year * Parental education medium",4,"reading",-0.053
+"2022",674,"COVID-19 year * Parental education medium",4,"math",0.0428
+"2023",675,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2024",675,"COVID-19 year * Parental education medium",4,"reading",-0.056
+"2025",675,"COVID-19 year * Parental education medium",4,"math",0.0428
+"2026",676,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2027",676,"COVID-19 year * Parental education medium",4,"reading",-0.0416
+"2028",676,"COVID-19 year * Parental education medium",4,"math",0.0428
+"2029",677,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2030",677,"COVID-19 year * Parental education medium",4,"reading",-0.0321
+"2031",677,"COVID-19 year * Parental education medium",4,"math",0.0626
+"2032",678,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2033",678,"COVID-19 year * Parental education medium",4,"reading",-0.053
+"2034",678,"COVID-19 year * Parental education medium",4,"math",0.0626
+"2035",679,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2036",679,"COVID-19 year * Parental education medium",4,"reading",-0.056
+"2037",679,"COVID-19 year * Parental education medium",4,"math",0.0626
+"2038",680,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2039",680,"COVID-19 year * Parental education medium",4,"reading",-0.0416
+"2040",680,"COVID-19 year * Parental education medium",4,"math",0.0626
+"2041",681,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2042",681,"COVID-19 year * Parental education medium",4,"reading",-0.0321
+"2043",681,"COVID-19 year * Parental education medium",4,"math",0.0339
+"2044",682,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2045",682,"COVID-19 year * Parental education medium",4,"reading",-0.053
+"2046",682,"COVID-19 year * Parental education medium",4,"math",0.0339
+"2047",683,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2048",683,"COVID-19 year * Parental education medium",4,"reading",-0.056
+"2049",683,"COVID-19 year * Parental education medium",4,"math",0.0339
+"2050",684,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2051",684,"COVID-19 year * Parental education medium",4,"reading",-0.0416
+"2052",684,"COVID-19 year * Parental education medium",4,"math",0.0339
+"2053",685,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2054",685,"COVID-19 year * Parental education medium",4,"reading",-0.0321
+"2055",685,"COVID-19 year * Parental education medium",4,"math",0.0162
+"2056",686,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2057",686,"COVID-19 year * Parental education medium",4,"reading",-0.053
+"2058",686,"COVID-19 year * Parental education medium",4,"math",0.0162
+"2059",687,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2060",687,"COVID-19 year * Parental education medium",4,"reading",-0.056
+"2061",687,"COVID-19 year * Parental education medium",4,"math",0.0162
+"2062",688,"COVID-19 year * Parental education medium",4,"spelling",0.0286
+"2063",688,"COVID-19 year * Parental education medium",4,"reading",-0.0416
+"2064",688,"COVID-19 year * Parental education medium",4,"math",0.0162
+"2065",689,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2066",689,"COVID-19 year * Parental education medium",5,"reading",-0.0321
+"2067",689,"COVID-19 year * Parental education medium",5,"math",0.0428
+"2068",690,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2069",690,"COVID-19 year * Parental education medium",5,"reading",-0.053
+"2070",690,"COVID-19 year * Parental education medium",5,"math",0.0428
+"2071",691,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2072",691,"COVID-19 year * Parental education medium",5,"reading",-0.056
+"2073",691,"COVID-19 year * Parental education medium",5,"math",0.0428
+"2074",692,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2075",692,"COVID-19 year * Parental education medium",5,"reading",-0.0416
+"2076",692,"COVID-19 year * Parental education medium",5,"math",0.0428
+"2077",693,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2078",693,"COVID-19 year * Parental education medium",5,"reading",-0.0321
+"2079",693,"COVID-19 year * Parental education medium",5,"math",0.0626
+"2080",694,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2081",694,"COVID-19 year * Parental education medium",5,"reading",-0.053
+"2082",694,"COVID-19 year * Parental education medium",5,"math",0.0626
+"2083",695,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2084",695,"COVID-19 year * Parental education medium",5,"reading",-0.056
+"2085",695,"COVID-19 year * Parental education medium",5,"math",0.0626
+"2086",696,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2087",696,"COVID-19 year * Parental education medium",5,"reading",-0.0416
+"2088",696,"COVID-19 year * Parental education medium",5,"math",0.0626
+"2089",697,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2090",697,"COVID-19 year * Parental education medium",5,"reading",-0.0321
+"2091",697,"COVID-19 year * Parental education medium",5,"math",0.0339
+"2092",698,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2093",698,"COVID-19 year * Parental education medium",5,"reading",-0.053
+"2094",698,"COVID-19 year * Parental education medium",5,"math",0.0339
+"2095",699,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2096",699,"COVID-19 year * Parental education medium",5,"reading",-0.056
+"2097",699,"COVID-19 year * Parental education medium",5,"math",0.0339
+"2098",700,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2099",700,"COVID-19 year * Parental education medium",5,"reading",-0.0416
+"2100",700,"COVID-19 year * Parental education medium",5,"math",0.0339
+"2101",701,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2102",701,"COVID-19 year * Parental education medium",5,"reading",-0.0321
+"2103",701,"COVID-19 year * Parental education medium",5,"math",0.0162
+"2104",702,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2105",702,"COVID-19 year * Parental education medium",5,"reading",-0.053
+"2106",702,"COVID-19 year * Parental education medium",5,"math",0.0162
+"2107",703,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2108",703,"COVID-19 year * Parental education medium",5,"reading",-0.056
+"2109",703,"COVID-19 year * Parental education medium",5,"math",0.0162
+"2110",704,"COVID-19 year * Parental education medium",5,"spelling",-0.0484
+"2111",704,"COVID-19 year * Parental education medium",5,"reading",-0.0416
+"2112",704,"COVID-19 year * Parental education medium",5,"math",0.0162
+"2113",705,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2114",705,"COVID-19 year * Parental education high",2,"reading",0.0148
+"2115",705,"COVID-19 year * Parental education high",2,"math",0.117
+"2116",706,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2117",706,"COVID-19 year * Parental education high",2,"reading",-0.0253
+"2118",706,"COVID-19 year * Parental education high",2,"math",0.117
+"2119",707,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2120",707,"COVID-19 year * Parental education high",2,"reading",0.0025
+"2121",707,"COVID-19 year * Parental education high",2,"math",0.117
+"2122",708,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2123",708,"COVID-19 year * Parental education high",2,"reading",-0.0153
+"2124",708,"COVID-19 year * Parental education high",2,"math",0.117
+"2125",709,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2126",709,"COVID-19 year * Parental education high",2,"reading",0.0148
+"2127",709,"COVID-19 year * Parental education high",2,"math",0.106
+"2128",710,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2129",710,"COVID-19 year * Parental education high",2,"reading",-0.0253
+"2130",710,"COVID-19 year * Parental education high",2,"math",0.106
+"2131",711,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2132",711,"COVID-19 year * Parental education high",2,"reading",0.0025
+"2133",711,"COVID-19 year * Parental education high",2,"math",0.106
+"2134",712,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2135",712,"COVID-19 year * Parental education high",2,"reading",-0.0153
+"2136",712,"COVID-19 year * Parental education high",2,"math",0.106
+"2137",713,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2138",713,"COVID-19 year * Parental education high",2,"reading",0.0148
+"2139",713,"COVID-19 year * Parental education high",2,"math",0.133
+"2140",714,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2141",714,"COVID-19 year * Parental education high",2,"reading",-0.0253
+"2142",714,"COVID-19 year * Parental education high",2,"math",0.133
+"2143",715,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2144",715,"COVID-19 year * Parental education high",2,"reading",0.0025
+"2145",715,"COVID-19 year * Parental education high",2,"math",0.133
+"2146",716,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2147",716,"COVID-19 year * Parental education high",2,"reading",-0.0153
+"2148",716,"COVID-19 year * Parental education high",2,"math",0.133
+"2149",717,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2150",717,"COVID-19 year * Parental education high",2,"reading",0.0148
+"2151",717,"COVID-19 year * Parental education high",2,"math",0.047
+"2152",718,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2153",718,"COVID-19 year * Parental education high",2,"reading",-0.0253
+"2154",718,"COVID-19 year * Parental education high",2,"math",0.047
+"2155",719,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2156",719,"COVID-19 year * Parental education high",2,"reading",0.0025
+"2157",719,"COVID-19 year * Parental education high",2,"math",0.047
+"2158",720,"COVID-19 year * Parental education high",2,"spelling",0.066
+"2159",720,"COVID-19 year * Parental education high",2,"reading",-0.0153
+"2160",720,"COVID-19 year * Parental education high",2,"math",0.047
+"2161",721,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2162",721,"COVID-19 year * Parental education high",3,"reading",0.0148
+"2163",721,"COVID-19 year * Parental education high",3,"math",0.117
+"2164",722,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2165",722,"COVID-19 year * Parental education high",3,"reading",-0.0253
+"2166",722,"COVID-19 year * Parental education high",3,"math",0.117
+"2167",723,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2168",723,"COVID-19 year * Parental education high",3,"reading",0.0025
+"2169",723,"COVID-19 year * Parental education high",3,"math",0.117
+"2170",724,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2171",724,"COVID-19 year * Parental education high",3,"reading",-0.0153
+"2172",724,"COVID-19 year * Parental education high",3,"math",0.117
+"2173",725,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2174",725,"COVID-19 year * Parental education high",3,"reading",0.0148
+"2175",725,"COVID-19 year * Parental education high",3,"math",0.106
+"2176",726,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2177",726,"COVID-19 year * Parental education high",3,"reading",-0.0253
+"2178",726,"COVID-19 year * Parental education high",3,"math",0.106
+"2179",727,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2180",727,"COVID-19 year * Parental education high",3,"reading",0.0025
+"2181",727,"COVID-19 year * Parental education high",3,"math",0.106
+"2182",728,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2183",728,"COVID-19 year * Parental education high",3,"reading",-0.0153
+"2184",728,"COVID-19 year * Parental education high",3,"math",0.106
+"2185",729,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2186",729,"COVID-19 year * Parental education high",3,"reading",0.0148
+"2187",729,"COVID-19 year * Parental education high",3,"math",0.133
+"2188",730,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2189",730,"COVID-19 year * Parental education high",3,"reading",-0.0253
+"2190",730,"COVID-19 year * Parental education high",3,"math",0.133
+"2191",731,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2192",731,"COVID-19 year * Parental education high",3,"reading",0.0025
+"2193",731,"COVID-19 year * Parental education high",3,"math",0.133
+"2194",732,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2195",732,"COVID-19 year * Parental education high",3,"reading",-0.0153
+"2196",732,"COVID-19 year * Parental education high",3,"math",0.133
+"2197",733,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2198",733,"COVID-19 year * Parental education high",3,"reading",0.0148
+"2199",733,"COVID-19 year * Parental education high",3,"math",0.047
+"2200",734,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2201",734,"COVID-19 year * Parental education high",3,"reading",-0.0253
+"2202",734,"COVID-19 year * Parental education high",3,"math",0.047
+"2203",735,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2204",735,"COVID-19 year * Parental education high",3,"reading",0.0025
+"2205",735,"COVID-19 year * Parental education high",3,"math",0.047
+"2206",736,"COVID-19 year * Parental education high",3,"spelling",0.0421
+"2207",736,"COVID-19 year * Parental education high",3,"reading",-0.0153
+"2208",736,"COVID-19 year * Parental education high",3,"math",0.047
+"2209",737,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2210",737,"COVID-19 year * Parental education high",4,"reading",0.0148
+"2211",737,"COVID-19 year * Parental education high",4,"math",0.117
+"2212",738,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2213",738,"COVID-19 year * Parental education high",4,"reading",-0.0253
+"2214",738,"COVID-19 year * Parental education high",4,"math",0.117
+"2215",739,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2216",739,"COVID-19 year * Parental education high",4,"reading",0.0025
+"2217",739,"COVID-19 year * Parental education high",4,"math",0.117
+"2218",740,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2219",740,"COVID-19 year * Parental education high",4,"reading",-0.0153
+"2220",740,"COVID-19 year * Parental education high",4,"math",0.117
+"2221",741,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2222",741,"COVID-19 year * Parental education high",4,"reading",0.0148
+"2223",741,"COVID-19 year * Parental education high",4,"math",0.106
+"2224",742,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2225",742,"COVID-19 year * Parental education high",4,"reading",-0.0253
+"2226",742,"COVID-19 year * Parental education high",4,"math",0.106
+"2227",743,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2228",743,"COVID-19 year * Parental education high",4,"reading",0.0025
+"2229",743,"COVID-19 year * Parental education high",4,"math",0.106
+"2230",744,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2231",744,"COVID-19 year * Parental education high",4,"reading",-0.0153
+"2232",744,"COVID-19 year * Parental education high",4,"math",0.106
+"2233",745,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2234",745,"COVID-19 year * Parental education high",4,"reading",0.0148
+"2235",745,"COVID-19 year * Parental education high",4,"math",0.133
+"2236",746,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2237",746,"COVID-19 year * Parental education high",4,"reading",-0.0253
+"2238",746,"COVID-19 year * Parental education high",4,"math",0.133
+"2239",747,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2240",747,"COVID-19 year * Parental education high",4,"reading",0.0025
+"2241",747,"COVID-19 year * Parental education high",4,"math",0.133
+"2242",748,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2243",748,"COVID-19 year * Parental education high",4,"reading",-0.0153
+"2244",748,"COVID-19 year * Parental education high",4,"math",0.133
+"2245",749,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2246",749,"COVID-19 year * Parental education high",4,"reading",0.0148
+"2247",749,"COVID-19 year * Parental education high",4,"math",0.047
+"2248",750,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2249",750,"COVID-19 year * Parental education high",4,"reading",-0.0253
+"2250",750,"COVID-19 year * Parental education high",4,"math",0.047
+"2251",751,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2252",751,"COVID-19 year * Parental education high",4,"reading",0.0025
+"2253",751,"COVID-19 year * Parental education high",4,"math",0.047
+"2254",752,"COVID-19 year * Parental education high",4,"spelling",0.0548
+"2255",752,"COVID-19 year * Parental education high",4,"reading",-0.0153
+"2256",752,"COVID-19 year * Parental education high",4,"math",0.047
+"2257",753,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2258",753,"COVID-19 year * Parental education high",5,"reading",0.0148
+"2259",753,"COVID-19 year * Parental education high",5,"math",0.117
+"2260",754,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2261",754,"COVID-19 year * Parental education high",5,"reading",-0.0253
+"2262",754,"COVID-19 year * Parental education high",5,"math",0.117
+"2263",755,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2264",755,"COVID-19 year * Parental education high",5,"reading",0.0025
+"2265",755,"COVID-19 year * Parental education high",5,"math",0.117
+"2266",756,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2267",756,"COVID-19 year * Parental education high",5,"reading",-0.0153
+"2268",756,"COVID-19 year * Parental education high",5,"math",0.117
+"2269",757,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2270",757,"COVID-19 year * Parental education high",5,"reading",0.0148
+"2271",757,"COVID-19 year * Parental education high",5,"math",0.106
+"2272",758,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2273",758,"COVID-19 year * Parental education high",5,"reading",-0.0253
+"2274",758,"COVID-19 year * Parental education high",5,"math",0.106
+"2275",759,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2276",759,"COVID-19 year * Parental education high",5,"reading",0.0025
+"2277",759,"COVID-19 year * Parental education high",5,"math",0.106
+"2278",760,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2279",760,"COVID-19 year * Parental education high",5,"reading",-0.0153
+"2280",760,"COVID-19 year * Parental education high",5,"math",0.106
+"2281",761,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2282",761,"COVID-19 year * Parental education high",5,"reading",0.0148
+"2283",761,"COVID-19 year * Parental education high",5,"math",0.133
+"2284",762,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2285",762,"COVID-19 year * Parental education high",5,"reading",-0.0253
+"2286",762,"COVID-19 year * Parental education high",5,"math",0.133
+"2287",763,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2288",763,"COVID-19 year * Parental education high",5,"reading",0.0025
+"2289",763,"COVID-19 year * Parental education high",5,"math",0.133
+"2290",764,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2291",764,"COVID-19 year * Parental education high",5,"reading",-0.0153
+"2292",764,"COVID-19 year * Parental education high",5,"math",0.133
+"2293",765,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2294",765,"COVID-19 year * Parental education high",5,"reading",0.0148
+"2295",765,"COVID-19 year * Parental education high",5,"math",0.047
+"2296",766,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2297",766,"COVID-19 year * Parental education high",5,"reading",-0.0253
+"2298",766,"COVID-19 year * Parental education high",5,"math",0.047
+"2299",767,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2300",767,"COVID-19 year * Parental education high",5,"reading",0.0025
+"2301",767,"COVID-19 year * Parental education high",5,"math",0.047
+"2302",768,"COVID-19 year * Parental education high",5,"spelling",-0.000224
+"2303",768,"COVID-19 year * Parental education high",5,"reading",-0.0153
+"2304",768,"COVID-19 year * Parental education high",5,"math",0.047
+"2305",769,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2306",769,"COVID-19 year * Parental education missing",2,"reading",0.0536
+"2307",769,"COVID-19 year * Parental education missing",2,"math",0.118
+"2308",770,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2309",770,"COVID-19 year * Parental education missing",2,"reading",-0.0418
+"2310",770,"COVID-19 year * Parental education missing",2,"math",0.118
+"2311",771,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2312",771,"COVID-19 year * Parental education missing",2,"reading",-0.0015
+"2313",771,"COVID-19 year * Parental education missing",2,"math",0.118
+"2314",772,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2315",772,"COVID-19 year * Parental education missing",2,"reading",-0.066
+"2316",772,"COVID-19 year * Parental education missing",2,"math",0.118
+"2317",773,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2318",773,"COVID-19 year * Parental education missing",2,"reading",0.0536
+"2319",773,"COVID-19 year * Parental education missing",2,"math",0.133
+"2320",774,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2321",774,"COVID-19 year * Parental education missing",2,"reading",-0.0418
+"2322",774,"COVID-19 year * Parental education missing",2,"math",0.133
+"2323",775,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2324",775,"COVID-19 year * Parental education missing",2,"reading",-0.0015
+"2325",775,"COVID-19 year * Parental education missing",2,"math",0.133
+"2326",776,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2327",776,"COVID-19 year * Parental education missing",2,"reading",-0.066
+"2328",776,"COVID-19 year * Parental education missing",2,"math",0.133
+"2329",777,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2330",777,"COVID-19 year * Parental education missing",2,"reading",0.0536
+"2331",777,"COVID-19 year * Parental education missing",2,"math",0.0498
+"2332",778,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2333",778,"COVID-19 year * Parental education missing",2,"reading",-0.0418
+"2334",778,"COVID-19 year * Parental education missing",2,"math",0.0498
+"2335",779,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2336",779,"COVID-19 year * Parental education missing",2,"reading",-0.0015
+"2337",779,"COVID-19 year * Parental education missing",2,"math",0.0498
+"2338",780,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2339",780,"COVID-19 year * Parental education missing",2,"reading",-0.066
+"2340",780,"COVID-19 year * Parental education missing",2,"math",0.0498
+"2341",781,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2342",781,"COVID-19 year * Parental education missing",2,"reading",0.0536
+"2343",781,"COVID-19 year * Parental education missing",2,"math",0.0501
+"2344",782,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2345",782,"COVID-19 year * Parental education missing",2,"reading",-0.0418
+"2346",782,"COVID-19 year * Parental education missing",2,"math",0.0501
+"2347",783,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2348",783,"COVID-19 year * Parental education missing",2,"reading",-0.0015
+"2349",783,"COVID-19 year * Parental education missing",2,"math",0.0501
+"2350",784,"COVID-19 year * Parental education missing",2,"spelling",0.00363
+"2351",784,"COVID-19 year * Parental education missing",2,"reading",-0.066
+"2352",784,"COVID-19 year * Parental education missing",2,"math",0.0501
+"2353",785,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2354",785,"COVID-19 year * Parental education missing",3,"reading",0.0536
+"2355",785,"COVID-19 year * Parental education missing",3,"math",0.118
+"2356",786,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2357",786,"COVID-19 year * Parental education missing",3,"reading",-0.0418
+"2358",786,"COVID-19 year * Parental education missing",3,"math",0.118
+"2359",787,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2360",787,"COVID-19 year * Parental education missing",3,"reading",-0.0015
+"2361",787,"COVID-19 year * Parental education missing",3,"math",0.118
+"2362",788,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2363",788,"COVID-19 year * Parental education missing",3,"reading",-0.066
+"2364",788,"COVID-19 year * Parental education missing",3,"math",0.118
+"2365",789,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2366",789,"COVID-19 year * Parental education missing",3,"reading",0.0536
+"2367",789,"COVID-19 year * Parental education missing",3,"math",0.133
+"2368",790,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2369",790,"COVID-19 year * Parental education missing",3,"reading",-0.0418
+"2370",790,"COVID-19 year * Parental education missing",3,"math",0.133
+"2371",791,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2372",791,"COVID-19 year * Parental education missing",3,"reading",-0.0015
+"2373",791,"COVID-19 year * Parental education missing",3,"math",0.133
+"2374",792,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2375",792,"COVID-19 year * Parental education missing",3,"reading",-0.066
+"2376",792,"COVID-19 year * Parental education missing",3,"math",0.133
+"2377",793,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2378",793,"COVID-19 year * Parental education missing",3,"reading",0.0536
+"2379",793,"COVID-19 year * Parental education missing",3,"math",0.0498
+"2380",794,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2381",794,"COVID-19 year * Parental education missing",3,"reading",-0.0418
+"2382",794,"COVID-19 year * Parental education missing",3,"math",0.0498
+"2383",795,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2384",795,"COVID-19 year * Parental education missing",3,"reading",-0.0015
+"2385",795,"COVID-19 year * Parental education missing",3,"math",0.0498
+"2386",796,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2387",796,"COVID-19 year * Parental education missing",3,"reading",-0.066
+"2388",796,"COVID-19 year * Parental education missing",3,"math",0.0498
+"2389",797,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2390",797,"COVID-19 year * Parental education missing",3,"reading",0.0536
+"2391",797,"COVID-19 year * Parental education missing",3,"math",0.0501
+"2392",798,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2393",798,"COVID-19 year * Parental education missing",3,"reading",-0.0418
+"2394",798,"COVID-19 year * Parental education missing",3,"math",0.0501
+"2395",799,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2396",799,"COVID-19 year * Parental education missing",3,"reading",-0.0015
+"2397",799,"COVID-19 year * Parental education missing",3,"math",0.0501
+"2398",800,"COVID-19 year * Parental education missing",3,"spelling",0.0141
+"2399",800,"COVID-19 year * Parental education missing",3,"reading",-0.066
+"2400",800,"COVID-19 year * Parental education missing",3,"math",0.0501
+"2401",801,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2402",801,"COVID-19 year * Parental education missing",4,"reading",0.0536
+"2403",801,"COVID-19 year * Parental education missing",4,"math",0.118
+"2404",802,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2405",802,"COVID-19 year * Parental education missing",4,"reading",-0.0418
+"2406",802,"COVID-19 year * Parental education missing",4,"math",0.118
+"2407",803,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2408",803,"COVID-19 year * Parental education missing",4,"reading",-0.0015
+"2409",803,"COVID-19 year * Parental education missing",4,"math",0.118
+"2410",804,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2411",804,"COVID-19 year * Parental education missing",4,"reading",-0.066
+"2412",804,"COVID-19 year * Parental education missing",4,"math",0.118
+"2413",805,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2414",805,"COVID-19 year * Parental education missing",4,"reading",0.0536
+"2415",805,"COVID-19 year * Parental education missing",4,"math",0.133
+"2416",806,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2417",806,"COVID-19 year * Parental education missing",4,"reading",-0.0418
+"2418",806,"COVID-19 year * Parental education missing",4,"math",0.133
+"2419",807,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2420",807,"COVID-19 year * Parental education missing",4,"reading",-0.0015
+"2421",807,"COVID-19 year * Parental education missing",4,"math",0.133
+"2422",808,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2423",808,"COVID-19 year * Parental education missing",4,"reading",-0.066
+"2424",808,"COVID-19 year * Parental education missing",4,"math",0.133
+"2425",809,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2426",809,"COVID-19 year * Parental education missing",4,"reading",0.0536
+"2427",809,"COVID-19 year * Parental education missing",4,"math",0.0498
+"2428",810,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2429",810,"COVID-19 year * Parental education missing",4,"reading",-0.0418
+"2430",810,"COVID-19 year * Parental education missing",4,"math",0.0498
+"2431",811,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2432",811,"COVID-19 year * Parental education missing",4,"reading",-0.0015
+"2433",811,"COVID-19 year * Parental education missing",4,"math",0.0498
+"2434",812,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2435",812,"COVID-19 year * Parental education missing",4,"reading",-0.066
+"2436",812,"COVID-19 year * Parental education missing",4,"math",0.0498
+"2437",813,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2438",813,"COVID-19 year * Parental education missing",4,"reading",0.0536
+"2439",813,"COVID-19 year * Parental education missing",4,"math",0.0501
+"2440",814,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2441",814,"COVID-19 year * Parental education missing",4,"reading",-0.0418
+"2442",814,"COVID-19 year * Parental education missing",4,"math",0.0501
+"2443",815,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2444",815,"COVID-19 year * Parental education missing",4,"reading",-0.0015
+"2445",815,"COVID-19 year * Parental education missing",4,"math",0.0501
+"2446",816,"COVID-19 year * Parental education missing",4,"spelling",0.0256
+"2447",816,"COVID-19 year * Parental education missing",4,"reading",-0.066
+"2448",816,"COVID-19 year * Parental education missing",4,"math",0.0501
+"2449",817,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2450",817,"COVID-19 year * Parental education missing",5,"reading",0.0536
+"2451",817,"COVID-19 year * Parental education missing",5,"math",0.118
+"2452",818,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2453",818,"COVID-19 year * Parental education missing",5,"reading",-0.0418
+"2454",818,"COVID-19 year * Parental education missing",5,"math",0.118
+"2455",819,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2456",819,"COVID-19 year * Parental education missing",5,"reading",-0.0015
+"2457",819,"COVID-19 year * Parental education missing",5,"math",0.118
+"2458",820,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2459",820,"COVID-19 year * Parental education missing",5,"reading",-0.066
+"2460",820,"COVID-19 year * Parental education missing",5,"math",0.118
+"2461",821,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2462",821,"COVID-19 year * Parental education missing",5,"reading",0.0536
+"2463",821,"COVID-19 year * Parental education missing",5,"math",0.133
+"2464",822,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2465",822,"COVID-19 year * Parental education missing",5,"reading",-0.0418
+"2466",822,"COVID-19 year * Parental education missing",5,"math",0.133
+"2467",823,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2468",823,"COVID-19 year * Parental education missing",5,"reading",-0.0015
+"2469",823,"COVID-19 year * Parental education missing",5,"math",0.133
+"2470",824,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2471",824,"COVID-19 year * Parental education missing",5,"reading",-0.066
+"2472",824,"COVID-19 year * Parental education missing",5,"math",0.133
+"2473",825,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2474",825,"COVID-19 year * Parental education missing",5,"reading",0.0536
+"2475",825,"COVID-19 year * Parental education missing",5,"math",0.0498
+"2476",826,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2477",826,"COVID-19 year * Parental education missing",5,"reading",-0.0418
+"2478",826,"COVID-19 year * Parental education missing",5,"math",0.0498
+"2479",827,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2480",827,"COVID-19 year * Parental education missing",5,"reading",-0.0015
+"2481",827,"COVID-19 year * Parental education missing",5,"math",0.0498
+"2482",828,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2483",828,"COVID-19 year * Parental education missing",5,"reading",-0.066
+"2484",828,"COVID-19 year * Parental education missing",5,"math",0.0498
+"2485",829,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2486",829,"COVID-19 year * Parental education missing",5,"reading",0.0536
+"2487",829,"COVID-19 year * Parental education missing",5,"math",0.0501
+"2488",830,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2489",830,"COVID-19 year * Parental education missing",5,"reading",-0.0418
+"2490",830,"COVID-19 year * Parental education missing",5,"math",0.0501
+"2491",831,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2492",831,"COVID-19 year * Parental education missing",5,"reading",-0.0015
+"2493",831,"COVID-19 year * Parental education missing",5,"math",0.0501
+"2494",832,"COVID-19 year * Parental education missing",5,"spelling",0.019
+"2495",832,"COVID-19 year * Parental education missing",5,"reading",-0.066
+"2496",832,"COVID-19 year * Parental education missing",5,"math",0.0501

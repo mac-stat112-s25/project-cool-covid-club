@@ -1,0 +1,109 @@
+---
+title: "Marvin C"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(readxl)
+
+closed_schools <- read_delim("../../data/school_closures.csv", delim = ';')
+covid <- read_xlsx("../../data/covid_test_scores.xlsx")
+```
+
+
+```{r}
+# Variables/Row in dataset (What is our unit of observation?)
+names(closed_schools)
+head(closed_schools)
+# Unit of observation is specific dates
+
+# Countries available in our dataset/more info on variables
+unique(closed_schools$Country)
+unique(closed_schools$`Region 1`) # World region 
+unique(closed_schools$`Region 2`) # Pretty much same thing
+unique(closed_schools$`Region 3`) # Economic status as income level for a country/region
+
+str(closed_schools)
+```
+
+```{r}
+# Summary of datapoints in the US (How many units in the US?)
+closed_schools_us <- closed_schools |>
+  filter(`Country ID` == "USA") 
+
+dim(closed_schools_us)
+
+# Converting character vectors to factors + recoding
+tidy_us_schools <- closed_schools_us |>
+  mutate(dl_method = as.factor(`Distance learning modalities (Global)`), 
+         income_level = `Region 3`, 
+         weeks_partial_open = `Weeks partially open`, 
+         weeks_closed = `Weeks fully closed`, 
+         open_status = fct_recode(Status,
+                                  "Academic break" = "break",
+                                  "Partially open" = "partial",
+                                  "Fully open" = "full"), 
+         date = Date) |>
+  select(date, income_level, open_status, dl_method, weeks_partial_open, weeks_closed)
+
+head(tidy_us_schools, 5)
+```
+
+```{r}
+# What is the distribution of our factors (status, dl_method)?
+
+tidy_us_schools |>
+  ggplot(aes(x = dl_method)) +
+  geom_bar()
+# The designated distance learning method throughout our time period was Online+TV
+
+tidy_us_schools |>
+  ggplot(aes(x = open_status)) +
+  geom_bar()
+# The majority of the time schools were partially open
+```
+
+```{r}
+# How did open status change over the course of our time period?
+
+tidy_us_schools |>
+  ggplot(aes(y = date, fill = open_status)) +
+  geom_bar()
+```
+
+```{r}
+nld_schools <- closed_schools |>
+  filter(Country == 'Netherlands')
+```
+
+```{r}
+# Importing final dataset
+covid <- read_csv("../../data/clean_covid.csv")
+```
+
+
+```{r}
+# Pivoting final dataset to include subject category
+clean_covid <- covid |>
+  pivot_longer(cols = c(spelling_value, reading_value, math_value),
+               names_to = 'subject',
+               values_to = 'scores_diff',
+               names_pattern = "(.*)_value",
+               names_transform = list(subject = as.factor))
+```
+
+```{r}
+unique(clean_covid$VARIABLES)
+
+# Removing unnecessary observations 
+factored_covid <- clean_covid |>
+  filter(!(VARIABLES %in% c("Constant", "Observations", "R-squared", "Clusters"))) 
+```
+
+```{r}
+clean_covid <- read_csv("../../data/clean_covid_formatted.csv")
+
+clean_covid
+```
+

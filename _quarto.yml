@@ -8,11 +8,9 @@ project:
   type: book
   output-dir: docs
 
-
-
 book:
-  title: "project title"
-  author: ["student 1 first and last name", "student 2 first and last name", "student 3 first and last name"]
+  title: "Did COVID Cook Our Kids?"
+  author: ["Marvin Contreras", "Gabriel Donelly-Higgins", "Madeline Willett", "Ruth Lavan"]
   date: today  # use today to update date published based on last time project was edited
   date-format: full
   # favicon: images/logo.png
@@ -29,7 +27,7 @@ book:
 
 
   sidebar:
-    title: "sidebar title"
+    title: "COMP112 Final Project"
     collapse-level: 2
     style: "docked"
     pinned: true
@@ -37,12 +35,24 @@ book:
 
   chapters:
     - index.qmd
-
+    
+    - part: "Effective Teamwork"
+      chapters: 
+      - src/et/GabrielDonellyHiggins.qmd
+      - src/et/marvin-c.qmd
+      - src/et/madeline-w.qmd
+      
+    - part: "EDA"
+      chapters: 
+      - src/eda/marvin-c.qmd
+      - src/eda/madeline-w.qmd
+      - src/eda/gabriel-dh.qmd
+      # - src/eda/ruth-l.qmd
+    
+    
   appendices:
   - src/appx/proposal.qmd
   - src/appx/case-study.qmd
-
-
 
 format:
   html:
@@ -62,6 +72,7 @@ format:
     code-block-bg: true
     code-block-border-left: "#1482FA"
     code-tools: true
+    code-fold: true
     page-layout: full
 
   # pdf:
@@ -72,8 +83,10 @@ format:
 
 execute:
   cache: true
+  echo: false
+  warning: false
+  error: false
 #   freeze: auto # remove when using GitHub action to execute code
-
 
 
 editor: 
