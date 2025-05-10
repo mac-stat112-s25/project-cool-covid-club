@@ -41,19 +41,22 @@ We also believe that this may have had an effect on students post-pandemic.
 
 For this project we decided to investigate how Covid-19s’ disruption of schools globally impacted children of different socioeconomic backgrounds.
 We focused on children graded two through five in the Netherlands, using their test scores in Math, Reading, and Spelling to calculate their “Learning gains”.
-The data we used comes from an article published in the PLOS one journal.
-The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014.
+
+The data we used comes from an article published in the PLOS one journal. The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014.
 We chose to limit our investigation to scores taken in the semester before the pandemic and the scores taken during the period of school closure.
 We also decided to focus just on Income and Parental education as the most prominent factors impacting student education.
 
 **References:**
+
 \- <https://www.who.int/news/item/30-12-2024-milestone-covid-19-five-years-ago>
+
 \- <https://www.containmentnu.nl/articles/timeline?lang=en>
+
 \- <https://www.news-medical.net/health/The-Science-Behind-Long-COVID-Brain-Fog.aspx>
 
 ## Data {.unnumbered}
 
-**Collection / Acquisition:** The data we used came from the [Nationaal Cohortonderzoek Onderwijs](https://plos.figshare.com/articles/dataset/The_disparate_impact_of_COVID-19_on_student_learning_gains_across_students_household_income_and_parental_education_levels_unweighted_/19108838?file=33953498)(NCO), which is a database owned by the Dutch government.
+**Collection / Acquisition:** The data we used came from the [Nationaal Cohortonderzoek Onderwijs](https://plos.figshare.com/articles/dataset/The_disparate_impact_of_COVID-19_on_student_learning_gains_across_students_household_income_and_parental_education_levels_unweighted_/19108838?file=33953498) (NCO), which is a database owned by the Dutch government.
 Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government.
 This means that data on students from private schools that do not receive any government funding was not included.
 The data used from the NCO database was exam scores prior to the pandemic during the pandemic.
@@ -64,7 +67,9 @@ Data about students' proficiency was taken by their exam scores in the categorie
 Then, per each grade, the average of all students' exam scores in each grade and for reading, spelling, and math was provided.
 The score on the exams that students took was graded from 1-100, so each grade's average is a percent of the maximum students could have scored.
 
-**Data understanding:** Each grade of school had roughly 150k+ students, so we decided that the sample size was large enough.
+## Findings {.unnumbered}
+
+Each grade of school had roughly 150k+ students, so we decided that the sample size was large enough.
 We found that the data set provided needed a lot of cleaning.
 Many unnecessary variables were included, and they were listed as rows instead of columns.
 The downloaded csv was not formatted like a csv, and the first row of it needed to be skipped to make the format work.
