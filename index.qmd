@@ -13,7 +13,7 @@ library(ggplot2)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
-![](./data/final_slides.pdf){width="8in" height="5in"}
+![](./data/Final Data Science Presentation.pdf){width="8in" height="5in"}
 
 ## Motivation {.unnumbered}
 
