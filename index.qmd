@@ -13,6 +13,8 @@ library(ggplot2)
 covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
+![](./data/DSProjectFinalVideo.mp4){width="8in" height="5in"}
+
 ![](./data/Final Data Science Presentation.pdf){width="8in" height="5in"}
 
 ## Motivation {.unnumbered}
@@ -25,7 +27,7 @@ We, as students who experienced Covid-19 and the resulting lockdown, wanted to k
 The goal of the research question is to gage whether or not Covid-19 and the lockdown had a negative, neutral, or positive effect on academic proficiency.
 It also attempts to gage whether the effects of Covid-19 on academic proficiency, if there are any, is affected by household income or parental education.
 
-So, our research question was: How did academic proficiency decrease in the Netherlands during Covid-19 relative to pre-pandemic levels and how did it vary by the income level of households or their parental education.
+So, our research question was: **How did academic proficiency decrease in the Netherlands during Covid-19 relative to pre-pandemic levels and how did it vary by the income level of households or their parental education?**
 
 ## Background {.unnumbered}
 
@@ -42,7 +44,8 @@ We also believe that this may have had an effect on students post-pandemic.
 For this project we decided to investigate how Covid-19s’ disruption of schools globally impacted children of different socioeconomic backgrounds.
 We focused on children graded two through five in the Netherlands, using their test scores in Math, Reading, and Spelling to calculate their “Learning gains”.
 
-The data we used comes from an article published in the PLOS one journal. The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014.
+The data we used comes from an article published in the PLOS one journal.
+The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014.
 We chose to limit our investigation to scores taken in the semester before the pandemic and the scores taken during the period of school closure.
 We also decided to focus just on Income and Parental education as the most prominent factors impacting student education.
 
