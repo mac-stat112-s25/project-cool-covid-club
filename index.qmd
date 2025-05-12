@@ -1,13 +1,312 @@
 ---
 title: "Report"
 execute: 
-  echo: true      # change to true to show the code
-code-fold: false  # change to true to fold the code chunks
+  echo: false      # change to true to show the code
+code-fold: true  # change to true to fold the code chunks
 ---
 
-Your report will go here.
-
 ```{r}
-# this is a test code
+library(tidyverse)
+library(ggthemes)
+library(ggplot2)
+
+covid <- read_csv("data/clean_covid_formatted.csv")
 ```
 
+![](./data/DSProjectFinalVideo.mp4){width="8in" height="5in"}
+
+![](./data/Final Data Science Presentation.pdf){width="8in" height="5in"}
+
+## Motivation {.unnumbered}
+
+We wanted to understand how covid affected the performance of students.
+We, as students who experienced Covid-19 and the resulting lockdown, wanted to know if it led to worse or better outcomes and whether its effects were influenced by household income and parental education.
+
+## Research Question {.unnumbered}
+
+The goal of the research question is to gage whether or not Covid-19 and the lockdown had a negative, neutral, or positive effect on academic proficiency.
+It also attempts to gage whether the effects of Covid-19 on academic proficiency, if there are any, is affected by household income or parental education.
+
+So, our research question was: **How did academic proficiency decrease in the Netherlands during Covid-19 relative to pre-pandemic levels and how did it vary by the income level of households or their parental education?**
+
+## Background {.unnumbered}
+
+Covid-19 is a contagious disease originating from the SARS-CoV-2 Virus.
+It was first identified in Wuhan, China, and then began to spread internationally.
+In response to the spread of Covid-19, the Netherlands went through several full lockdowns which closed schools.
+It first lockdown began in March, 2020.
+The next was on the 15th of December, 2020.
+It experienced another in December, 2021.
+
+Covid-19 is also known to cause brain fog, which leads to a trouble concentrating.
+We also believe that this may have had an effect on students post-pandemic.
+
+For this project we decided to investigate how Covid-19s’ disruption of schools globally impacted children of different socioeconomic backgrounds.
+We focused on children graded two through five in the Netherlands, using their test scores in Math, Reading, and Spelling to calculate their “Learning gains”.
+
+The data we used comes from an article published in the PLOS one journal.
+The article describes the impact that 12 weeks of school closures had on children from different socioeconomic backgrounds, taking into account family income, parental education, and migration background, with data going back as far as 2014.
+We chose to limit our investigation to scores taken in the semester before the pandemic and the scores taken during the period of school closure.
+We also decided to focus just on Income and Parental education as the most prominent factors impacting student education.
+
+**References:**
+
+\- <https://www.who.int/news/item/30-12-2024-milestone-covid-19-five-years-ago>
+
+\- <https://www.containmentnu.nl/articles/timeline?lang=en>
+
+\- <https://www.news-medical.net/health/The-Science-Behind-Long-COVID-Brain-Fog.aspx>
+
+## Data {.unnumbered}
+
+**Collection / Acquisition:** The data we used came from the [Nationaal Cohortonderzoek Onderwijs](https://plos.figshare.com/articles/dataset/The_disparate_impact_of_COVID-19_on_student_learning_gains_across_students_household_income_and_parental_education_levels_unweighted_/19108838?file=33953498) (NCO), which is a database owned by the Dutch government.
+Its data comes from the Dutch government's national education registry, which collects data about individual students provided by schools who recieve public funding from the Dutch government.
+This means that data on students from private schools that do not receive any government funding was not included.
+The data used from the NCO database was exam scores prior to the pandemic during the pandemic.
+The data provided from the NCO, however, is generalized to the entire student population based on whether their household incomes were middle or high, whether or not their parental education was high or low, and what grade they were in.
+The data required for the NCO to categorize each students parents' parental education was also cross referenced from government data, which contained the degrees they held.
+The data on students' household income was calculated by government data about whether or not the household received government benefits and experienced unemployment.
+Data about students' proficiency was taken by their exam scores in the categories of reading, spelling, and math.
+Then, per each grade, the average of all students' exam scores in each grade and for reading, spelling, and math was provided.
+The score on the exams that students took was graded from 1-100, so each grade's average is a percent of the maximum students could have scored.
+
+## Findings {.unnumbered}
+
+Each grade of school had roughly 150k+ students, so we decided that the sample size was large enough.
+We found that the data set provided needed a lot of cleaning.
+Many unnecessary variables were included, and they were listed as rows instead of columns.
+The downloaded csv was not formatted like a csv, and the first row of it needed to be skipped to make the format work.
+Many variables needed to be renamed, and the dataset needed to be transposed.
+Lastly, to calculate scores prior to and before covid, new variables needed to be created, and they were standardized as a percent of improvement or decline.
+
+## Visualizations {.unnumbered}
+
+**Viz 1: Scores before Covid-19 by Income Level**
+
+```{r}
+# viz 1: Scores before Covid-19 by Income Level
+covid |>
+  select(subject, grade,`income_medium`, `income_high`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "medium|high")))) |>
+  mutate(income_level = fct_relevel(income_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = income_level, fill = income_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Income Level",
+       y = "Average Change in Scores from Midterms to Finals",
+       title = "Changes In Exam Scores Before Covid-19",
+       fill = "") +
+  theme_solarized() +
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(-0.02, 0.07),
+                     breaks = seq(0, 0.07, .02)) +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
+```
+
+**Viz 2: Scores during Covid-19 by Income Level**
+
+```{r}
+#| fig-alt: "A set of column graphs depicting the average score differences from midterms to finals for both medium income students and high income students. Each column graph represents a different exam subject. As shown, we can see that there is a small gap between the medium and high income students in math score improvement, with high income students slightly outperforming the medium income students. For the reading score differences, we see this gap flips and the medium income students perform better than the high income students by a small margin. The last one, the spelling exam scores, is the outlier in which there is a wide gap between high income and low income students, with high income students once again performing better than medium income students."
+
+# viz 2: Scores during Covid-19 by Income Level
+covid |>
+  select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "income_level",
+               values_to = "scores_diff") |>
+  mutate(income_level = as.factor(str_to_sentence(str_extract(income_level, "Medium|High")))) |>
+  mutate(income_level = fct_relevel(income_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(income_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = income_level, fill = income_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Income Level",
+       y = "Average Change in Scores from Midterms to Finals",
+       title = "Changes in Exam Scores during Covid-19",
+       fill = "",
+       caption = "Visualization created by Marvin C. (2025), data sourced from the Dutch government") +
+  theme_solarized() +
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(-0.02, 0.07),
+                     breaks = seq(0, 0.07, .02)) +
+  scale_fill_solarized() +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
+```
+
+**Observations (vizualizations 1 & 2)**
+
+From our visualizations, we can see that the average difference in exam scores from the midterm to the finals increased by a significant amount across all 3 of the subjects accounted for in the data, comparing pre-Covid to mid-Covid test scores.
+Interestingly, the visualizations suggests that before the pandemic there was an average decrease in test scores throughout the school year in all subjects for both medium income and low income students, with the one exception being high income students' reading test scores.
+Against our intuition, the visualization of score differences during Covid suggests that students across the board scored higher on their finals than on their midterms in each subject regardless of income status.
+
+The indicator of interest here that directly answers our question is the height of the bars relative to one another.
+That is, we can answer our question by comparing the height difference in the orange and blue bars before and during Covid.
+The visualizations depict that in nearly every case the high income students perform better on average than, or at least not as bad as, the medium income students, with one notable exception: looking at the reading test score differences during Covid, we see this disparity has reversed itself; the high income students did not have the same level of improvement on their reading test scores as the medium income students.
+More pertinent, however, is the fact that the gaps between the blue and orange bars diminished as well during Covid.
+Again, the exception to this is the spelling category; where before there was only a difference in score differences of about 0.006 before Covid, it seems that this gap has grown to about 0.03 points.
+This represents a 5x increase in the performance gap between high income and low income students, at least when it came to the spelling test.
+It is important to note that this is in direct contrast with the other subjects accounted for, where the gap either shrunk marginally or flipped completely.
+
+**Viz 3: Scores Before Covid-19 By Parent Education Level**
+
+```{r}
+# Viz 3: Scores Before Covid-19 By Parent Education Level
+covid |>
+  select(subject, grade,education_high, education_medium) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Level",
+       y = "Average Change in Scores Before Covid",
+       title = "Changes in Exam Scores before Covid-19",
+       fill = "") +
+  theme_solarized() +
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
+```
+
+**Viz 4: Scores During Covid-19 By Parent Education Level**
+
+```{r}
+# Viz 4: Scores During Covid By Parent Education Level
+covid |>
+  select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level, fill = education_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Level",
+       y = "Average Change in Scores During Covid",
+       title = "Changes in Exam Scores during Covid-19",
+       fill = "") +
+  theme_solarized() +
+  scale_fill_solarized() +
+  theme(legend.position = "none") +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10)) 
+```
+
+**Observations (vizualizations 3 & 4)**
+
+These graphs compare the average scores of students before covid 19 and during the school closures caused by the pandemic separated by Parental Education Level.
+Parental education is split between Medium and High.
+When comparing the scores from before the students items to during covid, the graphs shows improvements in math but worsened in both reading and spelling.
+When comparing these scores across time it is most important to look at the differences Parental Education had on the scores of students.
+
+While students are shown to improve in math, students from families of high levels of education showed more improvement than the other students.
+When looking at the subjects where students struggled, the negative impact of covid has more of an impact on students of medium parental education.
+When comparing these graphs it is clear that the level of parental education had sever impacts on students during school disruptions, even if their scores were improving, flamiles of higher education saw more improvements and less damage.
+
+**Viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households**
+
+```{r}
+# viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households
+
+#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for Medium Income Households"
+#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in Medium Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects, all of them showing a positive correlation. All of the subjects have a negative percent change on the y-axis, but as grade increases the trend is that all of the subjects' difference decreases towards zero, even reaching a positive difference by grade 5 for reading and spelling. The range of the x-axis is from 2 to 5, and the y-axis is from positive 5 to negative 20. All points in the scatterplot are near 0, only going near negative 7.5 percent, except for one outlier. In the third grade, the percent difference in the score for math is negative twenty."
+
+pre_covid <- read_csv("data/pre_covid.csv")
+
+ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in Medium Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
+
+**Viz 6: Change in Scores by Grade Pre/During Covid in High Income Households**
+
+```{r}
+# viz 6: Change in Scores by Grade Pre/During Covid in High Income Households
+
+#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for High Income Households"
+#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in High Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects. Spelling shows a slight negative correlation, reading shows a slight positive correlation, and math shows a moderate negative correlation. The range of the x-axis is from 2 to 5, and the y-axis is from roughly positive 30 to roughly negative 7.5. All points in the scatterplot are near 0, only going as far away as 7.5 points, except for one outlier. In the third grade, the percent difference in the score for math is nearly positive 30. This outlier manipulates the trend line for math, whose points are actually near zero and have a roughly neutral correlation if you discount the third grade."
+
+ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in High Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
+
+**Observations (vizualizations 5 & 6)**
+
+The graphs compare the difference in scores of students, standardized by the percent change, pre and post covid by grade and subject.
+In the graph for medium income households, it becomes clear that all subjects saw a decrease.
+However, this effect reduced as grade increased.
+This possible covid effect, therefore, may have a stronger effect on younger students.
+But, in high income households, there was either a relatively neutral effect.
+In spelling, there was an improved score in grade 2, reduced scores in grade 3 and 4, and a near 0% difference in grade 5.
+Reading saw a nearly 0% difference in scores every year.
+Math saw a similar pattern, except for a uniquely high increase in the 3rd grade with a higher than 20% increase.
+What is interesting is that the reverse occurred in the 3rd grade for medium income households, indicating that higher incomes cause some sort of reverse effect.
+Overall, among high income households, there was relatively little change as grade increased, in contrast to the experience of medium income households.
+This may mean that money cushions high income households from a negative effect that occurred post pandemic, which medium income households could not cushion themselves from.
+
+## Limitations and Future Work {.unnumbered}
+
+The dataset itself is limited, as we only have access to a subset of the data collected during the study referenced above.
+Our pre-Covid timeframe only includes the 2017-18 school year, whereas the original data scientists had access to a timeline of data, and as such could produce visualizations that much better exemplified trends we were looking for.
+Also, as mentioned in the introduction, the original study itself only included data from publicly funded schools, meaning this is not representative of private school students, who are presumably in an even higher income bracket.
+This data could have helped us come to a clearer conclusion.
+
+Even within the data we have, a good portion of the data is labeled as 'missing'.
+You may have noticed that the categories we have for both parental education level and income status are only medium and high; this categorization implies a 3rd category: low.
+However, this was not available within the dataset, and instead there was a large group of students for whom these identifiers were missing.
+We were forced to exclude these students as these categories were exactly what we were looking at, and adding students that did not belong in either category would've confounded our data and obscured any potential observations we could have made.
+
+In terms of future work, an interesting next step would be to look at data for middle schoolers, high schoolers, and public university students if possible.
+This would give us the ability to look at if age has any significant impact on the relationship we were studying.
+Extrapolating further, we think it would be useful to also look at data across different countries and see if a country's GDP and economic status has any impact on this as well, especially in terms of a country's response to Covid.

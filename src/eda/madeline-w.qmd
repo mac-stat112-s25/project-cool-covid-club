@@ -1,0 +1,76 @@
+---
+title: "Madeline W"
+format: html
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+school_attendance <- read_csv("../../data/School_Attendance_by_Student_Group.csv")
+```
+
+```{r}
+#looking at varibles of the dataset and familarizing with the data
+  dim(school_attendance) 
+  nrow(school_attendance) 
+  names(school_attendance)
+  str(school_attendance)
+```
+
+```{r}
+#looking at districts with higher attendance rates durring covid
+school_attendance |>
+  arrange(desc(`2020-2021 attendance rate`)) |>
+  head()
+```
+
+```{r}
+covid <- read_csv("../../data/clean_covid_formatted.csv")
+```
+
+
+```{r}
+# Viz 4 final
+covid |>
+  select(subject, grade,`COVID-19 year * Parental education high`, `COVID-19 year * Parental education medium`) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |>
+   mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Level",
+       y = "Average Change in Scores During Covid",
+       title = "Comparing the Change in Exam Scores during Covid by Parental Education Level")
+```
+
+```{r}
+# Viz 3 
+covid |>
+  select(subject, grade,education_medium, education_high) |>
+  pivot_longer(cols = c(-subject, -grade),
+               names_to = "education_level",
+               values_to = "scores_diff") |> 
+  mutate(education_level = as.factor(str_to_sentence(str_extract(education_level, "medium|high")))) |>
+  mutate(education_level = fct_relevel(education_level, c("Medium", "High")),
+         subject = as.factor(subject)) |>
+  group_by(education_level, subject) |>
+  summarize(mean_scores_diff = mean(scores_diff)) |>
+  ggplot(aes(y = mean_scores_diff, x = education_level)) +
+  geom_col() +
+  facet_wrap(~subject) +
+  labs(x = "Parental Education Level",
+       y = "Average Change in Scores Before Covid",
+       title = "Comparing the Change in Exam Scores Before Covid by Parental Education Level")
+```
+
+
+
+

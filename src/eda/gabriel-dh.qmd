@@ -1,0 +1,141 @@
+---
+title: "Gabriel DH"
+format: html
+---
+
+## Import Necessary Libraries
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+```
+
+
+## Reshape, Clean, and wrangle the data
+
+```{r}
+messy_covid <- read_csv("../../data/covid_test_scores_2.csv", skip = 1)
+
+clean_covid_formatted <- messy_covid |>
+  filter(VARIABLES != "Additional controls") |>
+  filter(VARIABLES != "Household income") |>
+  filter(VARIABLES != "Parental education") |>
+  rename(reading_2 = `Grade 2...2`,
+         reading_3 = `Grade 3...3`,
+         reading_4 = `Grade 4...4`,
+         reading_5 = `Grade 5...5`,
+         spelling_1 = `Grade 1...6`,
+         spelling_2 = `Grade 2...7`,
+         spelling_3 = `Grade 3...8`,
+         spelling_4 = `Grade 4...9`,
+         spelling_5 = `Grade 5...10`,
+         math_1 = `Grade 1...11`,
+         math_2 = `Grade 2...12`,
+         math_3 = `Grade 3...13`,
+         math_4 = `Grade 4...14`,
+         math_5 = `Grade 5...15`) |>
+  select(-math_1, -spelling_1) |>
+  mutate(VARIABLES = ifelse(reading_2 == "-0.0233", "income_medium", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0181", "income_high", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0498", "income_missing", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.00413", "education_medium", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "0.0235", "education_high", VARIABLES)) |>
+  mutate(VARIABLES = ifelse(reading_2 == "-0.0303", "education_missing", VARIABLES))
+  
+write.csv(clean_covid_formatted, "../../data/clean_covid_formatted.csv")
+
+clean_covid_formatted
+
+write.csv(clean_covid_formatted |>
+  pivot_longer(cols = c(-VARIABLES), names_to = "type_grade", values_to = "score") |>
+  pivot_wider(names_from = VARIABLES, values_from = score) |>
+  rename(rsquared = `R-squared`) |>
+  select(-Constant, -Observations, -Clusters, -rsquared) |>
+  mutate(subject = as.factor(str_extract(type_grade, "reading|spelling|math")),
+         grade = as.numeric(str_extract(type_grade, "1|2|3|4|5"))) |>
+  select(-type_grade), "../../data/clean_covid_formatted.csv")
+
+messy_pre_covid <- read_csv("../../data/clean_covid_formatted.csv")
+
+pre_covid <- messy_pre_covid |>
+  select(-`...1`) |>
+  mutate(income_medium_dif = `COVID-19 year * Medium income household` - income_medium) |>
+  mutate(income_high_dif = `COVID-19 year * High income household` - income_high) |>
+  mutate(income_missing_dif = `COVID-19 year * Household income missing` - income_missing) |>
+  mutate(pct_dif_medium = (income_medium_dif / income_medium)) |>
+  mutate(pct_dif_high = (income_high_dif / income_high)) |>
+  mutate(pct_dif_missing = (income_missing_dif / income_missing)) |>
+  mutate(subject = fct_recode(subject,
+                              "Math" = "math",
+                              "Spelling" = "spelling",
+                              "Reading" = "reading"))
+
+write.csv(pre_covid, "../../data/pre_covid.csv")
+
+pre_covid
+```
+
+
+## Understand The Structure of The Data
+
+```{r}
+str(pre_covid)
+```
+
+```{r}
+summary(pre_covid)
+```
+
+## Visualize
+
+```{r}
+# viz 1
+ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in Medium Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
+
+```{r}
+# viz 2
+ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Change in Scores by Grade Pre/During Covid in High Income Households") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 15, face = "bold"),
+        axis.title = element_text(size = 14, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 14, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+
+```
+
+```{r}
+# viz 3
+ggplot(pre_covid, aes(x = grade, y = pct_dif_missing, color = subject)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  labs(x = "Grade", y = "% Difference in Scores", title = "Difference in Scores by Grade Pre/During Covid in Households with Missing Incomes") +
+  theme_solarized() +
+  scale_color_solarized(name = "Subject") +
+  theme(plot.title = element_text(hjust = 0.25, family = "serif", size = 14, face = "bold"),
+        axis.title = element_text(size = 13, family = "serif"),
+        axis.text = element_text(family = "mono", size = 10, color = "#657b83"),
+        strip.text = element_text(family = "mono", size = 10),
+        legend.title = element_text(size = 13, family = "serif", color = "#657b83"),
+        legend.text = element_text(size = 10, family = "mono", color = "#657b83")) 
+```
