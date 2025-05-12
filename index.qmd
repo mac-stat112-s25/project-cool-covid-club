@@ -235,6 +235,9 @@ When comparing these graphs it is clear that the level of parental education had
 ```{r}
 # viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households
 
+#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for Medium Income Households"
+#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in Medium Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects, all of them showing a positive correlation. All of the subjects have a negative percent change on the y-axis, but as grade increases the trend is that all of the subjects' difference decreases towards zero, even reaching a positive difference by grade 5 for reading and spelling. The range of the x-axis is from 2 to 5, and the y-axis is from positive 5 to negative 20. All points in the scatterplot are near 0, only going near negative 7.5 percent, except for one outlier. In the third grade, the percent difference in the score for math is negative twenty."
+
 pre_covid <- read_csv("data/pre_covid.csv")
 
 ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
@@ -256,6 +259,10 @@ ggplot(pre_covid, aes(x = grade, y = pct_dif_medium, color = subject)) +
 
 ```{r}
 # viz 6: Change in Scores by Grade Pre/During Covid in High Income Households
+
+#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for High Income Households"
+#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in High Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects. Spelling shows a slight negative correlation, reading shows a slight positive correlation, and math shows a moderate negative correlation. The range of the x-axis is from 2 to 5, and the y-axis is from roughly positive 30 to roughly negative 7.5. All points in the scatterplot are near 0, only going as far away as 7.5 points, except for one outlier. In the third grade, the percent difference in the score for math is nearly positive 30. This outlier manipulates the trend line for math, whose points are actually near zero and have a roughly neutral correlation if you discount the third grade."
+
 ggplot(pre_covid, aes(x = grade, y = pct_dif_high, color = subject)) +
   geom_point(size = 5) +
   geom_smooth(method = "lm",
