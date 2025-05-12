@@ -1246,71 +1246,78 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-247"><a href="#cb1-247"></a><span class="in">```{r}</span></span>
 <span id="cb1-248"><a href="#cb1-248"></a><span class="co"># viz 5: Change in Scores by Grade Pre/During Covid in Medium Income Households</span></span>
 <span id="cb1-249"><a href="#cb1-249"></a></span>
-<span id="cb1-250"><a href="#cb1-250"></a>pre_covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/pre_covid.csv"</span>)</span>
-<span id="cb1-251"><a href="#cb1-251"></a></span>
-<span id="cb1-252"><a href="#cb1-252"></a><span class="fu">ggplot</span>(pre_covid, <span class="fu">aes</span>(<span class="at">x =</span> grade, <span class="at">y =</span> pct_dif_medium, <span class="at">color =</span> subject)) <span class="sc">+</span></span>
-<span id="cb1-253"><a href="#cb1-253"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb1-254"><a href="#cb1-254"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>,</span>
-<span id="cb1-255"><a href="#cb1-255"></a>              <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb1-256"><a href="#cb1-256"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Grade"</span>, <span class="at">y =</span> <span class="st">"% Difference in Scores"</span>, <span class="at">title =</span> <span class="st">"Change in Scores by Grade Pre/During Covid in Medium Income Households"</span>) <span class="sc">+</span></span>
-<span id="cb1-257"><a href="#cb1-257"></a>  <span class="fu">theme_solarized</span>() <span class="sc">+</span></span>
-<span id="cb1-258"><a href="#cb1-258"></a>  <span class="fu">scale_color_solarized</span>(<span class="at">name =</span> <span class="st">"Subject"</span>) <span class="sc">+</span></span>
-<span id="cb1-259"><a href="#cb1-259"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.25</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">size =</span> <span class="dv">15</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb1-260"><a href="#cb1-260"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>),</span>
-<span id="cb1-261"><a href="#cb1-261"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
-<span id="cb1-262"><a href="#cb1-262"></a>        <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
-<span id="cb1-263"><a href="#cb1-263"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
-<span id="cb1-264"><a href="#cb1-264"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>)) </span>
-<span id="cb1-265"><a href="#cb1-265"></a><span class="in">```</span></span>
-<span id="cb1-266"><a href="#cb1-266"></a></span>
-<span id="cb1-267"><a href="#cb1-267"></a>**Viz 6: Change in Scores by Grade Pre/During Covid in High Income Households**</span>
-<span id="cb1-268"><a href="#cb1-268"></a></span>
-<span id="cb1-271"><a href="#cb1-271"></a><span class="in">```{r}</span></span>
-<span id="cb1-272"><a href="#cb1-272"></a><span class="co"># viz 6: Change in Scores by Grade Pre/During Covid in High Income Households</span></span>
-<span id="cb1-273"><a href="#cb1-273"></a><span class="fu">ggplot</span>(pre_covid, <span class="fu">aes</span>(<span class="at">x =</span> grade, <span class="at">y =</span> pct_dif_high, <span class="at">color =</span> subject)) <span class="sc">+</span></span>
-<span id="cb1-274"><a href="#cb1-274"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb1-275"><a href="#cb1-275"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>,</span>
-<span id="cb1-276"><a href="#cb1-276"></a>              <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb1-277"><a href="#cb1-277"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Grade"</span>, <span class="at">y =</span> <span class="st">"% Difference in Scores"</span>, <span class="at">title =</span> <span class="st">"Change in Scores by Grade Pre/During Covid in High Income Households"</span>) <span class="sc">+</span></span>
-<span id="cb1-278"><a href="#cb1-278"></a>  <span class="fu">theme_solarized</span>() <span class="sc">+</span></span>
-<span id="cb1-279"><a href="#cb1-279"></a>  <span class="fu">scale_color_solarized</span>(<span class="at">name =</span> <span class="st">"Subject"</span>) <span class="sc">+</span></span>
-<span id="cb1-280"><a href="#cb1-280"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.25</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">size =</span> <span class="dv">15</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb1-281"><a href="#cb1-281"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>),</span>
-<span id="cb1-282"><a href="#cb1-282"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
-<span id="cb1-283"><a href="#cb1-283"></a>        <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
-<span id="cb1-284"><a href="#cb1-284"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
-<span id="cb1-285"><a href="#cb1-285"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>)) </span>
-<span id="cb1-286"><a href="#cb1-286"></a><span class="in">```</span></span>
-<span id="cb1-287"><a href="#cb1-287"></a></span>
-<span id="cb1-288"><a href="#cb1-288"></a>**Observations (vizualizations 5 &amp; 6)**</span>
-<span id="cb1-289"><a href="#cb1-289"></a></span>
-<span id="cb1-290"><a href="#cb1-290"></a>The graphs compare the difference in scores of students, standardized by the percent change, pre and post covid by grade and subject.</span>
-<span id="cb1-291"><a href="#cb1-291"></a>In the graph for medium income households, it becomes clear that all subjects saw a decrease.</span>
-<span id="cb1-292"><a href="#cb1-292"></a>However, this effect reduced as grade increased.</span>
-<span id="cb1-293"><a href="#cb1-293"></a>This possible covid effect, therefore, may have a stronger effect on younger students.</span>
-<span id="cb1-294"><a href="#cb1-294"></a>But, in high income households, there was either a relatively neutral effect.</span>
-<span id="cb1-295"><a href="#cb1-295"></a>In spelling, there was an improved score in grade 2, reduced scores in grade 3 and 4, and a near 0% difference in grade 5.</span>
-<span id="cb1-296"><a href="#cb1-296"></a>Reading saw a nearly 0% difference in scores every year.</span>
-<span id="cb1-297"><a href="#cb1-297"></a>Math saw a similar pattern, except for a uniquely high increase in the 3rd grade with a higher than 20% increase.</span>
-<span id="cb1-298"><a href="#cb1-298"></a>What is interesting is that the reverse occurred in the 3rd grade for medium income households, indicating that higher incomes cause some sort of reverse effect.</span>
-<span id="cb1-299"><a href="#cb1-299"></a>Overall, among high income households, there was relatively little change as grade increased, in contrast to the experience of medium income households.</span>
-<span id="cb1-300"><a href="#cb1-300"></a>This may mean that money cushions high income households from a negative effect that occurred post pandemic, which medium income households could not cushion themselves from.</span>
-<span id="cb1-301"><a href="#cb1-301"></a></span>
-<span id="cb1-302"><a href="#cb1-302"></a><span class="fu">## Limitations and Future Work {.unnumbered}</span></span>
-<span id="cb1-303"><a href="#cb1-303"></a></span>
-<span id="cb1-304"><a href="#cb1-304"></a>The dataset itself is limited, as we only have access to a subset of the data collected during the study referenced above.</span>
-<span id="cb1-305"><a href="#cb1-305"></a>Our pre-Covid timeframe only includes the 2017-18 school year, whereas the original data scientists had access to a timeline of data, and as such could produce visualizations that much better exemplified trends we were looking for.</span>
-<span id="cb1-306"><a href="#cb1-306"></a>Also, as mentioned in the introduction, the original study itself only included data from publicly funded schools, meaning this is not representative of private school students, who are presumably in an even higher income bracket.</span>
-<span id="cb1-307"><a href="#cb1-307"></a>This data could have helped us come to a clearer conclusion.</span>
+<span id="cb1-250"><a href="#cb1-250"></a><span class="co">#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for Medium Income Households"</span></span>
+<span id="cb1-251"><a href="#cb1-251"></a><span class="co">#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in Medium Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects, all of them showing a positive correlation. All of the subjects have a negative percent change on the y-axis, but as grade increases the trend is that all of the subjects' difference decreases towards zero, even reaching a positive difference by grade 5 for reading and spelling. The range of the x-axis is from 2 to 5, and the y-axis is from positive 5 to negative 20. All points in the scatterplot are near 0, only going near negative 7.5 percent, except for one outlier. In the third grade, the percent difference in the score for math is negative twenty."</span></span>
+<span id="cb1-252"><a href="#cb1-252"></a></span>
+<span id="cb1-253"><a href="#cb1-253"></a>pre_covid <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/pre_covid.csv"</span>)</span>
+<span id="cb1-254"><a href="#cb1-254"></a></span>
+<span id="cb1-255"><a href="#cb1-255"></a><span class="fu">ggplot</span>(pre_covid, <span class="fu">aes</span>(<span class="at">x =</span> grade, <span class="at">y =</span> pct_dif_medium, <span class="at">color =</span> subject)) <span class="sc">+</span></span>
+<span id="cb1-256"><a href="#cb1-256"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb1-257"><a href="#cb1-257"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>,</span>
+<span id="cb1-258"><a href="#cb1-258"></a>              <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb1-259"><a href="#cb1-259"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Grade"</span>, <span class="at">y =</span> <span class="st">"% Difference in Scores"</span>, <span class="at">title =</span> <span class="st">"Change in Scores by Grade Pre/During Covid in Medium Income Households"</span>) <span class="sc">+</span></span>
+<span id="cb1-260"><a href="#cb1-260"></a>  <span class="fu">theme_solarized</span>() <span class="sc">+</span></span>
+<span id="cb1-261"><a href="#cb1-261"></a>  <span class="fu">scale_color_solarized</span>(<span class="at">name =</span> <span class="st">"Subject"</span>) <span class="sc">+</span></span>
+<span id="cb1-262"><a href="#cb1-262"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.25</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">size =</span> <span class="dv">15</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-263"><a href="#cb1-263"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>),</span>
+<span id="cb1-264"><a href="#cb1-264"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
+<span id="cb1-265"><a href="#cb1-265"></a>        <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb1-266"><a href="#cb1-266"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
+<span id="cb1-267"><a href="#cb1-267"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>)) </span>
+<span id="cb1-268"><a href="#cb1-268"></a><span class="in">```</span></span>
+<span id="cb1-269"><a href="#cb1-269"></a></span>
+<span id="cb1-270"><a href="#cb1-270"></a>**Viz 6: Change in Scores by Grade Pre/During Covid in High Income Households**</span>
+<span id="cb1-271"><a href="#cb1-271"></a></span>
+<span id="cb1-274"><a href="#cb1-274"></a><span class="in">```{r}</span></span>
+<span id="cb1-275"><a href="#cb1-275"></a><span class="co"># viz 6: Change in Scores by Grade Pre/During Covid in High Income Households</span></span>
+<span id="cb1-276"><a href="#cb1-276"></a></span>
+<span id="cb1-277"><a href="#cb1-277"></a><span class="co">#| fig-cap: "Scatterplot of Percent Difference in Exam Scores and Grade, Colored by Subject, for High Income Households"</span></span>
+<span id="cb1-278"><a href="#cb1-278"></a><span class="co">#| fig-alt: "This scatterplot shows the relationship between the percent difference in exam scores and grade of students. The title is 'Change in Scores by Grade Pre / During Covid in High Income Households'. The points are colored either red, green, or blue and there is a legend called 'Subject' for the colors. Blue represents math, red represents reading, and green represents spelling. There is a trend line for each of the subjects. Spelling shows a slight negative correlation, reading shows a slight positive correlation, and math shows a moderate negative correlation. The range of the x-axis is from 2 to 5, and the y-axis is from roughly positive 30 to roughly negative 7.5. All points in the scatterplot are near 0, only going as far away as 7.5 points, except for one outlier. In the third grade, the percent difference in the score for math is nearly positive 30. This outlier manipulates the trend line for math, whose points are actually near zero and have a roughly neutral correlation if you discount the third grade."</span></span>
+<span id="cb1-279"><a href="#cb1-279"></a></span>
+<span id="cb1-280"><a href="#cb1-280"></a><span class="fu">ggplot</span>(pre_covid, <span class="fu">aes</span>(<span class="at">x =</span> grade, <span class="at">y =</span> pct_dif_high, <span class="at">color =</span> subject)) <span class="sc">+</span></span>
+<span id="cb1-281"><a href="#cb1-281"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb1-282"><a href="#cb1-282"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>,</span>
+<span id="cb1-283"><a href="#cb1-283"></a>              <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb1-284"><a href="#cb1-284"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Grade"</span>, <span class="at">y =</span> <span class="st">"% Difference in Scores"</span>, <span class="at">title =</span> <span class="st">"Change in Scores by Grade Pre/During Covid in High Income Households"</span>) <span class="sc">+</span></span>
+<span id="cb1-285"><a href="#cb1-285"></a>  <span class="fu">theme_solarized</span>() <span class="sc">+</span></span>
+<span id="cb1-286"><a href="#cb1-286"></a>  <span class="fu">scale_color_solarized</span>(<span class="at">name =</span> <span class="st">"Subject"</span>) <span class="sc">+</span></span>
+<span id="cb1-287"><a href="#cb1-287"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.25</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">size =</span> <span class="dv">15</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-288"><a href="#cb1-288"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>),</span>
+<span id="cb1-289"><a href="#cb1-289"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
+<span id="cb1-290"><a href="#cb1-290"></a>        <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb1-291"><a href="#cb1-291"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">family =</span> <span class="st">"serif"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>),</span>
+<span id="cb1-292"><a href="#cb1-292"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">family =</span> <span class="st">"mono"</span>, <span class="at">color =</span> <span class="st">"#657b83"</span>)) </span>
+<span id="cb1-293"><a href="#cb1-293"></a><span class="in">```</span></span>
+<span id="cb1-294"><a href="#cb1-294"></a></span>
+<span id="cb1-295"><a href="#cb1-295"></a>**Observations (vizualizations 5 &amp; 6)**</span>
+<span id="cb1-296"><a href="#cb1-296"></a></span>
+<span id="cb1-297"><a href="#cb1-297"></a>The graphs compare the difference in scores of students, standardized by the percent change, pre and post covid by grade and subject.</span>
+<span id="cb1-298"><a href="#cb1-298"></a>In the graph for medium income households, it becomes clear that all subjects saw a decrease.</span>
+<span id="cb1-299"><a href="#cb1-299"></a>However, this effect reduced as grade increased.</span>
+<span id="cb1-300"><a href="#cb1-300"></a>This possible covid effect, therefore, may have a stronger effect on younger students.</span>
+<span id="cb1-301"><a href="#cb1-301"></a>But, in high income households, there was either a relatively neutral effect.</span>
+<span id="cb1-302"><a href="#cb1-302"></a>In spelling, there was an improved score in grade 2, reduced scores in grade 3 and 4, and a near 0% difference in grade 5.</span>
+<span id="cb1-303"><a href="#cb1-303"></a>Reading saw a nearly 0% difference in scores every year.</span>
+<span id="cb1-304"><a href="#cb1-304"></a>Math saw a similar pattern, except for a uniquely high increase in the 3rd grade with a higher than 20% increase.</span>
+<span id="cb1-305"><a href="#cb1-305"></a>What is interesting is that the reverse occurred in the 3rd grade for medium income households, indicating that higher incomes cause some sort of reverse effect.</span>
+<span id="cb1-306"><a href="#cb1-306"></a>Overall, among high income households, there was relatively little change as grade increased, in contrast to the experience of medium income households.</span>
+<span id="cb1-307"><a href="#cb1-307"></a>This may mean that money cushions high income households from a negative effect that occurred post pandemic, which medium income households could not cushion themselves from.</span>
 <span id="cb1-308"><a href="#cb1-308"></a></span>
-<span id="cb1-309"><a href="#cb1-309"></a>Even within the data we have, a good portion of the data is labeled as 'missing'.</span>
-<span id="cb1-310"><a href="#cb1-310"></a>You may have noticed that the categories we have for both parental education level and income status are only medium and high; this categorization implies a 3rd category: low.</span>
-<span id="cb1-311"><a href="#cb1-311"></a>However, this was not available within the dataset, and instead there was a large group of students for whom these identifiers were missing.</span>
-<span id="cb1-312"><a href="#cb1-312"></a>We were forced to exclude these students as these categories were exactly what we were looking at, and adding students that did not belong in either category would've confounded our data and obscured any potential observations we could have made.</span>
-<span id="cb1-313"><a href="#cb1-313"></a></span>
-<span id="cb1-314"><a href="#cb1-314"></a>In terms of future work, an interesting next step would be to look at data for middle schoolers, high schoolers, and public university students if possible.</span>
-<span id="cb1-315"><a href="#cb1-315"></a>This would give us the ability to look at if age has any significant impact on the relationship we were studying.</span>
-<span id="cb1-316"><a href="#cb1-316"></a>Extrapolating further, we think it would be useful to also look at data across different countries and see if a country's GDP and economic status has any impact on this as well, especially in terms of a country's response to Covid.</span>
+<span id="cb1-309"><a href="#cb1-309"></a><span class="fu">## Limitations and Future Work {.unnumbered}</span></span>
+<span id="cb1-310"><a href="#cb1-310"></a></span>
+<span id="cb1-311"><a href="#cb1-311"></a>The dataset itself is limited, as we only have access to a subset of the data collected during the study referenced above.</span>
+<span id="cb1-312"><a href="#cb1-312"></a>Our pre-Covid timeframe only includes the 2017-18 school year, whereas the original data scientists had access to a timeline of data, and as such could produce visualizations that much better exemplified trends we were looking for.</span>
+<span id="cb1-313"><a href="#cb1-313"></a>Also, as mentioned in the introduction, the original study itself only included data from publicly funded schools, meaning this is not representative of private school students, who are presumably in an even higher income bracket.</span>
+<span id="cb1-314"><a href="#cb1-314"></a>This data could have helped us come to a clearer conclusion.</span>
+<span id="cb1-315"><a href="#cb1-315"></a></span>
+<span id="cb1-316"><a href="#cb1-316"></a>Even within the data we have, a good portion of the data is labeled as 'missing'.</span>
+<span id="cb1-317"><a href="#cb1-317"></a>You may have noticed that the categories we have for both parental education level and income status are only medium and high; this categorization implies a 3rd category: low.</span>
+<span id="cb1-318"><a href="#cb1-318"></a>However, this was not available within the dataset, and instead there was a large group of students for whom these identifiers were missing.</span>
+<span id="cb1-319"><a href="#cb1-319"></a>We were forced to exclude these students as these categories were exactly what we were looking at, and adding students that did not belong in either category would've confounded our data and obscured any potential observations we could have made.</span>
+<span id="cb1-320"><a href="#cb1-320"></a></span>
+<span id="cb1-321"><a href="#cb1-321"></a>In terms of future work, an interesting next step would be to look at data for middle schoolers, high schoolers, and public university students if possible.</span>
+<span id="cb1-322"><a href="#cb1-322"></a>This would give us the ability to look at if age has any significant impact on the relationship we were studying.</span>
+<span id="cb1-323"><a href="#cb1-323"></a>Extrapolating further, we think it would be useful to also look at data across different countries and see if a country's GDP and economic status has any impact on this as well, especially in terms of a country's response to Covid.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
