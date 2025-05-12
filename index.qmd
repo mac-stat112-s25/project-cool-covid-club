@@ -116,6 +116,8 @@ covid |>
 **Viz 2: Scores during Covid-19 by Income Level**
 
 ```{r}
+#| fig-alt: "A set of column graphs depicting the average score differences from midterms to finals for both medium income students and high income students. Each column graph represents a different exam subject. As shown, we can see that there is a small gap between the medium and high income students in math score improvement, with high income students slightly outperforming the medium income students. For the reading score differences, we see this gap flips and the medium income students perform better than the high income students by a small margin. The last one, the spelling exam scores, is the outlier in which there is a wide gap between high income and low income students, with high income students once again performing better than medium income students."
+
 # viz 2: Scores during Covid-19 by Income Level
 covid |>
   select(subject, grade,`COVID-19 year * Medium income household`, `COVID-19 year * High income household`) |>
@@ -133,7 +135,8 @@ covid |>
   labs(x = "Income Level",
        y = "Average Change in Scores from Midterms to Finals",
        title = "Changes in Exam Scores during Covid-19",
-       fill = "") +
+       fill = "",
+       caption = "Visualization created by Marvin C. (2025), data sourced from the Dutch government") +
   theme_solarized() +
   theme(legend.position = "none") +
   scale_y_continuous(limits = c(-0.02, 0.07),
